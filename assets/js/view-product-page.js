@@ -25,6 +25,9 @@ async function viewProduct() {
   const path = document.getElementById('page-path');
   const documetnId = document.documentElement.getAttribute('id');
 
+  // product.innerHTML = '';
+  // path.innerHTML = '';
+
   viewAnalogs(postsData);
 
   const pathContent = `
@@ -56,40 +59,9 @@ async function viewProduct() {
 
   if (postsData[documetnId].imgPath2) {
     img2 = `
-      <div
-      class="splide__slide product__slide-tumbs js-product-gallery-tumbs-slide is-active is-visible is-current"
-      data-product-img-id="529685436"
-      data-product-img-index="0"
-      id="splide02-slide01"
-      style="
-        margin-right: 1rem;
-        width: calc(((100% + 1rem) / 7) - 1rem);
-      "
-      tabindex="0"
-    >
-      <div
-        class="img-ratio img-ratio_contain product__photo-tumb"
-      >
-        <div class="img-ratio__inner">
-          <picture>
-            <source
-              data-srcset="../${postsData[documetnId].imgPath2}"
-              type="image/webp"
-              class="lazyload entered"
-              data-ll-status="entered"
-              srcset="../${postsData[documetnId].imgPath2}"
-            />
-            <img
-              data-src="../${postsData[documetnId].imgPath2}"
-              class="lazyload entered loaded"
-              alt="${postsData[documetnId].title}"
-              data-ll-status="loaded"
-              src="../${postsData[documetnId].imgPath2}"
-            />
-          </picture>
-        </div>
+      <div>
+        <img style="max-height: 400px;" src="../${postsData[documetnId].imgPath2}" alt="Состав" />
       </div>
-    </div>
     `;
 
     imgMain2 = `
@@ -298,7 +270,6 @@ async function viewProduct() {
                 aria-controls="splide01-track"
                 aria-label="Previous slide"
                 disabled=""
-                style="display: flex !important;"
               >
                 <span
                   class="splide__arrow-icon icon-angle-left"
@@ -309,7 +280,6 @@ async function viewProduct() {
                 class="splide__arrow splide__arrow--next"
                 aria-controls="splide01-track"
                 aria-label="Next slide"
-                style="display: flex !important;"
               >
                 <span
                   class="splide__arrow-icon icon-angle-right"
@@ -408,7 +378,6 @@ async function viewProduct() {
                     </div>
                   </div>
                 </div>
-                ${img2}
                 
             
               </div>
@@ -420,7 +389,6 @@ async function viewProduct() {
                 aria-controls="splide02-track"
                 disabled=""
                 aria-label="Previous slide"
-                style="display: flex !important;"
               >
                 <span
                   class="splide__arrow-icon icon-angle-left"
@@ -432,7 +400,6 @@ async function viewProduct() {
                 aria-controls="splide02-track"
                 disabled=""
                 aria-label="Next slide"
-                style="display: flex !important;"
               >
                 <span
                   class="splide__arrow-icon icon-angle-right"
@@ -463,7 +430,7 @@ async function viewProduct() {
       </div>
         <div class="product__area-description">
           <div class="product__full-description static-text">
-            <div class="cut-block js-cut-block" data-max-height="0">
+            <div class="cut-block js-cut-block" data-max-height="1">
               <div class="cut-block__content-wrapper">
                 <div class="cut-block__content">
                   <div class="product__block-title">Состав</div>
@@ -491,7 +458,7 @@ async function viewProduct() {
                     >
                       <div class="tn-atom"></div>
                     </div>
-                    
+                    ${img2}
                   </div>
                 </div>
               </div>
@@ -630,6 +597,7 @@ async function viewProduct() {
 }
 
 viewProduct();
+// viewProduct();
 
 
 function viewAnalogs(postsData) {

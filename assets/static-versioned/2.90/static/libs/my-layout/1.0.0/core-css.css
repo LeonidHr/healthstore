@@ -11,9 +11,9 @@
   grid-template-columns: 1fr 250px 1fr !important;
 }
 
-.splide__arrow {
+/* .splide__arrow {
   display: flex !important;
-}
+} */
 
 a {
   text-decoration: none;
