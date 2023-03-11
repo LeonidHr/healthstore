@@ -57,10 +57,12 @@ async function viewProduct() {
   if (postsData[documetnId].imgPath2) {
     img2 = `
       <div>
-        <img style="max-height: 400px;" src="../${postsData[documetnId].imgPath2}" alt="Состав" />
+        <img style="max-height: 400px; max-width:500px" src="../${postsData[documetnId].imgPath2}" alt="Состав" />
       </div>
     `;
+  }
 
+  if(postsData[documetnId].imgPathSlide) {
     imgMain2 = `
       <div
         class="splide__slide product__slide-main"
@@ -78,24 +80,24 @@ async function viewProduct() {
           data-alt=""
           data-fslightbox="product-photos-lightbox-423834350"
           data-type="image"
-          href="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
+          href="../${postsData[documetnId].imgPathSlide}"
           tabindex="-1"
         >
           <div class="img-ratio__inner">
             <picture>
               <source
-                data-srcset="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
+                data-srcset="../${postsData[documetnId].imgPathSlide}"
                 type="image/webp"
                 class="lazyload entered exited"
                 data-ll-status="entered"
-                srcset="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
+                srcset="../${postsData[documetnId].imgPathSlide}"
               />
               <img
-                src="../img/" data-src="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
+                src="../img/" data-src="../${postsData[documetnId].imgPathSlide}"
                 class="lazyload entered loaded"
                 alt=""
                 data-ll-status="loaded"
-                src="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
+                src="../${postsData[documetnId].imgPathSlide}"
               />
             </picture>
           </div>
@@ -267,6 +269,7 @@ async function viewProduct() {
                 aria-controls="splide01-track"
                 aria-label="Previous slide"
                 disabled=""
+                style="display:flex !important;"
               >
                 <span
                   class="splide__arrow-icon icon-angle-left"
@@ -277,6 +280,7 @@ async function viewProduct() {
                 class="splide__arrow splide__arrow--next"
                 aria-controls="splide01-track"
                 aria-label="Next slide"
+                style="display: flex !important;"
               >
                 <span
                   class="splide__arrow-icon icon-angle-right"
@@ -375,7 +379,7 @@ async function viewProduct() {
                     </div>
                   </div>
                 </div>
-                
+                ${imgMain2}
             
               </div>
             </div>
@@ -386,6 +390,7 @@ async function viewProduct() {
                 aria-controls="splide02-track"
                 disabled=""
                 aria-label="Previous slide"
+                style="display:flex !important;"
               >
                 <span
                   class="splide__arrow-icon icon-angle-left"
@@ -397,6 +402,7 @@ async function viewProduct() {
                 aria-controls="splide02-track"
                 disabled=""
                 aria-label="Next slide"
+                style="display:flex !important;"
               >
                 <span
                   class="splide__arrow-icon icon-angle-right"

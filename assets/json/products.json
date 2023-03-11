@@ -54,11 +54,7 @@
       "mainCategory": "bads",
       "category": "think",
       "descr": [
-        "L-5 гидрокситриптофан - 100 mg;",
-        "Желатин;",
-        "Рисовая мука;",
-        "Стеарат магния;",
-        "Диоксид кремния;"
+        "L-5 гидрокситриптофан - 100 mg;"
       ]
     },
     {
@@ -376,7 +372,7 @@
     },
     {
       "id": 21,
-      "imgPath": "img/vitamins/16.jpg",
+      "imgPath": "img/vitamins/16.png",
       "articul": "No. 022",
       "title": "Витамин B5 (Пантотеновая кислота) Osavi",
       "text": "для энергии",
@@ -461,12 +457,7 @@
       "mainCategory": "vitamins",
       "category": "immunity",
       "descr": [
-        "Ниацин - 16 mg;",
-        "Пантотеновая кислота -18 mg;",
-        "Витамин В6 - 4,2 µg;",
-        "Фолиевая кислота - 400 µg;",
-        "Витамин В12 - 7,5 µg;",
-        "Биотин - 150 µg;"
+        ""
       ]
     },
     {
@@ -493,7 +484,7 @@
       "text": "для кислорода",
       "price": "780 ",
       "mainCategory": "vitamins",
-      "category": "nerves",
+      "category": "immunity",
       "descr": [
         "Коэнзим Q10 - 60 mg; "
       ]
@@ -599,6 +590,7 @@
     {
       "id": 34,
       "imgPath": "img/other/5.jpg",
+      "imgPath2": "img/other/5-1.png",
       "articul": "No. 035",
       "title": "Органическое какао (Now)",
       "text": "",
@@ -606,12 +598,7 @@
       "mainCategory": "other",
       "category": "all",
       "descr": [
-        "тростниковый сахар",
-        "22% обезжиренного какао",
-        "6% меда",
-        "мальтодекстрин",
-        "эмульгатор (соя-лецитин)",
-        "соль"
+        ""
       ]
     },
     {
@@ -760,7 +747,7 @@
       "imgPath": "img/herbs/5.jfif",
       "articul": "No. 045",
       "title": "Корень одуванчика",
-      "text": "Трава корень одуванчика на вес.",
+      "text": "Корень одуванчика на вес.",
       "price": "780 ",
       "mainCategory": "herbs",
       "isHerbs": true,
@@ -788,7 +775,7 @@
       "imgPath": "img/herbs/7.jfif",
       "articul": "No. 047",
       "title": "Лопух",
-      "text": "Трава лопуха на вес.",
+      "text": "Лопух на вес.",
       "price": "780 ",
       "mainCategory": "herbs",
       "isHerbs": true,
@@ -813,18 +800,16 @@
     },
     {
       "id": 48,
-      "imgPath": "img/vitamins/15.jpg",
+      "imgPath": "img/herbs/11.jpeg",
       "articul": "No. 049",
-      "title": "Железо + Витамин (Altapharma)",
-      "text": "для иммунитета",
+      "title": "Валерьяна",
+      "text": "Трава валерианы на вес.",
       "price": "780 ",
-      "mainCategory": "vitamins",
-      "category": "immunity",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "all",
       "descr": [
-        "Железо - 14 mg;",
-        "Витамин C - 80mg;",
-        "Витамин В12 - 2,5µg;",
-        "Фолиева кислота - 200 µg."
+        ""
       ]
     },
     {
@@ -930,7 +915,7 @@
     {
       "id": 55,
       "imgPath": "img/pills/6.webp",
-      "imgPath2": "img/pills/6-1.jpg",
+      "imgPathSlide": "img/pills/6-1.jpg",
       "articul": "No. 056",
       "title": "Boulardi",
       "text": "Пробиотики для кишечника",
@@ -1003,7 +988,6 @@
       "mainCategory": "capsules",
       "category": "calmness",
       "descr": [
-        "Аминофенилмасляной кислоты гидрохлорид - 250 mg",
         "Фенибут - 250 mg."
       ]
     },
@@ -1070,20 +1054,6 @@
       "articul": "No. 066",
       "title": "Доник",
       "text": "Трава донника на вес.",
-      "price": "780 ",
-      "mainCategory": "herbs",
-      "isHerbs": true,
-      "category": "all",
-      "descr": [
-        ""
-      ]
-    },
-    {
-      "id": 66,
-      "imgPath": "img/herbs/11.jpeg",
-      "articul": "No. 067",
-      "title": "Валерьяна",
-      "text": "Трава валерианы на вес.",
       "price": "780 ",
       "mainCategory": "herbs",
       "isHerbs": true,
