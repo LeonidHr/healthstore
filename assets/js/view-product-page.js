@@ -25,8 +25,8 @@ async function viewProduct() {
   const path = document.getElementById('page-path');
   const documetnId = document.documentElement.getAttribute('id');
 
-  // product.innerHTML = '';
-  // path.innerHTML = '';
+  product.innerHTML = '';
+  path.innerHTML = '';
 
   viewAnalogs(postsData);
 
@@ -597,7 +597,7 @@ async function viewProduct() {
 }
 
 viewProduct();
-// viewProduct();
+viewProduct();
 
 
 function viewAnalogs(postsData) {
