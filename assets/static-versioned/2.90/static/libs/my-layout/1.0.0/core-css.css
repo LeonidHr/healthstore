@@ -37,3 +37,25 @@ main {
     grid-template-columns: 1fr 1fr;
   }   
 }
+
+@media (max-width: 850px){
+  #filters {
+    min-width: 746px;
+  }
+  .filters-wrap {
+    margin: 0 20px !important;
+    overflow: auto;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 580px){
+  #main-filter {
+    min-width: 545px;
+    margin: 0 20px !important;
+    padding-bottom: 20px;
+  }
+  .tabs-prod__wrap {
+    overflow: auto;
+    margin-bottom: 30px;
+  }
+}
