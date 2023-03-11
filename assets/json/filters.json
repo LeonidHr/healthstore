@@ -1,0 +1,77 @@
+{
+  "filters": [  
+    {
+      "category": "bads",
+      "content": [
+        "Все",
+        "Для пищеварения",
+        "Для сна",
+        "Для мозга и настроение",
+        "Для иммунитета",
+        "Другое"
+      ],
+      "filters": [
+        "all",
+        "food",
+        "sleep",
+        "think",
+        "immunity",
+        "other"
+      ]
+    },
+    {
+      "category": "vitamins",
+      "content": [
+        "Все",
+        "Для нервной системы",
+        "Для иммунитета",
+        "Для энергии"
+      ],
+      "filters": [
+        "all",
+        "nerves",
+        "immunity",
+        "energy"
+      ]
+    },
+    {
+      "category": "pins",
+      "content": [
+        "Все",
+        "Для ЖКТ",
+        "Для дыхания",
+        "Для энергии",
+        "Для спокойствия",
+        "От аллергии",
+        "Обезболивающие"
+      ],
+      "filters": [
+        "all",
+        "gastrointestinal",
+        "breathing",
+        "energy",
+        "calmness",
+        "allergies",
+        "painkillers"
+      ]
+    },
+    {
+      "category": "herbs",
+      "content": [
+        "Все"
+      ],
+      "filters": [
+        "all"
+      ]
+    },
+    {
+      "category": "other",
+      "content": [
+        "Все"
+      ],
+      "filters": [
+        "all"
+      ]
+    }
+  ]
+}
