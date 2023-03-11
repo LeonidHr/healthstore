@@ -428,7 +428,10 @@ async function viewProduct() {
         
       <div data-showmore class="more-block">
         <div data-showmore-content="0" class="block__content">
-          ${img2}
+          <h6>Состав</h6>
+          <div>
+            ${img2}
+          </div>
         </div>
         <button hidden data-showmore-button type="button" class="block__more">
           <div>
@@ -545,7 +548,7 @@ async function viewProduct() {
   product.insertAdjacentHTML("beforeend", postEl);
 
 
-  const descr = document.querySelector('[data-showmore-content]');
+  const descr = document.querySelector('[data-showmore-content] div');
   
   postsData[documetnId].descr.forEach((text, i) => {
     descr.insertAdjacentHTML("beforeend", `

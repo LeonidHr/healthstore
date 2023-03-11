@@ -91,9 +91,22 @@ main {
 
 .block__more img {
   width: 11px;
-  margin-top: 2px;
+  margin-top: 4px;
+  transition: all 0.3s ease 0s;
+}
+
+._showmore-active .block__more img {
+  transform: rotate(-180deg);
 }
 
 .block__more span:nth-child(2) {
+  display: none;
+}
+
+._showmore-active .block__more span:nth-child(2) {
+  display: block;
+}
+
+._showmore-active .block__more span:nth-child(1) {
   display: none;
 }
