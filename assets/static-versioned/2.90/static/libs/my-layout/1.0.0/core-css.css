@@ -18,3 +18,22 @@
 a {
   text-decoration: none;
 }
+
+main {
+  overflow: hidden;
+}
+@media (max-width:1230px){
+  #analogs-wrap.grid-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }   
+}
+@media (max-width:680px){
+  #analogs-wrap.grid-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }   
+}
+@media (max-width:480px){
+  #analogs-wrap.grid-list {
+    grid-template-columns: 1fr 1fr;
+  }   
+}
