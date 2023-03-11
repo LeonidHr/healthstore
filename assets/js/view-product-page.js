@@ -806,7 +806,7 @@ let _slideDown = (target, duration = 500, showmore = 0) => {
 
 
 function showMore() {
-	window.addEventListener("load", function (e) {
+	// window.addEventListener("load", function (e) {
 		const showMoreBlocks = document.querySelectorAll('[data-showmore]');
 		let showMoreBlocksRegular;
 		let mdQueriesArray;
@@ -913,5 +913,5 @@ function showMore() {
 				mdQueriesArray && mdQueriesArray.length ? initItemsMedia(mdQueriesArray) : null;
 			}
 		}
-	});
+	// });
 }
