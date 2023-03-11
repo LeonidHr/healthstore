@@ -53,6 +53,7 @@ async function viewProduct() {
 
   let img2 = '';
   let imgMain2 = '';
+  let imgMain3 = '';
 
   if (postsData[documetnId].imgPath2) {
     img2 = `
@@ -103,6 +104,43 @@ async function viewProduct() {
           </div>
         </a>
       </div>
+    `;
+    
+    imgMain3 = `
+      <div
+      class="splide__slide product__slide-tumbs js-product-gallery-tumbs-slide is-active is-visible is-current"
+      data-product-img-id="529685436"
+      data-product-img-index="0"
+      id="splide02-slide01"
+      style="
+        margin-right: 1rem;
+        width: calc(((100% + 1rem) / 7) - 1rem);
+      "
+      tabindex="0"
+    >
+      <div
+        class="img-ratio img-ratio_contain product__photo-tumb"
+      >
+        <div class="img-ratio__inner">
+          <picture>
+            <source
+              data-srcset="../${postsData[documetnId].imgPathSlide}"
+              type="image/webp"
+              class="lazyload entered"
+              data-ll-status="entered"
+              srcset="../${postsData[documetnId].imgPathSlide}"
+            />
+            <img
+              data-src="../${postsData[documetnId].imgPathSlide}"
+              class="lazyload entered loaded"
+              alt="${postsData[documetnId].title}"
+              data-ll-status="loaded"
+              src="../${postsData[documetnId].imgPathSlide}"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
     `;
   }
 
@@ -379,7 +417,7 @@ async function viewProduct() {
                     </div>
                   </div>
                 </div>
-                ${imgMain2}
+                ${imgMain3}
             
               </div>
             </div>
