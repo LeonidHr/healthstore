@@ -806,7 +806,7 @@ let _slideDown = (target, duration = 500, showmore = 0) => {
 
 
 function showMore() {
-	document.addEventListener("DOMContentLoaded", function (e) {
+	window.addEventListener("load", function (e) {
 		const showMoreBlocks = document.querySelectorAll('[data-showmore]');
 		let showMoreBlocksRegular;
 		let mdQueriesArray;
