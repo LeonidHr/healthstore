@@ -25,9 +25,6 @@ async function viewProduct() {
   const path = document.getElementById('page-path');
   const documetnId = document.documentElement.getAttribute('id');
 
-  product.innerHTML = '';
-  path.innerHTML = '';
-
   viewAnalogs(postsData);
 
   const pathContent = `
@@ -428,55 +425,20 @@ async function viewProduct() {
           <span>${postsData[documetnId].articul}</span>
         </div>
       </div>
-        <div class="product__area-description">
-          <div class="product__full-description static-text">
-            <div class="cut-block js-cut-block" data-max-height="1">
-              <div class="cut-block__content-wrapper">
-                <div class="cut-block__content">
-                  <div class="product__block-title">Состав</div>
-                  <div class="product__description-content static-text">
-                  
-                   
-                    <div
-                      class="t396__elem tn-elem tn-elem__3127325921620230892027"
-                      data-elem-id="1620230892027"
-                      data-elem-type="shape"
-                      data-field-top-value="410"
-                      data-field-top-res-480-value="469"
-                      data-field-left-value="0"
-                      data-field-left-res-480-value="0"
-                      data-field-height-value="1"
-                      data-field-width-value="100"
-                      data-field-axisy-value="top"
-                      data-field-axisx-value="left"
-                      data-field-container-value="grid"
-                      data-field-topunits-value="px"
-                      data-field-leftunits-value="px"
-                      data-field-heightunits-value="px"
-                      data-field-widthunits-value="%"
-                      data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
-                    >
-                      <div class="tn-atom"></div>
-                    </div>
-                    ${img2}
-                  </div>
-                </div>
-              </div>
-              <div class="cut-block__controls">
-                <span class="cut-block__controls-link _show button-link js-show-cut-block">
-                Состав
-                <img src="../img/arrow-down.svg" />
-                </span>
-                <span
-                  class="cut-block__controls-link _hide button-link js-hide-cut-block"
-                >
-                  Свернуть
-                  <img src="../img/arrow-down.svg" />
-                </span>
-              </div>
-            </div>
-          </div>
+        
+      <div data-showmore class="more-block">
+        <div data-showmore-content="0" class="block__content">
+          ${img2}
         </div>
+        <button hidden data-showmore-button type="button" class="block__more">
+          <div>
+            <span>Состав</span>
+            <span>Скыть</span>
+          </div>
+          <img src="../img/arrow-down.svg" />
+        </button>
+      </div>
+
       </div>
 
 
@@ -583,7 +545,7 @@ async function viewProduct() {
   product.insertAdjacentHTML("beforeend", postEl);
 
 
-  const descr = document.querySelector('.product__description-content');
+  const descr = document.querySelector('[data-showmore-content]');
   
   postsData[documetnId].descr.forEach((text, i) => {
     descr.insertAdjacentHTML("beforeend", `
@@ -594,9 +556,9 @@ async function viewProduct() {
   });
 
   addBtnsClick();
+  showMore();
 }
 
-viewProduct();
 viewProduct();
 
 
@@ -770,4 +732,186 @@ function addBtnsClick() {
       addCartBtnCount.innerHTML = btn.dataset.num;
     });
   });
+}
+
+
+let _slideUp = (target, duration = 500, showmore = 0) => {
+	if (!target.classList.contains('_slide')) {
+		target.classList.add('_slide');
+		target.style.transitionProperty = 'height, margin, padding';
+		target.style.transitionDuration = duration + 'ms';
+		target.style.height = `${target.offsetHeight}px`;
+		target.offsetHeight;
+		target.style.overflow = 'hidden';
+		target.style.height = showmore ? `${showmore}px` : `0px`;
+		target.style.paddingTop = 0;
+		target.style.paddingBottom = 0;
+		target.style.marginTop = 0;
+		target.style.marginBottom = 0;
+		window.setTimeout(() => {
+			target.hidden = !showmore ? true : false;
+			!showmore ? target.style.removeProperty('height') : null;
+			target.style.removeProperty('padding-top');
+			target.style.removeProperty('padding-bottom');
+			target.style.removeProperty('margin-top');
+			target.style.removeProperty('margin-bottom');
+			!showmore ? target.style.removeProperty('overflow') : null;
+			target.style.removeProperty('transition-duration');
+			target.style.removeProperty('transition-property');
+			target.classList.remove('_slide');
+			// Створюємо подію 
+			document.dispatchEvent(new CustomEvent("slideUpDone", {
+				detail: {
+					target: target
+				}
+			}));
+		}, duration);
+	}
+}
+let _slideDown = (target, duration = 500, showmore = 0) => {
+	if (!target.classList.contains('_slide')) {
+		target.classList.add('_slide');
+		target.hidden = target.hidden ? false : null;
+		showmore ? target.style.removeProperty('height') : null;
+		let height = target.offsetHeight;
+		target.style.overflow = 'hidden';
+		target.style.height = showmore ? `${showmore}px` : `0px`;
+		target.style.paddingTop = 0;
+		target.style.paddingBottom = 0;
+		target.style.marginTop = 0;
+		target.style.marginBottom = 0;
+		target.offsetHeight;
+		target.style.transitionProperty = "height, margin, padding";
+		target.style.transitionDuration = duration + 'ms';
+		target.style.height = height + 'px';
+		target.style.removeProperty('padding-top');
+		target.style.removeProperty('padding-bottom');
+		target.style.removeProperty('margin-top');
+		target.style.removeProperty('margin-bottom');
+		window.setTimeout(() => {
+			target.style.removeProperty('height');
+			target.style.removeProperty('overflow');
+			target.style.removeProperty('transition-duration');
+			target.style.removeProperty('transition-property');
+			target.classList.remove('_slide');
+			// Створюємо подію
+			document.dispatchEvent(new CustomEvent("slideDownDone", {
+				detail: {
+					target: target
+				}
+			}));
+		}, duration);
+	}
+}
+
+
+function showMore() {
+	document.addEventListener("DOMContentLoaded", function (e) {
+		const showMoreBlocks = document.querySelectorAll('[data-showmore]');
+		let showMoreBlocksRegular;
+		let mdQueriesArray;
+		if (showMoreBlocks.length) {
+			// Отримання звичайних об'єктів
+			showMoreBlocksRegular = Array.from(showMoreBlocks).filter(function (item, index, self) {
+				return !item.dataset.showmoreMedia;
+			});
+			// Ініціалізація звичайних об'єктів
+			showMoreBlocksRegular.length ? initItems(showMoreBlocksRegular) : null;
+
+			document.addEventListener("click", showMoreActions);
+			window.addEventListener("resize", showMoreActions);
+
+			// Отримання об'єктів з медіа-запитами
+			mdQueriesArray = dataMediaQueries(showMoreBlocks, "showmoreMedia");
+			if (mdQueriesArray && mdQueriesArray.length) {
+				mdQueriesArray.forEach(mdQueriesItem => {
+					// Подія
+					mdQueriesItem.matchMedia.addEventListener("change", function () {
+						initItems(mdQueriesItem.itemsArray, mdQueriesItem.matchMedia);
+					});
+				});
+				initItemsMedia(mdQueriesArray);
+			}
+		}
+		function initItemsMedia(mdQueriesArray) {
+			mdQueriesArray.forEach(mdQueriesItem => {
+				initItems(mdQueriesItem.itemsArray, mdQueriesItem.matchMedia);
+			});
+		}
+		function initItems(showMoreBlocks, matchMedia) {
+			showMoreBlocks.forEach(showMoreBlock => {
+				initItem(showMoreBlock, matchMedia);
+			});
+		}
+		function initItem(showMoreBlock, matchMedia = false) {
+			showMoreBlock = matchMedia ? showMoreBlock.item : showMoreBlock;
+			let showMoreContent = showMoreBlock.querySelectorAll('[data-showmore-content]');
+			let showMoreButton = showMoreBlock.querySelectorAll('[data-showmore-button]');
+			showMoreContent = Array.from(showMoreContent).filter(item => item.closest('[data-showmore]') === showMoreBlock)[0];
+			showMoreButton = Array.from(showMoreButton).filter(item => item.closest('[data-showmore]') === showMoreBlock)[0];
+			const hiddenHeight = getHeight(showMoreBlock, showMoreContent);
+			if (matchMedia.matches || !matchMedia) {
+				if (hiddenHeight < getOriginalHeight(showMoreContent)) {
+					_slideUp(showMoreContent, 0, hiddenHeight);
+					showMoreButton.hidden = false;
+				} else {
+					_slideDown(showMoreContent, 0, hiddenHeight);
+					showMoreButton.hidden = true;
+				}
+			} else {
+				_slideDown(showMoreContent, 0, hiddenHeight);
+				showMoreButton.hidden = true;
+			}
+		}
+		function getHeight(showMoreBlock, showMoreContent) {
+			let hiddenHeight = 0;
+			const showMoreType = showMoreBlock.dataset.showmore ? showMoreBlock.dataset.showmore : 'size';
+			if (showMoreType === 'items') {
+				const showMoreTypeValue = showMoreContent.dataset.showmoreContent ? showMoreContent.dataset.showmoreContent : 3;
+				const showMoreItems = showMoreContent.children;
+				for (let index = 1; index < showMoreItems.length; index++) {
+					const showMoreItem = showMoreItems[index - 1];
+					hiddenHeight += showMoreItem.offsetHeight;
+					if (index == showMoreTypeValue) break
+				}
+			} else {
+				const showMoreTypeValue = showMoreContent.dataset.showmoreContent ? showMoreContent.dataset.showmoreContent : 150;
+				hiddenHeight = showMoreTypeValue;
+			}
+			return hiddenHeight;
+		}
+		function getOriginalHeight(showMoreContent) {
+			let parentHidden;
+			let hiddenHeight = showMoreContent.offsetHeight;
+			showMoreContent.style.removeProperty('height');
+			if (showMoreContent.closest(`[hidden]`)) {
+				parentHidden = showMoreContent.closest(`[hidden]`);
+				parentHidden.hidden = false;
+			}
+			let originalHeight = showMoreContent.offsetHeight;
+			parentHidden ? parentHidden.hidden = true : null;
+			showMoreContent.style.height = `${hiddenHeight}px`;
+			return originalHeight;
+		}
+		function showMoreActions(e) {
+			const targetEvent = e.target;
+			const targetType = e.type;
+			if (targetType === 'click') {
+				if (targetEvent.closest('[data-showmore-button]')) {
+					const showMoreButton = targetEvent.closest('[data-showmore-button]');
+					const showMoreBlock = showMoreButton.closest('[data-showmore]');
+					const showMoreContent = showMoreBlock.querySelector('[data-showmore-content]');
+					const showMoreSpeed = showMoreBlock.dataset.showmoreButton ? showMoreBlock.dataset.showmoreButton : '500';
+					const hiddenHeight = getHeight(showMoreBlock, showMoreContent);
+					if (!showMoreContent.classList.contains('_slide')) {
+						showMoreBlock.classList.contains('_showmore-active') ? _slideUp(showMoreContent, showMoreSpeed, hiddenHeight) : _slideDown(showMoreContent, showMoreSpeed, hiddenHeight);
+						showMoreBlock.classList.toggle('_showmore-active');
+					}
+				}
+			} else if (targetType === 'resize') {
+				showMoreBlocksRegular && showMoreBlocksRegular.length ? initItems(showMoreBlocksRegular) : null;
+				mdQueriesArray && mdQueriesArray.length ? initItemsMedia(mdQueriesArray) : null;
+			}
+		}
+	});
 }

@@ -59,3 +59,41 @@ main {
     margin-bottom: 30px;
   }
 }
+
+.more-block {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.block__more {
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  font-size: 16px;
+  color: #25a033;
+  font-weight: 600;
+}
+
+.block__content p {
+  font-size: 15px;
+}
+
+.block__content p:not(:last-child) {
+  margin-bottom: 10px !important;
+}
+
+.block__content p:last-child {
+  margin-bottom: 20px !important;
+}
+
+.block__more img {
+  width: 11px;
+  margin-top: 2px;
+}
+
+.block__more span:nth-child(2) {
+  display: none;
+}
