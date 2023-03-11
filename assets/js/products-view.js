@@ -133,7 +133,12 @@ function toggleClass(elClass, activeClass, elActive) {
     item.classList.remove(activeClass);
   });
 
-  document.getElementById(elActive).classList.add(activeClass);
+  if (activeClass == '_tab-active') {
+    document.querySelector(`[data-tab=${elActive}]`).classList.add(activeClass);
+  } else {
+    document.getElementById(elActive).classList.add(activeClass);
+  }
+
 }
 
 
@@ -200,6 +205,10 @@ function viewAllProducts(postsData, badsWrap, category) {
 let lastClicks = getLastButtonClicksJson('mainFilterClicks');
 let lastClicksFilter = getLastButtonClicksJson('filterClicks');
 
+if (lastClicks[0] == 'pins') {
+  lastClicks[0] = 'capsules';
+}
+
 if (checkUrlHash(window.location.href) && getUrlHashText(window.location.href) != lastClicks[0]) {
   addButtonClickToJson(getUrlHashText(window.location.href), 'mainFilterClicks');
   viewProducts(getUrlHashText(window.location.href), 'all');
@@ -237,8 +246,8 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector('#main-filter').addEventListener("click", e => {
     if (e.target.closest('.tabs-prod__title')) {
       addButtonClickToJson('all', 'filterClicks');
-      addButtonClickToJson(e.target.closest('.tabs-prod__title').getAttribute('id'), 'mainFilterClicks');
-      viewProducts(e.target.closest('.tabs-prod__title').getAttribute('id'), 'all');
+      addButtonClickToJson(e.target.closest('.tabs-prod__title').dataset.tab, 'mainFilterClicks');
+      viewProducts(e.target.closest('.tabs-prod__title').dataset.tab, 'all');
     }
   });
 });
@@ -324,7 +333,7 @@ function handleUrlHashChange() {
   const mainNav = document.querySelectorAll('[data-nav]');
 
   mainNav.forEach(item => {
-    if (hash == item.id) {
+    if (hash == item.dataset.tab) {
       viewProducts(getUrlHashText(window.location.href), 'all');
     }
   });

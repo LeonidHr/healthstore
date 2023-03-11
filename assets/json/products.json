@@ -848,7 +848,7 @@
       "title": "Fenkarol",
       "text": "противоаллергические",
       "price": "780 ",
-      "mainCategory": "pins",
+      "mainCategory": "capsules",
       "category": "allergies",
       "descr": [
         "50 мг квифенадин гидрохлорид"
@@ -862,7 +862,7 @@
       "title": "GoRespiro",
       "text": "для дыхания",
       "price": "780 ",
-      "mainCategory": "pins",
+      "mainCategory": "capsules",
       "category": "breathing",
       "descr": [
         "Экстракт босвеллии - 130 mg;",
@@ -884,7 +884,7 @@
       "title": "Escadra",
       "text": "для желудка",
       "price": "780 ",
-      "mainCategory": "pins",
+      "mainCategory": "capsules",
       "category": "gastrointestinal",
       "descr": [
         "Эзомепразол - 20 mg"
@@ -897,7 +897,7 @@
       "title": "Omeprazol",
       "text": "для желудка",
       "price": "780 ",
-      "mainCategory": "pins",
+      "mainCategory": "capsules",
       "category": "gastrointestinal",
       "descr": [
         "Омепразол- 20 mg"
@@ -910,7 +910,7 @@
       "title": "Gastroval",
       "text": "для пищеварения",
       "price": "780 ",
-      "mainCategory": "pins",
+      "mainCategory": "capsules",
       "category": "gastrointestinal",
       "descr": [
         "Магний - 200 mg;",
@@ -935,7 +935,7 @@
       "title": "Boulardi",
       "text": "Пробиотики для кишечника",
       "price": "780 ",
-      "mainCategory": "pins",
+      "mainCategory": "capsules",
       "category": "gastrointestinal",
       "descr": [
         ""
@@ -948,7 +948,7 @@
       "title": "Mildronats",
       "text": "для сил и энергии",
       "price": "780 ",
-      "mainCategory": "pins",
+      "mainCategory": "capsules",
       "category": "energy",
       "descr": [
         "Дигидрата мельдония - 250 mg."
@@ -961,7 +961,7 @@
       "title": "Nalgedol",
       "text": "обезболивающие",
       "price": "780 ",
-      "mainCategory": "pins",
+      "mainCategory": "capsules",
       "category": "painkillers",
       "descr": [
         "Напроксен натрия - 220 mg;"
@@ -974,7 +974,7 @@
       "title": "Neurotin",
       "text": "от нервных воспалений и болей",
       "price": "780 ",
-      "mainCategory": "pins",
+      "mainCategory": "capsules",
       "category": "painkillers",
       "descr": [
         "Габапентин - 100 mg;"
@@ -987,7 +987,7 @@
       "title": "Sorbex",
       "text": "сорбент при расстройстве желудка",
       "price": "780 ",
-      "mainCategory": "pins",
+      "mainCategory": "capsules",
       "category": "gastrointestinal",
       "descr": [
         "Активированный уголь - 300 mg."
@@ -1000,7 +1000,7 @@
       "title": "Noofen",
       "text": "для снятия стресса и тревоги",
       "price": "780 ",
-      "mainCategory": "pins",
+      "mainCategory": "capsules",
       "category": "calmness",
       "descr": [
         "Аминофенилмасляной кислоты гидрохлорид - 250 mg",
@@ -1014,7 +1014,7 @@
       "title": "Фосфоглив Урсо",
       "text": "для печени",
       "price": "780 ",
-      "mainCategory": "pins",
+      "mainCategory": "capsules",
       "category": "gastrointestinal",
       "descr": [
         "Урсодезоксихолевая кислота - 250 мг",
@@ -1028,7 +1028,7 @@
       "title": "Холензим",
       "text": "для жёлчного пузыря",
       "price": "780 ",
-      "mainCategory": "pins",
+      "mainCategory": "capsules",
       "category": "gastrointestinal",
       "descr": [
         "Желчь сухая - 100 мг",
