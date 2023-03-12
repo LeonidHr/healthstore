@@ -209,7 +209,15 @@ if (lastClicks[0] == 'pins') {
   lastClicks[0] = 'capsules';
 }
 
-if (checkUrlHash(window.location.href) && getUrlHashText(window.location.href) != lastClicks[0]) {
+if (
+  getUrlHashText(window.location.href) != 'bads' &&
+  getUrlHashText(window.location.href) != 'vitamins' &&
+  getUrlHashText(window.location.href) != 'capsules' &&
+  getUrlHashText(window.location.href) != 'herbs' &&
+  getUrlHashText(window.location.href) != 'other'
+) {
+  viewProducts('bads', 'all');
+} else if (checkUrlHash(window.location.href) && getUrlHashText(window.location.href) != lastClicks[0]) {
   addButtonClickToJson(getUrlHashText(window.location.href), 'mainFilterClicks');
   viewProducts(getUrlHashText(window.location.href), 'all');
 } else if (checkUrlHash(window.location.href) && lastClicksFilter) {
