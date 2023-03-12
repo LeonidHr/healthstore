@@ -9,10 +9,14 @@ async function viewSearch() {
   const productsWrap = document.getElementById('search-result');
   const searchItem = getSearchName();
 
-  console.log(searchItem[0]);
+  console.log(removeChars(searchItem[0].toLowerCase()));
 
   postsData.forEach(el => {
-    if (el.title.toLowerCase().indexOf(searchItem[0].toLowerCase()) > -1 || el.articul.toLowerCase().indexOf(searchItem[0].toLowerCase()) > -1) {
+    // console.log(removeChars(el.title.toLowerCase()));
+    if (
+      removeSpaces(removeChars(el.title.toLowerCase())).indexOf(removeSpaces(removeChars(searchItem[0].toLowerCase()))) > -1 
+      || el.articul.toLowerCase().indexOf(searchItem[0].toLowerCase()) > -1
+    ) {
       const postEl = `
         <div id="${el.id}" class="product-preview-elem ">
           <form
@@ -77,6 +81,14 @@ async function viewSearch() {
 
 viewSearch();
 
+function removeSpaces(s) {
+  // используем метод replace для замены всех вхождений пробелов на пустую строку ''
+  return s.replace(/\s+/g, '');
+}
+function removeChars(s) {
+  // используем регулярное выражение для замены всех вхождений символов '(', ')', и '-' на пустую строку ''
+  return s.replace(/[-()]/g, '');
+}
 
 function searchItems(items, term) {
   return items.filter(item => {

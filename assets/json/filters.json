@@ -58,7 +58,7 @@
     {
       "category": "herbs",
       "content": [
-        "Все"
+        ""
       ],
       "filters": [
         "all"
@@ -67,7 +67,7 @@
     {
       "category": "other",
       "content": [
-        "Все"
+        ""
       ],
       "filters": [
         "all"
