@@ -565,6 +565,27 @@
   /> -->
   <!-- <script src="assets/static-versioned/1.26/static/libs/fslightbox/3.2.2/fslightbox.js"></script> -->
   <style>
+    .product-preview__area-photo img {
+      max-width: 140px !important;
+      margin: 0 auto;
+      object-fit: contain;
+      padding-bottom: 20px;
+    }
+
+    .product-preview__photo {
+      max-width: 140px;
+      margin: 0 auto !important;
+    }
+    .product-preview__area-photo {
+      margin-bottom: 20px;
+    }
+
+
+    @media (max-width: 390px){
+      .product-preview__photo .img-ratio {
+        padding-top: 140px;
+      }   
+    }
     .tabs__head-item {
       margin: 0 auto !important;
     }
