@@ -294,7 +294,7 @@
                     <ul class="menu__list" data-menu-handle="main-menu">
                       <li class="menu__item">
                         <div class="menu__controls">
-                          <a href="#" class="menu__link">
+                          <a href="#" data-popup="#popup-about" class="menu__link">
                             О Нас 
                           </a>
                         </div>
@@ -308,7 +308,7 @@
                       </li>
                       <li class="menu__item">
                         <div class="menu__controls">
-                          <a href="#" class="menu__link">
+                          <a href="#" data-popup="#popup-payment" class="menu__link">
                             Оплата и доставка
                           </a>
                         </div>
@@ -444,9 +444,6 @@
       </main>
 
 
-      
-
-
       <footer id="footer">
         <div
           class="layout widget-type_system_widget_v4_delimeters"
@@ -567,6 +564,22 @@
         </div>
       </footer>
     </div>
+
+    <div id="popup-about" aria-hidden="true" class="popup popup-about">
+      <div class="popup__wrapper">
+        <div class="popup__content">
+          
+        </div>
+      </div>
+    </div>
+    <div id="popup-payment" aria-hidden="true" class="popup popup-about">
+      <div class="popup__wrapper">
+        <div class="popup__content">
+
+        </div>
+      </div>
+    </div>
+
     <div class="outside-widgets">
       <div
         class="layout widget-type_system_widget_v4_callback_modal_1"
@@ -1175,6 +1188,9 @@
   </body>
 
   <script src="../assets/js/pageNavigation.js"></script>
+  <script src="../assets/js/popup.js"></script>
+  <script src="../assets/js/view-popup.js"></script>
+
 
   <script src="../assets/common-js/common.v2.23.34.js"></script>
   <script src="../assets/static-versioned/2.77/static/libs/my-layout/1.0.0/my-layout.js"></script>
