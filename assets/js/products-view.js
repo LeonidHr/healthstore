@@ -216,6 +216,7 @@ if (
   getUrlHashText(window.location.href) != 'herbs' &&
   getUrlHashText(window.location.href) != 'other'
 ) {
+  addButtonClickToJson('bads', 'mainFilterClicks');
   viewProducts('bads', 'all');
 } else if (checkUrlHash(window.location.href) && getUrlHashText(window.location.href) != lastClicks[0]) {
   addButtonClickToJson(getUrlHashText(window.location.href), 'mainFilterClicks');

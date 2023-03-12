@@ -462,7 +462,7 @@ async function viewProduct() {
         <h1 class="product__title heading">
         ${postsData[documetnId].title}
         </h1>
-        <p class="product-preview__text">${postsData[documetnId].text}</p>   
+        <p class="product-page__text">${postsData[documetnId].text}</p>   
         <div class="product-form__area-sku">
         <div class="product__sku">
           <!-- data-product-card-sku='{"skuLabel": "арт. "}' -->
@@ -581,10 +581,10 @@ async function viewProduct() {
         </div>
       </div>
 
-
-      <div class="product-form__area-short-description">
-        <div class="product__short-description static-text"></div>
-      </div>
+      <p class="product__text">
+        * Перед применением этого или любого другого товара с нашего сайта, проконсультируйтесь с врачом
+      </p>
+      
     </form>
   </div>
   `;
