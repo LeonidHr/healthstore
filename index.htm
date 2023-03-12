@@ -84,7 +84,7 @@
     </style>
 
   </head>
-  <body data-multi-lang="false">
+  <body data-main data-multi-lang="false">
     <noscript>
       <div class="njs-alert-overlay">
         <div class="njs-alert-wrapper">
@@ -203,6 +203,7 @@
             </div>
 
             <div
+              id="side-panel"
               class="side-panel side-panel_no-languages"
               style="visibility: hidden"
             >
@@ -260,31 +261,31 @@
                   <div class="menu__head">Меню</div>
 
                   <div class="menu__section">
-                    <ul class="menu__list" data-navigation="" data-menu-handle="main-menu">
-                      <li class="menu__item" data-navigation-item="" data-menu-item-id="">
+                    <ul class="menu__list" data-menu-handle="main-menu">
+                      <li class="menu__item">
                         <div class="menu__controls">
-                          <a href="#" class="menu__link" data-navigation-link="/page/delivery">
+                          <a href="#" class="menu__link">
                             О Нас 
                           </a>
                         </div>
                       </li>
-                      <li class="menu__item" data-navigation-item="" data-menu-item-id="">
+                      <li class="menu__item">
                         <div class="menu__controls">
-                          <a href="#" class="menu__link" data-navigation-link="/page/delivery">
+                          <a href="#" class="menu__link" data-goto="#products">
                             Ассортимент
                           </a>
                         </div>
                       </li>
-                      <li class="menu__item" data-navigation-item="" data-menu-item-id="">
+                      <li class="menu__item">
                         <div class="menu__controls">
-                          <a href="#" class="menu__link" data-navigation-link="/page/delivery">
+                          <a href="#" class="menu__link">
                             Оплата и доставка
                           </a>
                         </div>
                       </li>
-                      <li class="menu__item" data-navigation-item="" data-menu-item-id="">
+                      <li class="menu__item">
                         <div class="menu__controls">
-                          <a href="#" class="menu__link" data-navigation-link="/page/delivery">
+                          <a href="#" data-goto="#footer" class="menu__link">
                             Контакты
                           </a>
                         </div>
@@ -464,7 +465,7 @@
               data-switch-row-hide-item="true"
               data-catalog-grid-list-column-gap="2"
             >
-              <div  class="tabs-prod">
+              <div id="products" class="tabs-prod">
                 <div class="tabs-prod__wrap">
                   <nav id="main-filter" class="tabs-prod__navigation">
                     <a data-tab="bads" href="#bads" data-nav type="button" class="tabs-prod__title _tab-active">
@@ -749,7 +750,7 @@
 
       </main>
 
-      <footer>
+      <footer id="footer">
         <div
           class="layout widget-type_system_widget_v4_delimeters"
           style="
@@ -870,6 +871,7 @@
 
   </body>
   <script src="./assets/js/products-view.js"></script>  
+  <script src="./assets/js/pageNavigation.js"></script>
 
   <script src="assets/common-js/common.v2.23.34.js"></script>
   <script src="assets/static-versioned/2.77/static/libs/my-layout/1.0.0/my-layout.js"></script>

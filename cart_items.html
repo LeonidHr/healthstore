@@ -107,7 +107,6 @@
         <div
           class="layout widget-type_system_widget_v4_header_11"
           style="
-            --logo-img: 'https://static.insales-cdn.com/files/1/5886/21419774/original/miologo_8330fee9de00433d2cc48f29227e8ec6.png';
             --logo-max-width: 120px;
             --hide-catalog: false;
             --hide-search: false;
@@ -211,6 +210,7 @@
             </div>
 
             <div
+              id="side-panel"
               class="side-panel side-panel_no-languages"
               style="visibility: hidden"
             >
@@ -238,10 +238,10 @@
                     </form>
                     <button
                       type="button"
-                      class="header__search-btn js-show-search"
+                      class="header__search-btn js-show-search  _show _hide"
                     >
-                      <span class="icon icon-search _show"></span>
-                      <span class="icon icon-times _hide"></span>
+                      <span class="icon icon-search "></span>
+                      <span class="icon icon-times "></span>
                     </button>
                   </div>
 
@@ -268,31 +268,31 @@
                   <div class="menu__head">Меню</div>
 
                   <div class="menu__section">
-                    <ul class="menu__list" data-navigation="" data-menu-handle="main-menu">
-                      <li class="menu__item" data-navigation-item="" data-menu-item-id="">
+                    <ul class="menu__list" data-menu-handle="main-menu">
+                      <li class="menu__item">
                         <div class="menu__controls">
-                          <a href="#" class="menu__link" data-navigation-link="/page/delivery">
+                          <a href="#" class="menu__link">
                             О Нас 
                           </a>
                         </div>
                       </li>
-                      <li class="menu__item" data-navigation-item="" data-menu-item-id="">
+                      <li class="menu__item">
                         <div class="menu__controls">
-                          <a href="#" class="menu__link" data-navigation-link="/page/delivery">
+                          <a href="#" class="menu__link" data-url="index.htm" data-go="products" data-goto="#products">
                             Ассортимент
                           </a>
                         </div>
                       </li>
-                      <li class="menu__item" data-navigation-item="" data-menu-item-id="">
+                      <li class="menu__item">
                         <div class="menu__controls">
-                          <a href="#" class="menu__link" data-navigation-link="/page/delivery">
+                          <a href="#" class="menu__link">
                             Оплата и доставка
                           </a>
                         </div>
                       </li>
-                      <li class="menu__item" data-navigation-item="" data-menu-item-id="">
+                      <li class="menu__item">
                         <div class="menu__controls">
-                          <a href="#" class="menu__link" data-navigation-link="/page/delivery">
+                          <a href="#" data-goto="#footer" class="menu__link">
                             Контакты
                           </a>
                         </div>
@@ -425,7 +425,7 @@
         </div>
       </main>
 
-      <footer>
+      <footer id="footer">
         <div
           class="layout widget-type_system_widget_v4_delimeters"
           style="
@@ -992,6 +992,7 @@
       </div>
     </div>
     <script src="./assets/js/forms.js"></script>
+    <script src="./assets/js/pageNavigation.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
