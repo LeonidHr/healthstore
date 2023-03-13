@@ -2,6 +2,10 @@ button {
   border: none;
 }
 
+.checkout__content {
+  min-height: calc(100vh - 70px);
+}
+
 .js-cart-empty {
   display: none;
 }

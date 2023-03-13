@@ -44,8 +44,8 @@ async function viewProductsCard() {
             </div>
           </div>
           <div class="cart-checkout__count cart-checkout__text">
-            <span>${postsData[item.id].unit == '100 гр.' ? item.count * 100 : item.count} </span> 
-            ${postsData[item.id].unit == '100 гр.' ? 'гр.' : postsData[item.id].unit}
+            <span>${postsData[item.id].unit == '100 гр.' ? item.count * 100 : postsData[item.id].unit == '100 гр.' ? item.count * 10 : item.count} </span> 
+            ${postsData[item.id].unit == '100 гр.' || postsData[item.id].unit == '10 гр.' ? 'гр.' : postsData[item.id].unit}
           </div>
           <div class="cart-checkout__price cart-checkout__text"><span>${formatDecimal(postsData[item.id].price * item.count)}</span> €</div>
         </div>
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function smoothScrollBy300px() {
   window.scrollBy({
-    top: 500,
+    top: window.innerHeight,
     left: 0,
     behavior: 'smooth'
   });

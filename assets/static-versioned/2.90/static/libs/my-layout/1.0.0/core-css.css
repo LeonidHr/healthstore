@@ -429,9 +429,23 @@ body::after {
 }
 
 .header__area-logo {
-  margin-right: 15px;
+  margin-right: 8px;
 }
 .filters-wrap {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.tabs-prod {
+  padding-top: 40px;
+}
+
+.product-preview-elem {
+  min-height: 274px;
+}
+
+@media (max-width: 430px){
+  .product-preview-elem {
+    min-height: 298px;
+  }
 }

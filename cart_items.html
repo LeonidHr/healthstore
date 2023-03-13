@@ -88,8 +88,6 @@
       }
     </style>
 
-    <script src="./assets/js/cart.js"></script>
-
   </head>
   <body data-multi-lang="false">
     <noscript>
@@ -371,21 +369,23 @@
               <div class="text-center js-cart-empty">Ваша корзина пуста</div>
             </div>
             <form data-dev id="checkout" class="checkout" action="files/sendmail/sendmail.php" method="POST">
-              <div class="checkout__info checkout-grid">
-                <div class="checkout__info-item">Название</div>
-                <div class="checkout__info-item">Количество</div>
-                <div class="checkout__info-item">Цена</div>
-              </div>
-              <div id="cards-wrap" class="checkout__cards">
-                
-              </div>
-              <div class="checkout__summa">
-                <div>Итого к оплате:</div>
-                <div class="checkout__summa-num"><span id="cart-summ">0</span> €</div>
-              </div>
-              <div class="checkout__btns">
-                <a href="index.htm" class="checkout__btn button button_no-bg">Продолжить покупки</a>
-                <button type="button" id="design-btn" class="checkout__btn button">Оформить заказ</button>
+              <div class="checkout__content">
+                <div class="checkout__info checkout-grid">
+                  <div class="checkout__info-item">Название</div>
+                  <div class="checkout__info-item">Количество</div>
+                  <div class="checkout__info-item">Цена</div>
+                </div>
+                <div id="cards-wrap" class="checkout__cards">
+                  
+                </div>
+                <div class="checkout__summa">
+                  <div>Итого к оплате:</div>
+                  <div class="checkout__summa-num"><span id="cart-summ">0</span> €</div>
+                </div>
+                <div class="checkout__btns">
+                  <a href="index.htm" class="checkout__btn button button_no-bg">Продолжить покупки</a>
+                  <button type="button" id="design-btn" class="checkout__btn button">Оформить заказ</button>
+                </div>
               </div>
               <div class="checkout__form">
                 <h2 class="heading checkout__heading">Оформление</h2>
@@ -1012,6 +1012,8 @@
         </div>
       </div>
     </div>
+
+    <script src="./assets/js/cart.js"></script>
     <script src="./assets/js/forms.js"></script>
     <script src="./assets/js/pageNavigation.js"></script>
     <script src="./assets/js/popup.js"></script>

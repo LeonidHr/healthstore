@@ -152,7 +152,7 @@ async function viewProduct() {
   `;
 
   if (postsData[documetnId].isHerbs) {
-    buttons = `<button data-num="5" type="button">5 гр.</button>`;
+    buttons = `<button data-num="10" type="button">10 гр.</button>`;
   }
   if (postsData[documetnId].isOther) {
     buttons = `<button data-num="50" type="button">50 гр.</button>`;
@@ -292,7 +292,7 @@ async function viewProduct() {
                         <img
                           data-src="../${postsData[documetnId].imgPath}"
                           class="lazyload entered loaded"
-                          alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
+                          alt="${postsData[documetnId].title}"
                           data-ll-status="loaded"
                           src="../${postsData[documetnId].imgPath}"
                         />
@@ -537,13 +537,6 @@ async function viewProduct() {
                     </span>
                   </button>
                   <div class="add-cart-counter__controls">
-                    <button
-                      data-add-cart-counter-minus=""
-                      class="button button_size-l add-cart-counter__controls-btn"
-                      type="button"
-                    >
-                      -
-                    </button>
                     <a
                       href="../cart_items.html"
                       class="button button_size-l add-cart-counter__detail"
@@ -557,13 +550,6 @@ async function viewProduct() {
                         >Перейти</span
                       >
                     </a>
-                    <button
-                      data-add-cart-counter-plus=""
-                      class="button button_size-l add-cart-counter__controls-btn"
-                      type="button"
-                    >
-                      +
-                    </button>
                   </div>
                 </div>
                 <button
