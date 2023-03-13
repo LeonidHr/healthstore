@@ -2,7 +2,7 @@
   "products": [  
     {
       "id": 0,
-      "imgPath": "img/1.jfif",
+      "imgPath": "img/1.webp",
       "articul": "No. 001",
       "title": "Triphala (Unifarma)",
       "text": "Добавка для пищеварения",
@@ -18,7 +18,7 @@
     },
     {
       "id": 1,
-      "imgPath": "img/2.png",
+      "imgPath": "img/2.webp",
       "articul": "No. 002",
       "title": "Ashvaganda (Himalaya)",
       "text": "Добавка для спокойствия",
@@ -49,7 +49,7 @@
     },
     {
       "id": 3,
-      "imgPath": "img/4.jpg",
+      "imgPath": "img/4.webp",
       "articul": "No. 004",
       "title": "5-HTP (Swanson)",
       "text": "Добавка для работы мозга",
@@ -63,8 +63,8 @@
     },
     {
       "id": 4,
-      "imgPath": "img/5.jpg",
-      "imgPath2": "img/4-1.jpg",
+      "imgPath": "img/5.webp",
+      "imgPath2": "img/4-1.webp",
       "articul": "No. 005",
       "title": "Super Enzymes (NOW)",
       "text": "Добавка для пищеварения",
@@ -78,7 +78,7 @@
     },
     {
       "id": 5,
-      "imgPath": "img/6.jpeg",
+      "imgPath": "img/6.webp",
       "articul": "No. 006",
       "title": "L-Carnitine (Ostrovit)",
       "text": "Добавка для выносливости",
@@ -92,7 +92,7 @@
     },
     {
       "id": 6,
-      "imgPath": "img/7.jpg",
+      "imgPath": "img/7.webp",
       "articul": "No. 007",
       "title": "L-theanine (Ostrovit)",
       "text": "Добавка для работы мозга",
@@ -107,7 +107,7 @@
     },
     {
       "id": 7,
-      "imgPath": "img/8.jpg",
+      "imgPath": "img/8.webp",
       "articul": "No. 008",
       "title": "Brahmi (Bacopa) Himalaya",
       "text": "Добавка для работы мозга",
@@ -121,7 +121,7 @@
     },
     {
       "id": 8,
-      "imgPath": "img/9.jpg",
+      "imgPath": "img/9.webp",
       "articul": "No. 009",
       "title": "LIV-52 (Himalaya) ",
       "text": "Добавка для печени",
@@ -141,7 +141,7 @@
     },
     {
       "id": 9,
-      "imgPath": "img/11.png",
+      "imgPath": "img/11.webp",
       "articul": "No. 010",
       "title": "Healthy Skin (Ostrovit)",
       "text": "Добавка для кожи",
@@ -166,7 +166,7 @@
     },
     {
       "id": 10,
-      "imgPath": "img/12.jpg",
+      "imgPath": "img/12.webp",
       "articul": "No. 011",
       "title": "NeuroOffice (BioChronoss+)",
       "text": "Добавка для продуктивности",
@@ -191,7 +191,7 @@
     },
     {
       "id": 11,
-      "imgPath": "img/13.png",
+      "imgPath": "img/13.webp",
       "articul": "No. 012",
       "title": "Immuno Shots (Acorus Balance)",
       "text": "Добавка для иммунитета",
@@ -227,7 +227,7 @@
     },
     {
       "id": 13,
-      "imgPath": "img/15.png",
+      "imgPath": "img/15.webp",
       "articul": "No. 014",
       "title": "Мелатонин (Эвалар)",
       "text": "Добавка для сна",
@@ -274,7 +274,7 @@
     },
     {
       "id": 15,
-      "imgPath": "img/17.png",
+      "imgPath": "img/17.webp",
       "articul": "No. 016",
       "title": "Эликсир Иммунитет (Vital Elixir)",
       "text": "Добавка для иммунитета",
@@ -308,7 +308,7 @@
     },
     {
       "id": 16,
-      "imgPath": "img/10.png",
+      "imgPath": "img/10.webp",
       "articul": "No. 017",
       "title": "Калия Йодид (Витамир)",
       "text": "Йод",
@@ -342,7 +342,7 @@
     },
     {
       "id": 18,
-      "imgPath": "img/vitamins/2.jpg",
+      "imgPath": "img/vitamins/2.webp",
       "articul": "No. 019",
       "title": "D витамин + Омега 3 + K2 (Mollers)",
       "text": "для иммунитета",
@@ -360,7 +360,7 @@
     },
     {
       "id": 19,
-      "imgPath": "img/vitamins/3.jpg",
+      "imgPath": "img/vitamins/3.webp",
       "articul": "No. 020",
       "title": "Кальций+Калий+Магний+Цинк (Biofarmacija)",
       "text": "для иммунитета",
@@ -378,7 +378,7 @@
     },
     {
       "id": 20,
-      "imgPath": "img/vitamins/4.jpg",
+      "imgPath": "img/vitamins/4.webp",
       "articul": "No. 021",
       "title": "Pre Race drink (Aptona)",
       "text": "для спокойной тренировки",
@@ -394,7 +394,7 @@
     },
     {
       "id": 21,
-      "imgPath": "img/vitamins/16.png",
+      "imgPath": "img/vitamins/16.webp",
       "articul": "No. 022",
       "title": "Витамин B5 (Пантотеновая кислота) Osavi",
       "text": "для энергии",
@@ -408,7 +408,7 @@
     },
     {
       "id": 22,
-      "imgPath": "img/vitamins/15.jpg",
+      "imgPath": "img/vitamins/15.webp",
       "articul": "No. 023",
       "title": "Железо + Витамины (Altapharma)",
       "text": "для иммунитета",
@@ -425,7 +425,7 @@
     },
     {
       "id": 23,
-      "imgPath": "img/vitamins/7.jpg",
+      "imgPath": "img/vitamins/7.webp",
       "articul": "No. 024",
       "title": "Selen/Zinc (Walmark)",
       "text": "для иммунитета",
@@ -461,7 +461,7 @@
     },
     {
       "id": 25,
-      "imgPath": "img/vitamins/9.jpg",
+      "imgPath": "img/vitamins/9.webp",
       "articul": "No. 026",
       "title": "Магний 200 mg",
       "text": "для нервной системы, расслабления мышц",
@@ -475,8 +475,8 @@
     },
     {
       "id": 26,
-      "imgPath": "img/vitamins/10.jpg",
-      "imgPath2": "img/vitamins/10-1.png",
+      "imgPath": "img/vitamins/10.webp",
+      "imgPath2": "img/vitamins/10-1.webp",
       "articul": "No. 027",
       "title": "Комплекс витаминов и минералов Altapharma",
       "text": "для иммунитета",
@@ -490,7 +490,7 @@
     },
     {
       "id": 27,
-      "imgPath": "img/vitamins/11.jpg",
+      "imgPath": "img/vitamins/11.webp",
       "articul": "No. 028",
       "title": "Immunosil Virufix",
       "text": "для иммунитета",
@@ -507,7 +507,7 @@
     },
     {
       "id": 28,
-      "imgPath": "img/vitamins/12.jpg",
+      "imgPath": "img/vitamins/12.webp",
       "articul": "No. 029",
       "title": "Coenzyme Q10",
       "text": "для кислорода",
@@ -521,7 +521,7 @@
     },
     {
       "id": 29,
-      "imgPath": "img/vitamins/13.jpg",
+      "imgPath": "img/vitamins/13.webp",
       "articul": "No. 030",
       "title": "Senior Complex (комплекс витаминов с Гинкго Билобой)",
       "text": "для иммунитета",
@@ -553,7 +553,7 @@
     },
     {
       "id": 30,
-      "imgPath": "img/other/1.jpg",
+      "imgPath": "img/other/1.webp",
       "articul": "No. 031",
       "title": "Кокосовая мука",
       "text": "",
@@ -570,7 +570,7 @@
     },
     {
       "id": 31,
-      "imgPath": "img/other/2.jpg",
+      "imgPath": "img/other/2.webp",
       "articul": "No. 032",
       "title": "Молотый миндаль",
       "text": "",
@@ -587,8 +587,8 @@
     },
     {
       "id": 32,
-      "imgPath": "img/other/3.jpg",
-      "imgPath2": "img/other/3-1.jpg",
+      "imgPath": "img/other/3.webp",
+      "imgPath2": "img/other/3-1.webp",
       "articul": "No. 033",
       "title": "Gold Nutrition Protein (Whey)",
       "text": "",
@@ -603,7 +603,7 @@
     
     {
       "id": 33,
-      "imgPath": "img/other/4.jpg",
+      "imgPath": "img/other/4.webp",
       "articul": "No. 034",
       "title": "Протеин с магнием и цинком (Dobra Kaloria)",
       "text": "",
@@ -624,8 +624,8 @@
     },
     {
       "id": 34,
-      "imgPath": "img/other/5.jpg",
-      "imgPath2": "img/other/5-1.png",
+      "imgPath": "img/other/5.webp",
+      "imgPath2": "img/other/5-1.webp",
       "articul": "No. 035",
       "title": "Органическое какао (Now)",
       "text": "",
@@ -639,7 +639,7 @@
     },
     {
       "id": 35,
-      "imgPath": "img/other/10.jpg",
+      "imgPath": "img/other/10.webp",
       "articul": "No. 036",
       "title": "Semper (BabySemp 1) детское питание",
       "text": "",
@@ -663,7 +663,7 @@
     },
     {
       "id": 36,
-      "imgPath": "img/other/6.jpg",
+      "imgPath": "img/other/6.webp",
       "articul": "No. 037",
       "title": "Турецкие семена",
       "text": "",
@@ -680,7 +680,7 @@
     },
     {
       "id": 37,
-      "imgPath": "img/other/7.jpg",
+      "imgPath": "img/other/7.webp",
       "articul": "No. 038",
       "title": "Cемена льна",
       "text": "",
@@ -697,7 +697,7 @@
     },
     {
       "id": 38,
-      "imgPath": "img/other/8.jpg",
+      "imgPath": "img/other/8.webp",
       "articul": "No. 039",
       "title": "Тыквенные семечки",
       "text": "",
@@ -714,8 +714,8 @@
     },
     {
       "id": 39,
-      "imgPath": "img/other/9.jpg",
-      "imgPath2": "img/other/9-1.jpg",
+      "imgPath": "img/other/9.webp",
+      "imgPath2": "img/other/9-1.webp",
       "articul": "No. 040",
       "title": "Овес необработанный",
       "text": "",
@@ -729,7 +729,7 @@
     },
     {
       "id": 40,
-      "imgPath": "img/herbs/1.jfif",
+      "imgPath": "img/herbs/1.webp",
       "articul": "No. 041",
       "title": "Зверобой",
       "text": "Трава зверобоя на вес.",
@@ -743,7 +743,7 @@
     },
     {
       "id": 41,
-      "imgPath": "img/herbs/2.jfif",
+      "imgPath": "img/herbs/2.webp",
       "articul": "No. 042",
       "title": "Полынь",
       "text": "Трава полыни на вес.",
@@ -757,7 +757,7 @@
     },
     {
       "id": 42,
-      "imgPath": "img/herbs/3.jfif",
+      "imgPath": "img/herbs/3.webp",
       "articul": "No. 043",
       "title": "Ромашка",
       "text": "Трава ромашки на вес.",
@@ -771,7 +771,7 @@
     },
     {
       "id": 43,
-      "imgPath": "img/herbs/4.jpg",
+      "imgPath": "img/herbs/4.webp",
       "articul": "No. 044",
       "title": "Фенхель",
       "text": "Трава фенхеля на вес.",
@@ -785,7 +785,7 @@
     },
     {
       "id": 44,
-      "imgPath": "img/herbs/5.jfif",
+      "imgPath": "img/herbs/5.webp",
       "articul": "No. 045",
       "title": "Корень одуванчика",
       "text": "Корень одуванчика на вес.",
@@ -799,7 +799,7 @@
     },
     {
       "id": 45,
-      "imgPath": "img/herbs/6.jfif",
+      "imgPath": "img/herbs/6.webp",
       "articul": "No. 046",
       "title": "Душица",
       "text": "Трава душицы на вес.",
@@ -813,7 +813,7 @@
     },
     {
       "id": 46,
-      "imgPath": "img/herbs/7.jfif",
+      "imgPath": "img/herbs/7.webp",
       "articul": "No. 047",
       "title": "Лопух",
       "text": "Лопух на вес.",
@@ -827,7 +827,7 @@
     },
     {
       "id": 47,
-      "imgPath": "img/vitamins/14.jpg",
+      "imgPath": "img/vitamins/14.webp",
       "articul": "No. 048",
       "title": "Zink/Vitamin (Altapharma)",
       "text": "для иммунитета",
@@ -842,7 +842,7 @@
     },
     {
       "id": 48,
-      "imgPath": "img/herbs/11.jpeg",
+      "imgPath": "img/herbs/11.webp",
       "articul": "No. 049",
       "title": "Валерьяна",
       "text": "Трава валерианы на вес.",
@@ -856,7 +856,7 @@
     },
     {
       "id": 49,
-      "imgPath": "img/herbs/13.jfif",
+      "imgPath": "img/herbs/13.webp",
       "articul": "No. 069",
       "title": "Бессмертник",
       "text": "Трава бессмертника на вес.",
@@ -870,7 +870,7 @@
     },
     {
       "id": 50,
-      "imgPath": "img/pills/1.jpg",
+      "imgPath": "img/pills/1.webp",
       "articul": "No. 051",
       "title": "Fenkarol",
       "text": "противоаллергические",
@@ -885,7 +885,7 @@
     
     {
       "id": 51,
-      "imgPath": "img/pills/2.jpg",
+      "imgPath": "img/pills/2.webp",
       "articul": "No. 052",
       "title": "GoRespiro",
       "text": "для дыхания",
@@ -908,7 +908,7 @@
     },
     {
       "id": 52,
-      "imgPath": "img/pills/3.jpg",
+      "imgPath": "img/pills/3.webp",
       "articul": "No. 053",
       "title": "Escadra",
       "text": "для желудка",
@@ -936,7 +936,7 @@
     },
     {
       "id": 54,
-      "imgPath": "img/pills/5.jpg",
+      "imgPath": "img/pills/5.webp",
       "articul": "No. 055",
       "title": "Gastroval",
       "text": "для пищеварения",
@@ -962,7 +962,7 @@
     {
       "id": 55,
       "imgPath": "img/pills/6.webp",
-      "imgPathSlide": "img/pills/6-1.jpg",
+      "imgPathSlide": "img/pills/6-1.webp",
       "articul": "No. 056",
       "title": "Boulardi",
       "text": "Пробиотики для кишечника",
@@ -976,7 +976,7 @@
     },
     {
       "id": 56,
-      "imgPath": "img/pills/7.jpg",
+      "imgPath": "img/pills/7.webp",
       "articul": "No. 057",
       "title": "Mildronats",
       "text": "для сил и энергии",
@@ -990,7 +990,7 @@
     },
     {
       "id": 57,
-      "imgPath": "img/pills/8.jpg",
+      "imgPath": "img/pills/8.webp",
       "articul": "No. 058",
       "title": "Nalgedol",
       "text": "обезболивающие",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": 58,
-      "imgPath": "img/pills/9.jpg",
+      "imgPath": "img/pills/9.webp",
       "articul": "No. 059",
       "title": "Neurotin",
       "text": "от нервных воспалений и болей",
@@ -1018,7 +1018,7 @@
     },
     {
       "id": 59,
-      "imgPath": "img/pills/10.jpg",
+      "imgPath": "img/pills/10.webp",
       "articul": "No. 060",
       "title": "Sorbex",
       "text": "сорбент при расстройстве желудка",
@@ -1032,7 +1032,7 @@
     },
     {
       "id": 60,
-      "imgPath": "img/pills/11.jpg",
+      "imgPath": "img/pills/11.webp",
       "articul": "No. 061",
       "title": "Noofen",
       "text": "для снятия стресса и тревоги",
@@ -1046,7 +1046,7 @@
     },
     {
       "id": 61,
-      "imgPath": "img/pills/12.jpeg",
+      "imgPath": "img/pills/12.webp",
       "articul": "No. 062",
       "title": "Фосфоглив Урсо",
       "text": "для печени",
@@ -1061,7 +1061,7 @@
     },
     {
       "id": 62,
-      "imgPath": "img/pills/13.jpg",
+      "imgPath": "img/pills/13.webp",
       "articul": "No. 063",
       "title": "Холензим",
       "text": "для жёлчного пузыря",
@@ -1077,7 +1077,7 @@
     },
     {
       "id": 63,
-      "imgPath": "img/herbs/8.jfif",
+      "imgPath": "img/herbs/8.webp",
       "articul": "No. 064",
       "title": "Хвощ полевой",
       "text": "Трава хвощь полевой на вес.",
@@ -1105,7 +1105,7 @@
     },
     {
       "id": 65,
-      "imgPath": "img/herbs/10.jfif",
+      "imgPath": "img/herbs/10.webp",
       "articul": "No. 066",
       "title": "Доник",
       "text": "Трава донника на вес.",
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 67,
-      "imgPath": "img/herbs/12.jpg",
+      "imgPath": "img/herbs/12.webp",
       "articul": "No. 050",
       "title": "Боярышник",
       "text": "Трава боярышника на вес.",
