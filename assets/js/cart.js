@@ -43,19 +43,21 @@ async function viewProductsCard() {
               </div>
             </div>
           </div>
-          <div class="cart-checkout__count cart-checkout__text"><span>${item.count}</span> шт</div>
+          <div class="cart-checkout__count cart-checkout__text">
+            <span>${postsData[item.id].unit == '100 гр.' ? item.count * 100 : item.count} </span> 
+            ${postsData[item.id].unit == '100 гр.' ? 'гр.' : postsData[item.id].unit}
+          </div>
           <div class="cart-checkout__price cart-checkout__text"><span>${postsData[item.id].price * item.count}</span> €</div>
         </div>
       `;
       cartWrap.insertAdjacentHTML("beforeend", postEl);
-    
-      summ += postsData[item.id].price * item.count;
+  
+      summ += postsData[item.id].price * +item.count;
     });
   
     summWrap.innerHTML = summ;
   
     document.querySelectorAll('.cart-checkout__exit').forEach(btnExit => {
-        console.log(btnExit);
         btnExit.addEventListener("click", e => {
           removeProduct(e, prodId);
           viewProductsCard();

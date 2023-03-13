@@ -499,7 +499,7 @@ async function viewProduct() {
           class="product__price-old"
           data-product-card-old-price=""
         ></span>
-        за шт.
+        за ${postsData[documetnId].unit}
       </div>
     </div>
 

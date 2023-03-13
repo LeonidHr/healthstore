@@ -6,7 +6,8 @@
       "articul": "No. 001",
       "title": "Triphala (Unifarma)",
       "text": "Добавка для пищеварения",
-      "price": "780 ",
+      "price": "0.20",
+      "unit": "шт.",
       "mainCategory": "bads",
       "category": "food",
       "descr": [
@@ -21,7 +22,8 @@
       "articul": "No. 002",
       "title": "Ashvaganda (Himalaya)",
       "text": "Добавка для спокойствия",
-      "price": "780 ",
+      "price": "0.20",
+      "unit": "шт.",
       "mainCategory": "bads",
       "category": "calmness",
       "descr": [
@@ -34,7 +36,8 @@
       "articul": "No. 003",
       "title": "Расторопша+Артишок (Биокор)",
       "text": "Добавка для печени",
-      "price": "780 ",
+      "price": "0.20",
+      "unit": "шт.",
       "mainCategory": "bads",
       "category": "food",
       "descr": [
@@ -50,7 +53,8 @@
       "articul": "No. 004",
       "title": "5-HTP (Swanson)",
       "text": "Добавка для работы мозга",
-      "price": "780 ",
+      "price": "0.25",
+      "unit": "шт.",
       "mainCategory": "bads",
       "category": "think",
       "descr": [
@@ -64,7 +68,8 @@
       "articul": "No. 005",
       "title": "Super Enzymes (NOW)",
       "text": "Добавка для пищеварения",
-      "price": "780 ",
+      "price": "0.30",
+      "unit": "шт.",
       "mainCategory": "bads",
       "category": "food",
       "descr": [
@@ -77,7 +82,8 @@
       "articul": "No. 006",
       "title": "L-Carnitine (Ostrovit)",
       "text": "Добавка для выносливости",
-      "price": "780 ",
+      "price": "0.25",
+      "unit": "шт.",
       "mainCategory": "bads",
       "category": "others",
       "descr": [
@@ -90,7 +96,8 @@
       "articul": "No. 007",
       "title": "L-theanine (Ostrovit)",
       "text": "Добавка для работы мозга",
-      "price": "780 ",
+      "price": "0.15",
+      "unit": "шт.",
       "mainCategory": "bads",
       "category": "think",
       "descr": [
@@ -104,7 +111,8 @@
       "articul": "No. 008",
       "title": "Brahmi (Bacopa) Himalaya",
       "text": "Добавка для работы мозга",
-      "price": "780 ",
+      "price": "0.25",
+      "unit": "шт.",
       "mainCategory": "bads",
       "category": "think",
       "descr": [
@@ -117,7 +125,8 @@
       "articul": "No. 009",
       "title": "LIV-52 (Himalaya) ",
       "text": "Добавка для печени",
-      "price": "780 ",
+      "price": "0.15",
+      "unit": "шт.",
       "mainCategory": "bads",
       "category": "food",
       "descr": [
@@ -136,7 +145,8 @@
       "articul": "No. 010",
       "title": "Healthy Skin (Ostrovit)",
       "text": "Добавка для кожи",
-      "price": "780 ",
+      "price": "0.25",
+      "unit": "шт.",
       "mainCategory": "bads",
       "category": "others",
       "descr": [
@@ -160,7 +170,8 @@
       "articul": "No. 011",
       "title": "NeuroOffice (BioChronoss+)",
       "text": "Добавка для продуктивности",
-      "price": "780 ",
+      "price": "0.66",
+      "unit": "шт.",
       "mainCategory": "bads",
       "category": "others",
       "descr": [
@@ -184,7 +195,8 @@
       "articul": "No. 012",
       "title": "Immuno Shots (Acorus Balance)",
       "text": "Добавка для иммунитета",
-      "price": "780 ",
+      "price": "2.00",
+      "unit": "шт.",
       "mainCategory": "bads",
       "category": "immunity",
       "descr": [
@@ -204,7 +216,8 @@
       "articul": "No. 013",
       "title": "Travelan (Olimp Labs)",
       "text": "Добавка от укачивания",
-      "price": "780 ",
+      "price": "0.70",
+      "unit": "шт.",
       "mainCategory": "bads",
       "category": "others",
       "descr": [
@@ -218,7 +231,8 @@
       "articul": "No. 014",
       "title": "Мелатонин (Эвалар)",
       "text": "Добавка для сна",
-      "price": "780 ",
+      "price": "0.30",
+      "unit": "шт.",
       "mainCategory": "bads",
       "category": "sleep",
       "descr": [
@@ -231,7 +245,8 @@
       "articul": "No. 015",
       "title": "Chyawanprash (Dabur)",
       "text": "Добавка для иммунитета",
-      "price": "780 ",
+      "price": "0.03",
+      "unit": "гр.",
       "mainCategory": "bads",
       "category": "immunity",
       "descr": [
@@ -263,9 +278,11 @@
       "articul": "No. 016",
       "title": "Эликсир Иммунитет (Vital Elixir)",
       "text": "Добавка для иммунитета",
-      "price": "780 ",
+      "price": "0.06",
+      "unit": "гр.",
       "mainCategory": "bads",
       "category": "immunity",
+      "isHerbs": true,
       "descr": [
         "Экстракт плодов айвы - 150 µg;",     
         "Экстракт яблока - 67 µg;",     
@@ -295,7 +312,8 @@
       "articul": "No. 017",
       "title": "Калия Йодид (Витамир)",
       "text": "Йод",
-      "price": "780 ",
+      "price": "0.04",
+      "unit": "шт.",
       "mainCategory": "vitamins",
       "category": "immunity",
       "descr": [
@@ -308,7 +326,8 @@
       "articul": "No. 018",
       "title": "Комплекс витаминов B группы (Jonax)",
       "text": "для нервной системы",
-      "price": "780 ",
+      "price": "0.30",
+      "unit": "шт.",
       "mainCategory": "vitamins",
       "category": "nerves",
       "descr": [
@@ -327,7 +346,8 @@
       "articul": "No. 019",
       "title": "D витамин + Омега 3 + K2 (Mollers)",
       "text": "для иммунитета",
-      "price": "780 ",
+      "price": "0.60",
+      "unit": "шт.",
       "mainCategory": "vitamins",
       "category": "immunity",
       "descr": [
@@ -344,7 +364,8 @@
       "articul": "No. 020",
       "title": "Кальций+Калий+Магний+Цинк (Biofarmacija)",
       "text": "для иммунитета",
-      "price": "780 ",
+      "price": "0.60",
+      "unit": "шт.",
       "mainCategory": "vitamins",
       "category": "immunity",
       "descr": [
@@ -361,7 +382,8 @@
       "articul": "No. 021",
       "title": "Pre Race drink (Aptona)",
       "text": "для спокойной тренировки",
-      "price": "780 ",
+      "price": "1.44",
+      "unit": "шт.",
       "mainCategory": "vitamins",
       "category": "energy",
       "descr": [
@@ -376,7 +398,8 @@
       "articul": "No. 022",
       "title": "Витамин B5 (Пантотеновая кислота) Osavi",
       "text": "для энергии",
-      "price": "780 ",
+      "price": "0.20",
+      "unit": "шт.",
       "mainCategory": "vitamins",
       "category": "energy",
       "descr": [
@@ -389,7 +412,8 @@
       "articul": "No. 023",
       "title": "Железо + Витамины (Altapharma)",
       "text": "для иммунитета",
-      "price": "780 ",
+      "price": "0.15",
+      "unit": "шт.",
       "mainCategory": "vitamins",
       "category": "immunity",
       "descr": [
@@ -405,7 +429,8 @@
       "articul": "No. 024",
       "title": "Selen/Zinc (Walmark)",
       "text": "для иммунитета",
-      "price": "780 ",
+      "price": "0.30",
+      "unit": "шт.",
       "mainCategory": "vitamins",
       "category": "immunity",
       "descr": [
@@ -419,7 +444,8 @@
       "articul": "No. 025",
       "title": "Dias Collagen",
       "text": "для кожи, костей, мышц",
-      "price": "780 ",
+      "price": "1.60",
+      "unit": "шт.",
       "mainCategory": "vitamins",
       "category": "nerves",
       "descr": [
@@ -439,7 +465,8 @@
       "articul": "No. 026",
       "title": "Магний 200 mg",
       "text": "для нервной системы, расслабления мышц",
-      "price": "780 ",
+      "price": "0.22",
+      "unit": "шт.",
       "mainCategory": "vitamins",
       "category": "nerves",
       "descr": [
@@ -453,7 +480,8 @@
       "articul": "No. 027",
       "title": "Комплекс витаминов и минералов Altapharma",
       "text": "для иммунитета",
-      "price": "780 ",
+      "price": "0.15",
+      "unit": "шт.",
       "mainCategory": "vitamins",
       "category": "immunity",
       "descr": [
@@ -466,7 +494,8 @@
       "articul": "No. 028",
       "title": "Immunosil Virufix",
       "text": "для иммунитета",
-      "price": "780 ",
+      "price": "0.40",
+      "unit": "шт.",
       "mainCategory": "vitamins",
       "category": "immunity",
       "descr": [
@@ -482,7 +511,8 @@
       "articul": "No. 029",
       "title": "Coenzyme Q10",
       "text": "для кислорода",
-      "price": "780 ",
+      "price": "0.35",
+      "unit": "шт.",
       "mainCategory": "vitamins",
       "category": "immunity",
       "descr": [
@@ -495,7 +525,8 @@
       "articul": "No. 030",
       "title": "Senior Complex (комплекс витаминов с Гинкго Билобой)",
       "text": "для иммунитета",
-      "price": "780 ",
+      "price": "0.30",
+      "unit": "шт.",
       "mainCategory": "vitamins",
       "category": "immunity",
       "descr": [
@@ -526,7 +557,8 @@
       "articul": "No. 031",
       "title": "Кокосовая мука",
       "text": "",
-      "price": "780 ",
+      "price": "0.80",
+      "unit": "100 гр.",
       "mainCategory": "other",
       "category": "all",
       "descr": [
@@ -542,7 +574,8 @@
       "articul": "No. 032",
       "title": "Молотый миндаль",
       "text": "",
-      "price": "780 ",
+      "price": "1.50",
+      "unit": "100 гр.",
       "mainCategory": "other",
       "category": "all",
       "descr": [
@@ -559,7 +592,8 @@
       "articul": "No. 033",
       "title": "Gold Nutrition Protein (Whey)",
       "text": "",
-      "price": "780 ",
+      "price": "6.50",
+      "unit": "100 гр.",
       "mainCategory": "other",
       "category": "all",
       "descr": [
@@ -573,7 +607,8 @@
       "articul": "No. 034",
       "title": "Протеин с магнием и цинком (Dobra Kaloria)",
       "text": "",
-      "price": "780 ",
+      "price": "2.05",
+      "unit": "100 гр.",
       "mainCategory": "other",
       "category": "all",
       "descr": [
@@ -594,7 +629,8 @@
       "articul": "No. 035",
       "title": "Органическое какао (Now)",
       "text": "",
-      "price": "780 ",
+      "price": "4.50",
+      "unit": "100 гр.",
       "mainCategory": "other",
       "category": "all",
       "descr": [
@@ -607,7 +643,8 @@
       "articul": "No. 036",
       "title": "Semper (BabySemp 1) детское питание",
       "text": "",
-      "price": "780 ",
+      "price": "2.00",
+      "unit": "100 гр.",
       "mainCategory": "other",
       "category": "all",
       "descr": [
@@ -630,7 +667,8 @@
       "articul": "No. 037",
       "title": "Турецкие семена",
       "text": "",
-      "price": "780 ",
+      "price": "0.80",
+      "unit": "100 гр.",
       "mainCategory": "other",
       "category": "all",
       "descr": [
@@ -646,7 +684,8 @@
       "articul": "No. 038",
       "title": "Cемена льна",
       "text": "",
-      "price": "780 ",
+      "price": "1.00",
+      "unit": "100 гр.",
       "mainCategory": "other",
       "category": "all",
       "descr": [
@@ -662,7 +701,8 @@
       "articul": "No. 039",
       "title": "Тыквенные семечки",
       "text": "",
-      "price": "780 ",
+      "price": "1.80",
+      "unit": "100 гр.",
       "mainCategory": "other",
       "category": "all",
       "descr": [
@@ -679,7 +719,8 @@
       "articul": "No. 040",
       "title": "Овес необработанный",
       "text": "",
-      "price": "780 ",
+      "price": "2.50",
+      "unit": "100 гр.",
       "mainCategory": "other",
       "category": "all",
       "descr": [
@@ -790,7 +831,8 @@
       "articul": "No. 048",
       "title": "Zink/Vitamin (Altapharma)",
       "text": "для иммунитета",
-      "price": "780 ",
+      "price": "0.15",
+      "unit": "шт.",
       "mainCategory": "vitamins",
       "category": "immunity",
       "descr": [
@@ -832,7 +874,8 @@
       "articul": "No. 051",
       "title": "Fenkarol",
       "text": "противоаллергические",
-      "price": "780 ",
+      "price": "0.22",
+      "unit": "шт.",
       "mainCategory": "capsules",
       "category": "allergies",
       "descr": [
@@ -846,7 +889,8 @@
       "articul": "No. 052",
       "title": "GoRespiro",
       "text": "для дыхания",
-      "price": "780 ",
+      "price": "0.46",
+      "unit": "шт.",
       "mainCategory": "capsules",
       "category": "breathing",
       "descr": [
@@ -868,7 +912,8 @@
       "articul": "No. 053",
       "title": "Escadra",
       "text": "для желудка",
-      "price": "780 ",
+      "price": "0.30",
+      "unit": "шт.",
       "mainCategory": "capsules",
       "category": "gastrointestinal",
       "descr": [
@@ -881,7 +926,8 @@
       "articul": "No. 054",
       "title": "Omeprazol",
       "text": "для желудка",
-      "price": "780 ",
+      "price": "0.18",
+      "unit": "шт.",
       "mainCategory": "capsules",
       "category": "gastrointestinal",
       "descr": [
@@ -894,7 +940,8 @@
       "articul": "No. 055",
       "title": "Gastroval",
       "text": "для пищеварения",
-      "price": "780 ",
+      "price": "0.45",
+      "unit": "шт.",
       "mainCategory": "capsules",
       "category": "gastrointestinal",
       "descr": [
@@ -919,7 +966,8 @@
       "articul": "No. 056",
       "title": "Boulardi",
       "text": "Пробиотики для кишечника",
-      "price": "780 ",
+      "price": "0.60",
+      "unit": "шт.",
       "mainCategory": "capsules",
       "category": "gastrointestinal",
       "descr": [
@@ -932,7 +980,8 @@
       "articul": "No. 057",
       "title": "Mildronats",
       "text": "для сил и энергии",
-      "price": "780 ",
+      "price": "0.30",
+      "unit": "шт.",
       "mainCategory": "capsules",
       "category": "energy",
       "descr": [
@@ -945,7 +994,8 @@
       "articul": "No. 058",
       "title": "Nalgedol",
       "text": "обезболивающие",
-      "price": "780 ",
+      "price": "0.22",
+      "unit": "шт.",
       "mainCategory": "capsules",
       "category": "painkillers",
       "descr": [
@@ -958,7 +1008,8 @@
       "articul": "No. 059",
       "title": "Neurotin",
       "text": "от нервных воспалений и болей",
-      "price": "780 ",
+      "price": "0.20",
+      "unit": "шт.",
       "mainCategory": "capsules",
       "category": "painkillers",
       "descr": [
@@ -971,7 +1022,8 @@
       "articul": "No. 060",
       "title": "Sorbex",
       "text": "сорбент при расстройстве желудка",
-      "price": "780 ",
+      "price": "0.30",
+      "unit": "шт.",
       "mainCategory": "capsules",
       "category": "gastrointestinal",
       "descr": [
@@ -984,7 +1036,8 @@
       "articul": "No. 061",
       "title": "Noofen",
       "text": "для снятия стресса и тревоги",
-      "price": "780 ",
+      "price": "0.50",
+      "unit": "шт.",
       "mainCategory": "capsules",
       "category": "calmness",
       "descr": [
@@ -997,7 +1050,8 @@
       "articul": "No. 062",
       "title": "Фосфоглив Урсо",
       "text": "для печени",
-      "price": "780 ",
+      "price": "0.30",
+      "unit": "шт.",
       "mainCategory": "capsules",
       "category": "gastrointestinal",
       "descr": [
@@ -1011,7 +1065,8 @@
       "articul": "No. 063",
       "title": "Холензим",
       "text": "для жёлчного пузыря",
-      "price": "780 ",
+      "price": "0.12",
+      "unit": "шт.",
       "mainCategory": "capsules",
       "category": "gastrointestinal",
       "descr": [
