@@ -8,7 +8,7 @@
         "Для сна",
         "Для мозга и настроения",
         "Для иммунитета",
-        "Другое"
+        "Другие"
       ],
       "filters": [
         "all",
@@ -38,39 +38,47 @@
       "category": "capsules",
       "content": [
         "Все",
-        "Для ЖКТ",
-        "Для дыхания",
-        "Для энергии",
-        "Для спокойствия",
-        "От аллергии",
-        "Обезболивающие"
+        "Пищеварение",
+        "Нервная система",
+        "Другие"
       ],
       "filters": [
         "all",
         "gastrointestinal",
-        "breathing",
-        "energy",
-        "calmness",
-        "allergies",
-        "painkillers"
+        "nerves",
+        "others"
       ]
     },
     {
       "category": "herbs",
       "content": [
-        ""
+        "Все",
+        "Пищеварение",
+        "Нервная система",
+        "Иммунитет",
+        "Другие"
       ],
       "filters": [
-        "all"
+        "all",
+        "gastrointestinal",
+        "nerves",
+        "immunity",
+        "others"
       ]
     },
     {
       "category": "other",
       "content": [
-        ""
+        "Все",
+        "Протеин",
+        "Орехи и семена",
+        "Другие"
       ],
       "filters": [
-        "all"
+        "all",
+        "protein",
+        "seeds",
+        "others"
       ]
     }
   ]

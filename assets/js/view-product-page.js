@@ -154,6 +154,10 @@ async function viewProduct() {
   if (postsData[documetnId].isHerbs) {
     buttons = `<button data-num="5" type="button">5 гр.</button>`;
   }
+  if (postsData[documetnId].isOther) {
+    buttons = `<button data-num="50" type="button">50 гр.</button>`;
+  }
+
 
 
 

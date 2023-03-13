@@ -247,6 +247,7 @@
       "text": "Добавка для иммунитета",
       "price": "0.03",
       "unit": "гр.",
+      "isOther": true,
       "mainCategory": "bads",
       "category": "immunity",
       "descr": [
@@ -282,7 +283,7 @@
       "unit": "гр.",
       "mainCategory": "bads",
       "category": "immunity",
-      "isHerbs": true,
+      "isOther": true,
       "descr": [
         "Экстракт плодов айвы - 150 µg;",     
         "Экстракт яблока - 67 µg;",     
@@ -447,7 +448,7 @@
       "price": "1.60",
       "unit": "шт.",
       "mainCategory": "vitamins",
-      "category": "nerves",
+      "category": "immunity",
       "descr": [
         "Коллаген типа I и типа II - 4000 mg",
         "Гиалуроновая кислота - 50 мг",
@@ -554,13 +555,14 @@
     {
       "id": 30,
       "imgPath": "img/other/1.webp",
-      "articul": "No. 031",
+      "articul": "No. 058",
       "title": "Кокосовая мука",
       "text": "",
       "price": "0.80",
       "unit": "100 гр.",
       "mainCategory": "other",
-      "category": "all",
+      "isOther": true,
+      "category": "others",
       "descr": [
         "Жиры - 10 g.",
         "Углеводы 18 g.",
@@ -571,13 +573,14 @@
     {
       "id": 31,
       "imgPath": "img/other/2.webp",
-      "articul": "No. 032",
+      "articul": "No. 059",
       "title": "Молотый миндаль",
       "text": "",
       "price": "1.50",
       "unit": "100 гр.",
       "mainCategory": "other",
-      "category": "all",
+      "isOther": true,
+      "category": "seeds",
       "descr": [
         "Жиры - 50 g.",
         "Углеводы - 10,7 g.",
@@ -589,13 +592,14 @@
       "id": 32,
       "imgPath": "img/other/3.webp",
       "imgPath2": "img/other/3-1.webp",
-      "articul": "No. 033",
+      "articul": "No. 060",
       "title": "Gold Nutrition Protein (Whey)",
       "text": "",
       "price": "6.50",
       "unit": "100 гр.",
       "mainCategory": "other",
-      "category": "all",
+      "isOther": true,
+      "category": "protein",
       "descr": [
         ""
       ]
@@ -604,13 +608,14 @@
     {
       "id": 33,
       "imgPath": "img/other/4.webp",
-      "articul": "No. 034",
+      "articul": "No. 061",
       "title": "Протеин с магнием и цинком (Dobra Kaloria)",
       "text": "",
       "price": "2.05",
       "unit": "100 гр.",
       "mainCategory": "other",
-      "category": "all",
+      "isOther": true,
+      "category": "protein",
       "descr": [
         "Жиры - 36 g.",
         "Углеводы - 10,0 g.",
@@ -626,13 +631,14 @@
       "id": 34,
       "imgPath": "img/other/5.webp",
       "imgPath2": "img/other/5-1.webp",
-      "articul": "No. 035",
+      "articul": "No. 062",
       "title": "Органическое какао (Now)",
       "text": "",
       "price": "4.50",
       "unit": "100 гр.",
       "mainCategory": "other",
-      "category": "all",
+      "isOther": true,
+      "category": "others",
       "descr": [
         ""
       ]
@@ -640,13 +646,14 @@
     {
       "id": 35,
       "imgPath": "img/other/10.webp",
-      "articul": "No. 036",
+      "articul": "No. 063",
       "title": "Semper (BabySemp 1) детское питание",
       "text": "",
       "price": "2.00",
       "unit": "100 гр.",
       "mainCategory": "other",
-      "category": "all",
+      "isOther": true,
+      "category": "others",
       "descr": [
         "Обезжиренное молоко;",
         "Лактоза;",
@@ -664,12 +671,13 @@
     {
       "id": 36,
       "imgPath": "img/other/6.webp",
-      "articul": "No. 037",
+      "articul": "No. 064",
       "title": "Турецкие семена",
       "text": "",
       "price": "0.80",
       "unit": "100 гр.",
       "mainCategory": "other",
+      "isOther": true,
       "category": "all",
       "descr": [
         "Жиры - 1,1 g.",
@@ -681,13 +689,14 @@
     {
       "id": 37,
       "imgPath": "img/other/7.webp",
-      "articul": "No. 038",
+      "articul": "No. 065",
       "title": "Cемена льна",
       "text": "",
       "price": "1.00",
       "unit": "100 гр.",
       "mainCategory": "other",
-      "category": "all",
+      "isOther": true,
+      "category": "seeds",
       "descr": [
         "Жиры - 10.1 g.",
         "Углеводы - 28 g.",
@@ -698,13 +707,14 @@
     {
       "id": 38,
       "imgPath": "img/other/8.webp",
-      "articul": "No. 039",
+      "articul": "No. 066",
       "title": "Тыквенные семечки",
       "text": "",
       "price": "1.80",
       "unit": "100 гр.",
       "mainCategory": "other",
-      "category": "all",
+      "isOther": true,
+      "category": "seeds",
       "descr": [
         "Жиры - 49,05 g.",
         "Белки - 30,23 g.",
@@ -716,13 +726,14 @@
       "id": 39,
       "imgPath": "img/other/9.webp",
       "imgPath2": "img/other/9-1.webp",
-      "articul": "No. 040",
+      "articul": "No. 067",
       "title": "Овес необработанный",
       "text": "",
       "price": "2.50",
       "unit": "100 гр.",
       "mainCategory": "other",
-      "category": "all",
+      "isOther": true,
+      "category": "others",
       "descr": [
         ""
       ]
@@ -730,7 +741,7 @@
     {
       "id": 40,
       "imgPath": "img/herbs/1.webp",
-      "articul": "No. 041",
+      "articul": "No. 045",
       "title": "Зверобой",
       "text": "Трава зверобоя на вес.",
       "price": "780 ",
@@ -744,13 +755,13 @@
     {
       "id": 41,
       "imgPath": "img/herbs/2.webp",
-      "articul": "No. 042",
+      "articul": "No. 046",
       "title": "Полынь",
       "text": "Трава полыни на вес.",
       "price": "780 ",
       "mainCategory": "herbs",
       "isHerbs": true,
-      "category": "all",
+      "category": "gastrointestinal",
       "descr": [
         ""
       ]
@@ -758,13 +769,13 @@
     {
       "id": 42,
       "imgPath": "img/herbs/3.webp",
-      "articul": "No. 043",
+      "articul": "No. 047",
       "title": "Ромашка",
       "text": "Трава ромашки на вес.",
       "price": "780 ",
       "mainCategory": "herbs",
       "isHerbs": true,
-      "category": "all",
+      "category": "gastrointestinal",
       "descr": [
         ""
       ]
@@ -772,13 +783,13 @@
     {
       "id": 43,
       "imgPath": "img/herbs/4.webp",
-      "articul": "No. 044",
+      "articul": "No. 048",
       "title": "Фенхель",
       "text": "Трава фенхеля на вес.",
       "price": "780 ",
       "mainCategory": "herbs",
       "isHerbs": true,
-      "category": "all",
+      "category": "gastrointestinal",
       "descr": [
         ""
       ]
@@ -786,13 +797,13 @@
     {
       "id": 44,
       "imgPath": "img/herbs/5.webp",
-      "articul": "No. 045",
+      "articul": "No. 049",
       "title": "Корень одуванчика",
       "text": "Корень одуванчика на вес.",
       "price": "780 ",
       "mainCategory": "herbs",
       "isHerbs": true,
-      "category": "all",
+      "category": "immunity",
       "descr": [
         ""
       ]
@@ -800,13 +811,13 @@
     {
       "id": 45,
       "imgPath": "img/herbs/6.webp",
-      "articul": "No. 046",
+      "articul": "No. 050",
       "title": "Душица",
       "text": "Трава душицы на вес.",
       "price": "780 ",
       "mainCategory": "herbs",
       "isHerbs": true,
-      "category": "all",
+      "category": "nerves",
       "descr": [
         ""
       ]
@@ -814,13 +825,13 @@
     {
       "id": 46,
       "imgPath": "img/herbs/7.webp",
-      "articul": "No. 047",
+      "articul": "No. 051",
       "title": "Лопух",
       "text": "Лопух на вес.",
       "price": "780 ",
       "mainCategory": "herbs",
       "isHerbs": true,
-      "category": "all",
+      "category": "gastrointestinal",
       "descr": [
         ""
       ]
@@ -828,7 +839,7 @@
     {
       "id": 47,
       "imgPath": "img/vitamins/14.webp",
-      "articul": "No. 048",
+      "articul": "No. 031",
       "title": "Zink/Vitamin (Altapharma)",
       "text": "для иммунитета",
       "price": "0.15",
@@ -843,13 +854,13 @@
     {
       "id": 48,
       "imgPath": "img/herbs/11.webp",
-      "articul": "No. 049",
+      "articul": "No. 052",
       "title": "Валерьяна",
       "text": "Трава валерианы на вес.",
       "price": "780 ",
       "mainCategory": "herbs",
       "isHerbs": true,
-      "category": "all",
+      "category": "nerves",
       "descr": [
         ""
       ]
@@ -857,13 +868,13 @@
     {
       "id": 49,
       "imgPath": "img/herbs/13.webp",
-      "articul": "No. 069",
+      "articul": "No. 053",
       "title": "Бессмертник",
       "text": "Трава бессмертника на вес.",
       "price": "780 ",
       "mainCategory": "herbs",
       "isHerbs": true,
-      "category": "all",
+      "category": "gastrointestinal",
       "descr": [
         ""
       ]
@@ -871,13 +882,13 @@
     {
       "id": 50,
       "imgPath": "img/pills/1.webp",
-      "articul": "No. 051",
+      "articul": "No. 032",
       "title": "Fenkarol",
       "text": "противоаллергические",
       "price": "0.22",
       "unit": "шт.",
       "mainCategory": "capsules",
-      "category": "allergies",
+      "category": "others",
       "descr": [
         "50 мг квифенадин гидрохлорид"
       ]
@@ -886,13 +897,13 @@
     {
       "id": 51,
       "imgPath": "img/pills/2.webp",
-      "articul": "No. 052",
+      "articul": "No. 033",
       "title": "GoRespiro",
       "text": "для дыхания",
       "price": "0.46",
       "unit": "шт.",
       "mainCategory": "capsules",
-      "category": "breathing",
+      "category": "others",
       "descr": [
         "Экстракт босвеллии - 130 mg;",
         "Экстракт пассифлоры -  110 mg;",
@@ -909,7 +920,7 @@
     {
       "id": 52,
       "imgPath": "img/pills/3.webp",
-      "articul": "No. 053",
+      "articul": "No. 034",
       "title": "Escadra",
       "text": "для желудка",
       "price": "0.30",
@@ -923,7 +934,7 @@
     {
       "id": 53,
       "imgPath": "img/pills/4.webp",
-      "articul": "No. 054",
+      "articul": "No. 035",
       "title": "Omeprazol",
       "text": "для желудка",
       "price": "0.18",
@@ -937,7 +948,7 @@
     {
       "id": 54,
       "imgPath": "img/pills/5.webp",
-      "articul": "No. 055",
+      "articul": "No. 036",
       "title": "Gastroval",
       "text": "для пищеварения",
       "price": "0.45",
@@ -963,7 +974,7 @@
       "id": 55,
       "imgPath": "img/pills/6.webp",
       "imgPathSlide": "img/pills/6-1.webp",
-      "articul": "No. 056",
+      "articul": "No. 037",
       "title": "Boulardi",
       "text": "Пробиотики для кишечника",
       "price": "0.60",
@@ -977,13 +988,13 @@
     {
       "id": 56,
       "imgPath": "img/pills/7.webp",
-      "articul": "No. 057",
+      "articul": "No. 038",
       "title": "Mildronats",
       "text": "для сил и энергии",
       "price": "0.30",
       "unit": "шт.",
       "mainCategory": "capsules",
-      "category": "energy",
+      "category": "others",
       "descr": [
         "Дигидрата мельдония - 250 mg."
       ]
@@ -991,13 +1002,13 @@
     {
       "id": 57,
       "imgPath": "img/pills/8.webp",
-      "articul": "No. 058",
+      "articul": "No. 039",
       "title": "Nalgedol",
       "text": "обезболивающие",
       "price": "0.22",
       "unit": "шт.",
       "mainCategory": "capsules",
-      "category": "painkillers",
+      "category": "nerves",
       "descr": [
         "Напроксен натрия - 220 mg;"
       ]
@@ -1005,13 +1016,13 @@
     {
       "id": 58,
       "imgPath": "img/pills/9.webp",
-      "articul": "No. 059",
+      "articul": "No. 040",
       "title": "Neurotin",
       "text": "от нервных воспалений и болей",
       "price": "0.20",
       "unit": "шт.",
       "mainCategory": "capsules",
-      "category": "painkillers",
+      "category": "nerves",
       "descr": [
         "Габапентин - 100 mg;"
       ]
@@ -1019,7 +1030,7 @@
     {
       "id": 59,
       "imgPath": "img/pills/10.webp",
-      "articul": "No. 060",
+      "articul": "No. 041",
       "title": "Sorbex",
       "text": "сорбент при расстройстве желудка",
       "price": "0.30",
@@ -1033,13 +1044,13 @@
     {
       "id": 60,
       "imgPath": "img/pills/11.webp",
-      "articul": "No. 061",
+      "articul": "No. 042",
       "title": "Noofen",
       "text": "для снятия стресса и тревоги",
       "price": "0.50",
       "unit": "шт.",
       "mainCategory": "capsules",
-      "category": "calmness",
+      "category": "nerves",
       "descr": [
         "Фенибут - 250 mg."
       ]
@@ -1047,7 +1058,7 @@
     {
       "id": 61,
       "imgPath": "img/pills/12.webp",
-      "articul": "No. 062",
+      "articul": "No. 043",
       "title": "Фосфоглив Урсо",
       "text": "для печени",
       "price": "0.30",
@@ -1062,7 +1073,7 @@
     {
       "id": 62,
       "imgPath": "img/pills/13.webp",
-      "articul": "No. 063",
+      "articul": "No. 044",
       "title": "Холензим",
       "text": "для жёлчного пузыря",
       "price": "0.12",
@@ -1078,13 +1089,13 @@
     {
       "id": 63,
       "imgPath": "img/herbs/8.webp",
-      "articul": "No. 064",
+      "articul": "No. 054",
       "title": "Хвощ полевой",
       "text": "Трава хвощь полевой на вес.",
       "price": "780 ",
       "mainCategory": "herbs",
       "isHerbs": true,
-      "category": "all",
+      "category": "immunity",
       "descr": [
         ""
       ]
@@ -1092,13 +1103,13 @@
     {
       "id": 64,
       "imgPath": "img/herbs/9.webp",
-      "articul": "No. 065",
+      "articul": "No. 055",
       "title": "Тысячилетник",
       "text": "Трава тысячилетника на вес.",
       "price": "780 ",
       "mainCategory": "herbs",
       "isHerbs": true,
-      "category": "all",
+      "category": "others",
       "descr": [
         ""
       ]
@@ -1106,27 +1117,27 @@
     {
       "id": 65,
       "imgPath": "img/herbs/10.webp",
-      "articul": "No. 066",
+      "articul": "No. 056",
       "title": "Доник",
       "text": "Трава донника на вес.",
       "price": "780 ",
       "mainCategory": "herbs",
       "isHerbs": true,
-      "category": "all",
+      "category": "others",
       "descr": [
         ""
       ]
     },
     {
-      "id": 67,
+      "id": 66,
       "imgPath": "img/herbs/12.webp",
-      "articul": "No. 050",
+      "articul": "No. 057",
       "title": "Боярышник",
       "text": "Трава боярышника на вес.",
       "price": "780 ",
       "mainCategory": "herbs",
       "isHerbs": true,
-      "category": "all",
+      "category": "nerves",
       "descr": [
         ""
       ]

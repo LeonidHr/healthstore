@@ -47,7 +47,7 @@ async function viewProductsCard() {
             <span>${postsData[item.id].unit == '100 гр.' ? item.count * 100 : item.count} </span> 
             ${postsData[item.id].unit == '100 гр.' ? 'гр.' : postsData[item.id].unit}
           </div>
-          <div class="cart-checkout__price cart-checkout__text"><span>${postsData[item.id].price * item.count}</span> €</div>
+          <div class="cart-checkout__price cart-checkout__text"><span>${formatDecimal(postsData[item.id].price * item.count)}</span> €</div>
         </div>
       `;
       cartWrap.insertAdjacentHTML("beforeend", postEl);
@@ -55,7 +55,7 @@ async function viewProductsCard() {
       summ += postsData[item.id].price * +item.count;
     });
   
-    summWrap.innerHTML = summ;
+    summWrap.innerHTML = formatDecimal(summ);
   
     document.querySelectorAll('.cart-checkout__exit').forEach(btnExit => {
         btnExit.addEventListener("click", e => {
@@ -71,6 +71,14 @@ async function viewProductsCard() {
 }
 
 viewProductsCard();
+
+function formatDecimal(num) {
+  if (Number.isInteger(num)) { // проверяем, является ли число целым
+    return num.toString(); // если число целое, возвращаем его строковое представление
+  } else {
+    return num.toFixed(2); // если число дробное, возвращаем строку с двумя цифрами после точки
+  }
+}
 
 function removeProduct(e, prodId) {
   const carts = document.querySelectorAll('.cart-checkout');
