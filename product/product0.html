@@ -1073,8 +1073,7 @@
   <script src="../assets/js/pageNavigation.js"></script>
   <script src="../assets/js/popup.js"></script>
   <script src="../assets/js/view-popup.js"></script>
-
-
+ 
   <script src="../assets/common-js/common.v2.23.34.js"></script>
   <script src="../assets/static-versioned/2.77/static/libs/my-layout/1.0.0/my-layout.js"></script>
   <link
@@ -7942,14 +7941,10 @@
           let showVariantPhotos = () => {
             for (let i = 0; i < variant_photos_ids.length; i++) {
               let result_main_slide = productNode.find(
-                '.js-product-all-images .product__slide-main[data-product-img-id="' +
-                  variant_photos_ids[i] +
-                  '"]'
+                '.js-product-all-images .product__slide-main[data-product-img-id]'
               );
               let result_tumbs_slide = productNode.find(
-                '.js-product-all-images .product__slide-tumbs[data-product-img-id="' +
-                  variant_photos_ids[i] +
-                  '"]'
+                '.js-product-all-images .product__slide-tumbs[data-product-img-id]'
               );
 
               if (result_main_slide.length > 0) {
@@ -7960,7 +7955,7 @@
                   .find(".product__photo")
                   .attr(
                     "data-fslightbox",
-                    "product-photos-lightbox-" + variant_id
+                    "product-photos-lightbox"
                   );
                 main_slide_clone.appendTo(
                   $(slider_main_inst.Components.Elements.list)
@@ -8589,7 +8584,7 @@
           '"'
       );
     }
-  </script> 
+  </script>  
 
   <meta name="font-static-version" content="2.71" />
   <meta
