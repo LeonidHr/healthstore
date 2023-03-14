@@ -684,8 +684,8 @@ window.addEventListener("load", () => {
 
   countBtns.forEach(btn => {
     btn.addEventListener("click", e => {
-      addToCart(e.target.closest('[data-product]').getAttribute('id'), e.target.dataset.num);
-      // addProductToCart(e.target.closest('[data-product]').getAttribute('id'), e.target.dataset.num);
+      // addToCart(e.target.closest('[data-product]').getAttribute('id'), e.target.dataset.num);
+      addProductToCart(e.target.closest('[data-product]').getAttribute('id'), e.target.dataset.num);
     });
   });
 });
@@ -705,57 +705,57 @@ function removeDuplicates(array) {
   return uniqueArray;
 }
 
-function addToCart(prodNum, prodCount) {
-  // Предполагается, что данные для объектов уже готовы
-  let product = {
-    id: prodNum,
-    count: prodCount
-  }
+// function addToCart(prodNum, prodCount) {
+//   // Предполагается, что данные для объектов уже готовы
+//   let product = {
+//     id: prodNum,
+//     count: prodCount
+//   }
   
-  // Получаем текущее значение куки (если есть)
-  const cart = JSON.parse(getCookie('prodToCart') || '[]');
+//   // Получаем текущее значение куки (если есть)
+//   const cart = JSON.parse(getCookie('prodToCart') || '[]');
   
-  // Добавляем новые объекты в массив
-  cart.push(product);
+//   // Добавляем новые объекты в массив
+//   cart.push(product);
   
-  // Сохраняем массив в куки
-  setCookie('prodToCart', JSON.stringify(removeDuplicates(cart)), { expires: 7, path: '/' });
-}
+//   // Сохраняем массив в куки
+//   setCookie('prodToCart', JSON.stringify(removeDuplicates(cart)), { expires: 7, path: '/' });
+// }
 
-// Функции для работы с куками
-function setCookie(name, value, options = {}) {
-  options = {
-    path: '/',
-    ...options
-  };
+// // Функции для работы с куками
+// function setCookie(name, value, options = {}) {
+//   options = {
+//     path: '/',
+//     ...options
+//   };
 
-  if (options.expires instanceof Date) {
-    options.expires = options.expires.toUTCString();
-  }
+//   if (options.expires instanceof Date) {
+//     options.expires = options.expires.toUTCString();
+//   }
 
-  let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+//   let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
 
-  for (let optionKey in options) {
-    updatedCookie += "; " + optionKey;
-    let optionValue = options[optionKey];
-    if (optionValue !== true) {
-      updatedCookie += "=" + optionValue;
-    }
-  }
+//   for (let optionKey in options) {
+//     updatedCookie += "; " + optionKey;
+//     let optionValue = options[optionKey];
+//     if (optionValue !== true) {
+//       updatedCookie += "=" + optionValue;
+//     }
+//   }
 
-  document.cookie = updatedCookie;
-}
+//   document.cookie = updatedCookie;
+// }
 
-function getCookie(name) {
-  let matches = document.cookie.match(new RegExp(
-    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-  ));
-  return matches ? decodeURIComponent(matches[1]) : undefined;
-}
+// function getCookie(name) {
+//   let matches = document.cookie.match(new RegExp(
+//     "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+//   ));
+//   return matches ? decodeURIComponent(matches[1]) : undefined;
+// }
 
 function addProductToCart(prodNum, prodCount) {
   // Проверяем, есть ли уже объект в локальном хранилище
-  let json = localStorage.getItem('prodToCart');
+  let json = sessionStorage.getItem('prodToCart');
   let prodToCart = [];
   if (json) {
     prodToCart = JSON.parse(json);
@@ -772,24 +772,24 @@ function addProductToCart(prodNum, prodCount) {
   const uniqueArray = removeDuplicates(prodToCart);
 
   // Сохраняем обновленный объект в локальном хранилище
-  localStorage.setItem('prodToCart', JSON.stringify(uniqueArray));
+  sessionStorage.setItem('prodToCart', JSON.stringify(uniqueArray));
 }
 
-// function addButtonClickToJson(buttonNumber) {
-//   // Проверяем, есть ли уже объект в локальном хранилище
-//   let json = localStorage.getItem('buttonClicks');
-//   let buttonClicks = [];
-//   if (json) {
-//     buttonClicks = JSON.parse(json);
-//   }
+function addButtonClickToJson(buttonNumber) {
+  // Проверяем, есть ли уже объект в локальном хранилище
+  let json = sessionStorage.getItem('buttonClicks');
+  let buttonClicks = [];
+  if (json) {
+    buttonClicks = JSON.parse(json);
+  }
 
-//   buttonClicks = [];
-//   // Добавляем новое значение
-//   buttonClicks.unshift(buttonNumber);
+  buttonClicks = [];
+  // Добавляем новое значение
+  buttonClicks.unshift(buttonNumber);
 
-//   // Сохраняем обновленный объект в локальном хранилище
-//   localStorage.setItem('buttonClicks', JSON.stringify(buttonClicks));
-// }
+  // Сохраняем обновленный объект в локальном хранилище
+  sessionStorage.setItem('buttonClicks', JSON.stringify(buttonClicks));
+}
 
 
 function removeSending() {
