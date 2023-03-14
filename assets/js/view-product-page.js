@@ -592,6 +592,15 @@ async function viewProduct() {
     `);
   });
 
+  
+  const countBtns = document.querySelectorAll('.product-form__counters-btns button');
+  countBtns.forEach(btn => {
+    btn.addEventListener("click", e => {
+      addProductToCart(e.target.closest('[data-product]').getAttribute('id'), e.target.dataset.num);
+      // addToCart(e.target.closest('[data-product]').getAttribute('id'), e.target.dataset.num);
+    });
+  });
+
   addBtnsClick();
   showMore();
 }
@@ -680,14 +689,6 @@ function generateRandomNumbers() {
 
 window.addEventListener("load", () => {
   const productElems = document.querySelectorAll('.product-preview-elem');
-  const countBtns = document.querySelectorAll('.product-form__counters-btns button');
-
-  countBtns.forEach(btn => {
-    btn.addEventListener("click", e => {
-      // addToCart(e.target.closest('[data-product]').getAttribute('id'), e.target.dataset.num);
-      addProductToCart(e.target.closest('[data-product]').getAttribute('id'), e.target.dataset.num);
-    });
-  });
 });
 
 function removeDuplicates(array) {
@@ -704,54 +705,6 @@ function removeDuplicates(array) {
 
   return uniqueArray;
 }
-
-// function addToCart(prodNum, prodCount) {
-//   // Предполагается, что данные для объектов уже готовы
-//   let product = {
-//     id: prodNum,
-//     count: prodCount
-//   }
-  
-//   // Получаем текущее значение куки (если есть)
-//   const cart = JSON.parse(getCookie('prodToCart') || '[]');
-  
-//   // Добавляем новые объекты в массив
-//   cart.push(product);
-  
-//   // Сохраняем массив в куки
-//   setCookie('prodToCart', JSON.stringify(removeDuplicates(cart)), { expires: 7, path: '/' });
-// }
-
-// // Функции для работы с куками
-// function setCookie(name, value, options = {}) {
-//   options = {
-//     path: '/',
-//     ...options
-//   };
-
-//   if (options.expires instanceof Date) {
-//     options.expires = options.expires.toUTCString();
-//   }
-
-//   let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
-
-//   for (let optionKey in options) {
-//     updatedCookie += "; " + optionKey;
-//     let optionValue = options[optionKey];
-//     if (optionValue !== true) {
-//       updatedCookie += "=" + optionValue;
-//     }
-//   }
-
-//   document.cookie = updatedCookie;
-// }
-
-// function getCookie(name) {
-//   let matches = document.cookie.match(new RegExp(
-//     "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-//   ));
-//   return matches ? decodeURIComponent(matches[1]) : undefined;
-// }
 
 function addProductToCart(prodNum, prodCount) {
   // Проверяем, есть ли уже объект в локальном хранилище
@@ -813,6 +766,56 @@ function addBtnsClick() {
     });
   });
 }
+
+
+
+// function addToCart(prodNum, prodCount) {
+//   // Предполагается, что данные для объектов уже готовы
+//   let product = {
+//     id: prodNum,
+//     count: prodCount
+//   }
+  
+//   // Получаем текущее значение куки (если есть)
+//   const cart = JSON.parse(getCookie('prodToCart') || '[]');
+  
+//   // Добавляем новые объекты в массив
+//   cart.push(product);
+  
+//   // Сохраняем массив в куки
+//   setCookie('prodToCart', JSON.stringify(removeDuplicates(cart)), { expires: 7, path: '/' });
+// }
+
+// // Функции для работы с куками
+// function setCookie(name, value, options = {}) {
+//   options = {
+//     path: '/',
+//     ...options
+//   };
+
+//   if (options.expires instanceof Date) {
+//     options.expires = options.expires.toUTCString();
+//   }
+
+//   let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+//   for (let optionKey in options) {
+//     updatedCookie += "; " + optionKey;
+//     let optionValue = options[optionKey];
+//     if (optionValue !== true) {
+//       updatedCookie += "=" + optionValue;
+//     }
+//   }
+
+//   document.cookie = updatedCookie;
+// }
+
+// function getCookie(name) {
+//   let matches = document.cookie.match(new RegExp(
+//     "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+//   ));
+//   return matches ? decodeURIComponent(matches[1]) : undefined;
+// }
 
 
 let _slideUp = (target, duration = 500, showmore = 0) => {
