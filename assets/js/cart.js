@@ -1,14 +1,52 @@
-function getProdId() {
-  let json = localStorage.getItem('prodToCart');
-  if (json) {
-    // Если в локальном хранилище есть JSON объект, возвращаем его
-    let buttonClicks = JSON.parse(json);
-    return buttonClicks;
-  } else {
-    // Если объекта в локальном хранилище нет, возвращаем пустой JSON объект
-    return '{}';
+// function getProdId() {
+//   let json = localStorage.getItem('prodToCart');
+//   if (json) {
+//     // Если в локальном хранилище есть JSON объект, возвращаем его
+//     let buttonClicks = JSON.parse(json);
+//     return buttonClicks;
+//   } else {
+//     // Если объекта в локальном хранилище нет, возвращаем пустой JSON объект
+//     return '{}';
+//   }
+// }
+
+// function getCookie(name) {
+//   let matches = document.cookie.match(new RegExp(
+//     "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+//   ));
+//   return matches ? decodeURIComponent(matches[1]) : undefined;
+// }
+
+function getCookie(name) {
+  // Разбиваем строку с куками на массив пар "имя=значение"
+  const cookies = document.cookie.split(';');
+
+  // Ищем пару с заданным именем
+  for (let i = 0; i < cookies.length; i++) {
+    const cookie = cookies[i].trim();
+    if (cookie.startsWith(`${name}=`)) {
+      // Если нашли, возвращаем значение
+      return decodeURIComponent(cookie.substring(name.length + 1));
+    }
   }
+
+  // Если не нашли, возвращаем null
+  return '[]';
 }
+
+function jsonStringToArray(jsonString) {
+  // Преобразуем JSON-строку в JavaScript-объект
+  const json = JSON.parse(jsonString);
+  
+  // Если json не является массивом, возвращаем ошибку
+  if (!Array.isArray(json)) {
+    throw new Error('JSON строка не является массивом');
+  }
+  
+  // Возвращаем массив объектов
+  return json;
+}
+
 
 
 const getData = async (url) => {
@@ -22,7 +60,9 @@ async function viewProductsCard() {
   const cartWrap = document.getElementById('cards-wrap');
   const summWrap = document.getElementById('cart-summ');
   let summ = 0;
-  let prodId = getProdId();
+  let prodId = jsonStringToArray(getCookie('prodToCart'));
+
+  console.log(prodId);
 
   if (prodId.length > 0) {
     prodId.forEach((item, i) => {
@@ -60,7 +100,9 @@ async function viewProductsCard() {
   
     document.querySelectorAll('.cart-checkout__exit').forEach(btnExit => {
         btnExit.addEventListener("click", e => {
-          removeProduct(e, prodId);
+          // removeProduct(e, prodId);
+          removeItemFromCookieArray('prodToCart', e.target.closest('.cart-checkout').dataset.num);
+
           viewProductsCard();
         });
       
@@ -89,7 +131,6 @@ function removeProduct(e, prodId) {
       prodId.splice(e.target.closest('.cart-checkout').dataset.num, 1);
     }
   });
-  // e.target.closest('.cart-checkout').remove();
 
   carts.forEach(cart => {
     cart.remove();
@@ -98,6 +139,47 @@ function removeProduct(e, prodId) {
   localStorage.setItem('prodToCart', JSON.stringify(prodId));
 
 }
+
+function removeItemFromCookieArray(cookieName, indexToRemove) {
+  // Получаем значение cookies
+  const carts = document.querySelectorAll('.cart-checkout');
+
+  var cookies = document.cookie.split(';');
+  var cookieValue = '';
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i].trim();
+    if (cookie.indexOf(cookieName + '=') == 0) {
+      cookieValue = decodeURIComponent(cookie.substring(cookieName.length + 1));
+      break;
+    }
+  }
+
+  // Преобразуем значение cookies в массив
+  var array = JSON.parse(cookieValue);
+
+  // Удаляем элемент из массива
+  array.splice(indexToRemove, 1);
+
+  // Преобразуем массив обратно в строку
+  cookieValue = JSON.stringify(array);
+
+  // Сохраняем массив в cookies
+  document.cookie = cookieName + '=' + encodeURIComponent(cookieValue);
+
+  carts.forEach(cart => {
+    cart.remove();
+  });
+}
+
+
+
+
+
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById('design-btn').addEventListener("click", smoothScrollBy300px);
