@@ -155,6 +155,10 @@ button {
   }  
 }
 
+.js-cart-empty .text-center {
+  margin-bottom: 20px;
+}
+
 .cart-checkout__img {
   max-height: 170px;
   flex: 0 0 130px;

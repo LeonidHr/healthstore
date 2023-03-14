@@ -570,6 +570,41 @@
   /> -->
   <!-- <script src="assets/static-versioned/1.26/static/libs/fslightbox/3.2.2/fslightbox.js"></script> -->
   <style>
+.grid-list {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 20px;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 550px){
+      .grid-list {
+        justify-content: stretch;
+      }
+    }
+
+    .product-preview-elem {
+      flex: 0 0 calc(16.666%);
+    }
+
+    @media (max-width: 992px){
+      .product-preview-elem {
+        flex: 0 0 calc(25% - 20px);
+      }
+    }
+    @media (max-width: 767px){
+      .product-preview-elem {
+        flex: 0 0 calc(33.333% - 20px);
+      }
+    }
+    @media (max-width: 550px){
+      .product-preview-elem {
+        flex: 0 0 calc(50% - 10px);
+      }
+    }
+
     .product-preview__area-photo img {
       max-width: 140px !important;
       margin: 0 auto;

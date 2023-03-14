@@ -155,7 +155,7 @@ async function viewProduct() {
     buttons = `<button data-num="10" type="button">10 гр.</button>`;
   }
   if (postsData[documetnId].isOther) {
-    buttons = `<button data-num="50" type="button">50 гр.</button>`;
+    buttons = `<button data-num="0.5" type="button">50 гр.</button>`;
   }
 
 
