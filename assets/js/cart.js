@@ -43,8 +43,11 @@ async function viewProductsCard() {
             </div>
           </div>
           <div class="cart-checkout__count cart-checkout__text">
-            <span>${postsData[item.id].unit == '100 гр.' ? item.count * 100 : postsData[item.id].unit == '100 гр.' ? item.count * 10 : item.count} </span> 
-            ${postsData[item.id].unit == '100 гр.' || postsData[item.id].unit == '10 гр.' ? 'гр.' : postsData[item.id].unit}
+            <span>
+            ${postsData[item.id].unit == '50 гр.' ? item.count * 50 : postsData[item.id].unit == '100 гр.' ? item.count * 10 : postsData[item.id].unit == '10 гр.' ? item.count * 10 : item.count} 
+            
+            </span> 
+            ${postsData[item.id].unit == '100 гр.' || postsData[item.id].unit == '10 гр.' || postsData[item.id].unit == '50 гр.' ? 'гр.' : postsData[item.id].unit}
           </div>
           <div class="cart-checkout__price cart-checkout__text"><span>${postsData[item.id].price}</span> €</div>
           <div class="cart-checkout__price cart-checkout__text"><span>${formatDecimal(postsData[item.id].price * item.count)}</span> €</div>

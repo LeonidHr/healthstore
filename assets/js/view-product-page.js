@@ -152,12 +152,15 @@ async function viewProduct() {
   `;
 
   if (postsData[documetnId].isHerbs) {
-    buttons = `<button data-num="10" type="button">10 гр.</button>`;
+    buttons = `<button data-num="1" type="button">10 гр.</button>`;
   }
   if (postsData[documetnId].isOther) {
-    buttons = `<button data-num="0.5" type="button">50 гр.</button>`;
+    buttons = `<button data-num="1" type="button">50 гр.</button>`;
   }
-
+  if (postsData[documetnId].isBadsGr) {
+    buttons = `<button data-num="50" type="button">50 гр.</button>`;
+  }
+  
 
   const postEl = `
     <div id="${postsData[documetnId].id}" data-product data-gallery-type="all-photos" class="product is-zero-count-preorder">
