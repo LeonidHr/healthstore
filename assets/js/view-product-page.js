@@ -159,8 +159,6 @@ async function viewProduct() {
   }
 
 
-
-
   const postEl = `
     <div id="${postsData[documetnId].id}" data-product data-gallery-type="all-photos" class="product is-zero-count-preorder">
     <div class="product__area-photo">
@@ -592,7 +590,7 @@ async function viewProduct() {
     `);
   });
 
-  
+
   const countBtns = document.querySelectorAll('.product-form__counters-btns button');
   countBtns.forEach(btn => {
     btn.addEventListener("click", e => {
@@ -687,9 +685,6 @@ function generateRandomNumbers() {
   return numbers;
 }
 
-window.addEventListener("load", () => {
-  const productElems = document.querySelectorAll('.product-preview-elem');
-});
 
 function removeDuplicates(array) {
   const uniqueObjects = {};
@@ -728,22 +723,6 @@ function addProductToCart(prodNum, prodCount) {
   sessionStorage.setItem('prodToCart', JSON.stringify(uniqueArray));
 }
 
-function addButtonClickToJson(buttonNumber) {
-  // Проверяем, есть ли уже объект в локальном хранилище
-  let json = sessionStorage.getItem('buttonClicks');
-  let buttonClicks = [];
-  if (json) {
-    buttonClicks = JSON.parse(json);
-  }
-
-  buttonClicks = [];
-  // Добавляем новое значение
-  buttonClicks.unshift(buttonNumber);
-
-  // Сохраняем обновленный объект в локальном хранилище
-  sessionStorage.setItem('buttonClicks', JSON.stringify(buttonClicks));
-}
-
 
 function removeSending() {
   const elems = document.querySelectorAll('.product-preview-elem');
@@ -766,56 +745,6 @@ function addBtnsClick() {
     });
   });
 }
-
-
-
-// function addToCart(prodNum, prodCount) {
-//   // Предполагается, что данные для объектов уже готовы
-//   let product = {
-//     id: prodNum,
-//     count: prodCount
-//   }
-  
-//   // Получаем текущее значение куки (если есть)
-//   const cart = JSON.parse(getCookie('prodToCart') || '[]');
-  
-//   // Добавляем новые объекты в массив
-//   cart.push(product);
-  
-//   // Сохраняем массив в куки
-//   setCookie('prodToCart', JSON.stringify(removeDuplicates(cart)), { expires: 7, path: '/' });
-// }
-
-// // Функции для работы с куками
-// function setCookie(name, value, options = {}) {
-//   options = {
-//     path: '/',
-//     ...options
-//   };
-
-//   if (options.expires instanceof Date) {
-//     options.expires = options.expires.toUTCString();
-//   }
-
-//   let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
-
-//   for (let optionKey in options) {
-//     updatedCookie += "; " + optionKey;
-//     let optionValue = options[optionKey];
-//     if (optionValue !== true) {
-//       updatedCookie += "=" + optionValue;
-//     }
-//   }
-
-//   document.cookie = updatedCookie;
-// }
-
-// function getCookie(name) {
-//   let matches = document.cookie.match(new RegExp(
-//     "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-//   ));
-//   return matches ? decodeURIComponent(matches[1]) : undefined;
-// }
 
 
 let _slideUp = (target, duration = 500, showmore = 0) => {

@@ -10,47 +10,6 @@ function getProdId() {
   }
 }
 
-// function getCookie(name) {
-//   let matches = document.cookie.match(new RegExp(
-//     "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-//   ));
-//   return matches ? decodeURIComponent(matches[1]) : undefined;
-// }
-
-// function getCookie(name) {
-//   // Разбиваем строку с куками на массив пар "имя=значение"
-//   const cookies = document.cookie.split(';');
-
-//   // Ищем пару с заданным именем
-//   for (let i = 0; i < cookies.length; i++) {
-//     const cookie = cookies[i].trim();
-//     if (cookie.startsWith(`${name}=`)) {
-//       // Если нашли, возвращаем значение
-//       return decodeURIComponent(cookie.substring(name.length + 1));
-//     }
-//   }
-
-//   // Если не нашли, возвращаем null
-//   return '[]';
-// }
-
-// function jsonStringToArray(jsonString) {
-//   // Преобразуем JSON-строку в JavaScript-объект
-//   const json = JSON.parse(jsonString);
-//   // const parseJson = JSON.parse(json);
-
-
-//   // Если json не является массивом, возвращаем ошибку
-//   if (!Array.isArray(json)) {
-//     throw new Error('JSON строка не является массивом');
-//   }
-  
-//   // Возвращаем массив объектов
-//   return json;
-// }
-
-
-
 const getData = async (url) => {
   const response = await fetch(url);
   return await response.json();
@@ -139,87 +98,6 @@ function removeProduct(e, prodId) {
   sessionStorage.setItem('prodToCart', JSON.stringify(prodId));
 
 }
-
-// function removeItemFromCookieArray(e, prodId) {
-//   // Получаем значение cookies
-//   const carts = document.querySelectorAll('.cart-checkout');
-//   // Получаем текущее значение куки (если есть)
-//   // const cart = JSON.parse(getCookies('prodToCart') || '[]');
-
-//   // console.log(cart);
-
-//   prodId.forEach(item => {
-//     if (item.id == e.target.closest('.cart-checkout').getAttribute('id')) {
-//       prodId.splice(e.target.closest('.cart-checkout').dataset.num, 1);
-//     }
-//   });
-
-//   // var cookies = document.cookie.split(';');
-//   // var cookieValue = '';
-//   // for (var i = 0; i < cookies.length; i++) {
-//   //   var cookie = cookies[i].trim();
-//   //   if (cookie.indexOf(cookieName + '=') == 0) {
-//   //     cookieValue = decodeURIComponent(cookie.substring(cookieName.length + 1));
-//   //     break;
-//   //   }
-//   // }
-
-//   // Преобразуем значение cookies в массив
-//   // var array = JSON.parse(cart);
-
-//   // Удаляем элемент из массива
-//   // cart.splice(indexToRemove, 1);
-
-//   // Преобразуем массив обратно в строку
-//   cookieValue = JSON.stringify(prodId);
-
-//   // Сохраняем массив в cookies
-//   // document.cookie = cookieName + '=' + encodeURIComponent(cookieValue);
-//   setCookie('prodToCart', cookieValue, { expires: 7, path: '/' });
-
-//   carts.forEach(cart => {
-//     cart.remove();
-//   });
-// }
-
-
-
-// Функции для работы с куками
-// function setCookie(name, value, options = {}) {
-//   options = {
-//     path: '/',
-//     ...options
-//   };
-
-//   if (options.expires instanceof Date) {
-//     options.expires = options.expires.toUTCString();
-//   }
-
-//   let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
-
-//   for (let optionKey in options) {
-//     updatedCookie += "; " + optionKey;
-//     let optionValue = options[optionKey];
-//     if (optionValue !== true) {
-//       updatedCookie += "=" + optionValue;
-//     }
-//   }
-
-//   document.cookie = updatedCookie;
-// }
-
-// function getCookies(name) {
-//   let matches = document.cookie.match(new RegExp(
-//     "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-//   ));
-//   return matches ? decodeURIComponent(matches[1]) : undefined;
-// }
-
-
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById('design-btn').addEventListener("click", smoothScrollBy300px);

@@ -9,10 +9,7 @@ async function viewSearch() {
   const productsWrap = document.getElementById('search-result');
   const searchItem = getSearchName();
 
-  console.log(removeChars(searchItem[0].toLowerCase()));
-
   postsData.forEach(el => {
-    // console.log(removeChars(el.title.toLowerCase()));
     if (
       removeSpaces(removeChars(el.title.toLowerCase())).indexOf(removeSpaces(removeChars(searchItem[0].toLowerCase()))) > -1 
       || el.articul.toLowerCase().indexOf(searchItem[0].toLowerCase()) > -1
@@ -97,7 +94,7 @@ function searchItems(items, term) {
 }
 
 function getSearchName() {
-  let json = localStorage.getItem('search');
+  let json = sessionStorage.getItem('search');
   if (json) {
     // Если в локальном хранилище есть JSON объект, возвращаем его
     let buttonClicks = JSON.parse(json);

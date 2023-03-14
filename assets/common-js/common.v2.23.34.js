@@ -27,7 +27,7 @@ function hasProductInUrl() {
 
 function addSearchToLocal(value) {
   // Проверяем, есть ли уже объект в локальном хранилище
-  let json = localStorage.getItem('search');
+  let json = sessionStorage.getItem('search');
   let search = [];
   if (json) {
     search = JSON.parse(json);
@@ -38,7 +38,7 @@ function addSearchToLocal(value) {
   search.push(value);
 
   // Сохраняем обновленный объект в локальном хранилище
-  localStorage.setItem('search', JSON.stringify(search));
+  sessionStorage.setItem('search', JSON.stringify(search));
 }
 
 
