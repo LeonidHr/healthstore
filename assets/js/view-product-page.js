@@ -719,7 +719,7 @@ function addToCart(prodNum, prodCount) {
   cart.push(product);
   
   // Сохраняем массив в куки
-  setCookie('prodToCart', JSON.stringify(removeDuplicates(cart)), { expires: 7, path: '/healthstore' });
+  setCookie('prodToCart', JSON.stringify(removeDuplicates(cart)), { expires: 7, path: '/' });
 }
 
 // Функции для работы с куками

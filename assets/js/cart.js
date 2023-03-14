@@ -37,7 +37,9 @@ function getCookie(name) {
 function jsonStringToArray(jsonString) {
   // Преобразуем JSON-строку в JavaScript-объект
   const json = JSON.parse(jsonString);
-  
+  // const parseJson = JSON.parse(json);
+
+
   // Если json не является массивом, возвращаем ошибку
   if (!Array.isArray(json)) {
     throw new Error('JSON строка не является массивом');
@@ -61,8 +63,6 @@ async function viewProductsCard() {
   const summWrap = document.getElementById('cart-summ');
   let summ = 0;
   let prodId = jsonStringToArray(getCookie('prodToCart'));
-
-  console.log(prodId);
 
   if (prodId.length > 0) {
     prodId.forEach((item, i) => {
@@ -101,7 +101,7 @@ async function viewProductsCard() {
     document.querySelectorAll('.cart-checkout__exit').forEach(btnExit => {
         btnExit.addEventListener("click", e => {
           // removeProduct(e, prodId);
-          removeItemFromCookieArray('prodToCart', e.target.closest('.cart-checkout').dataset.num);
+          removeItemFromCookieArray(e, prodId);
 
           viewProductsCard();
         });
@@ -140,31 +140,42 @@ function removeProduct(e, prodId) {
 
 }
 
-function removeItemFromCookieArray(cookieName, indexToRemove) {
+function removeItemFromCookieArray(e, prodId) {
   // Получаем значение cookies
   const carts = document.querySelectorAll('.cart-checkout');
+  // Получаем текущее значение куки (если есть)
+  // const cart = JSON.parse(getCookies('prodToCart') || '[]');
 
-  var cookies = document.cookie.split(';');
-  var cookieValue = '';
-  for (var i = 0; i < cookies.length; i++) {
-    var cookie = cookies[i].trim();
-    if (cookie.indexOf(cookieName + '=') == 0) {
-      cookieValue = decodeURIComponent(cookie.substring(cookieName.length + 1));
-      break;
+  // console.log(cart);
+
+  prodId.forEach(item => {
+    if (item.id == e.target.closest('.cart-checkout').getAttribute('id')) {
+      prodId.splice(e.target.closest('.cart-checkout').dataset.num, 1);
     }
-  }
+  });
+
+  // var cookies = document.cookie.split(';');
+  // var cookieValue = '';
+  // for (var i = 0; i < cookies.length; i++) {
+  //   var cookie = cookies[i].trim();
+  //   if (cookie.indexOf(cookieName + '=') == 0) {
+  //     cookieValue = decodeURIComponent(cookie.substring(cookieName.length + 1));
+  //     break;
+  //   }
+  // }
 
   // Преобразуем значение cookies в массив
-  var array = JSON.parse(cookieValue);
+  // var array = JSON.parse(cart);
 
   // Удаляем элемент из массива
-  array.splice(indexToRemove, 1);
+  // cart.splice(indexToRemove, 1);
 
   // Преобразуем массив обратно в строку
-  cookieValue = JSON.stringify(array);
+  cookieValue = JSON.stringify(prodId);
 
   // Сохраняем массив в cookies
-  document.cookie = cookieName + '=' + encodeURIComponent(cookieValue);
+  // document.cookie = cookieName + '=' + encodeURIComponent(cookieValue);
+  setCookie('prodToCart', cookieValue, { expires: 7, path: '/' });
 
   carts.forEach(cart => {
     cart.remove();
@@ -173,7 +184,36 @@ function removeItemFromCookieArray(cookieName, indexToRemove) {
 
 
 
+// Функции для работы с куками
+function setCookie(name, value, options = {}) {
+  options = {
+    path: '/',
+    ...options
+  };
 
+  if (options.expires instanceof Date) {
+    options.expires = options.expires.toUTCString();
+  }
+
+  let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+  for (let optionKey in options) {
+    updatedCookie += "; " + optionKey;
+    let optionValue = options[optionKey];
+    if (optionValue !== true) {
+      updatedCookie += "=" + optionValue;
+    }
+  }
+
+  document.cookie = updatedCookie;
+}
+
+function getCookies(name) {
+  let matches = document.cookie.match(new RegExp(
+    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+  ));
+  return matches ? decodeURIComponent(matches[1]) : undefined;
+}
 
 
 
