@@ -107,18 +107,30 @@ main {
 }
 @media (max-width: 415px){
   #main-filter {
-    gap: 30px;
+    gap: 35px;
   }
 }
-@media (max-width: 380px){
+@media (max-width: 390px){
   #main-filter {
-    gap: 21px;
+    gap: 25px;
   }
 }
 
-@media (max-width: 350px){
+@media (max-width: 370px){
   #main-filter {
-    gap: 10px;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 355px){
+  #main-filter {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 340px){
+  #main-filter {
+    gap: 9px;
   }
 }
 
