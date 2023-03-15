@@ -655,7 +655,7 @@
             --delimeter-type: solid;
             --border-size: 3px;
             --layout-wide-bg: true;
-            --layout-pt: 1vw;
+            --layout-pt: 2vw;
             --layout-pb: 1vw;
             --layout-wide-content: false;
             --layout-edge: false;
@@ -832,6 +832,12 @@
   />
   <script src="assets/static-versioned/1.26/static/libs/fslightbox/3.2.2/fslightbox.js"></script>
   <style>
+    @media (max-width: 550px){
+      #footer {
+        margin-top: -30px;
+      }
+    }
+
     .product-preview__area-photo img {
       max-width: 140px !important;
       margin: 0 auto;
