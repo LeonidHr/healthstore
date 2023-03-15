@@ -174,15 +174,15 @@ let formValidate = {
 					checkbox.checked = false;
 				}
 			}
-			if (flsModules.select) {
-				let selects = form.querySelectorAll('.select');
-				if (selects.length) {
-					for (let index = 0; index < selects.length; index++) {
-						const select = selects[index].querySelector('select');
-						flsModules.select.selectBuild(select);
-					}
-				}
-			}
+			// if (flsModules.select) {
+			// 	let selects = form.querySelectorAll('.select');
+			// 	if (selects.length) {
+			// 		for (let index = 0; index < selects.length; index++) {
+			// 			const select = selects[index].querySelector('select');
+			// 			flsModules.select.selectBuild(select);
+			// 		}
+			// 	}
+			// }
 		}, 0);
 	},
 	emailTest(formRequiredItem) {
@@ -227,8 +227,7 @@ function formSubmit() {
 					form.classList.remove('_sending');
 					formSent(form, responseResult);
 				} else {
-					// showPopup(form, false, response)
-					alert('Произошла ошибка');
+					showPopup(form, false, response);
 					form.classList.remove('_sending');
 				}
 			} else if (form.hasAttribute('data-dev')) {	// Якщо режим розробки
@@ -251,18 +250,39 @@ function formSubmit() {
 				form: form
 			}
 		}));
-		alert('Форма отправлена!');
-		// showPopup(form, true);
+		showPopup(form, true);
 
 		// Очищуємо форму
 		formValidate.formClean(form);
 		// Повідомляємо до консолі
-		formLogging(`Форму відправлено!`);
+		// formLogging(`Форму відправлено!`);
 	}
-	function formLogging(message) {
-		FLS(`[Форми]: ${message}`);
-	}
+	// function formLogging(message) {
+	// 	FLS(`[Форми]: ${message}`);
+	// }
 }
+
+function showPopup(form, isSucsess, response = '',) {
+	setTimeout(() => {
+		const popup = form.dataset.popupMessage,
+					popupTitle = document.querySelector('[data-popap-title]');
+
+
+		if (isSucsess) {
+			popupTitle.innerHTML = 'Спасибо за ваш заказ. Мы свяжемся с вами.';
+		} else {
+			popupTitle.innerHTML = `Ошибка ${response.status}. Форма не отправлена`;
+		}
+
+		new Popup({}).open(popup);
+	}, 0);
+
+	// setTimeout(() => {
+	// 	const popup = form.dataset.popupMessage;
+	// 	new Popup({}).close(popup);
+	// }, 5000);
+}
+
 
 
 /* Модуль форми "кількість" */

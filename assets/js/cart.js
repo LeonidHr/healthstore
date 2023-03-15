@@ -102,14 +102,20 @@ function removeProduct(e, prodId) {
 
 }
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById('design-btn').addEventListener("click", smoothScrollBy300px);
+  document.getElementById('design-btn').addEventListener("click", smoothScroll);
 });
 
-function smoothScrollBy300px() {
-  window.scrollBy({
-    top: window.innerHeight,
-    left: 0,
-    behavior: 'smooth'
-  });
+function smoothScroll() {
+  document.querySelector('.checkout__form').classList.add('_view');
+  
+  setTimeout(() => {
+    window.scrollTo({
+      top: document.querySelector('.checkout__form').offsetTop,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }, 200);
 }
