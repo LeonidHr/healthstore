@@ -450,9 +450,23 @@ body::after {
   }
 }
 
+.swiper-product__wrapper {
+  align-items: center;
+}
+.swiper-product-thumbs__wrapper {
+  align-items: center;
+}
+
 .swiper-product__slide {
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.swiper-product__slide img {
+  width: 310px;
+  max-height: 450px;
 }
 
 .swiper-product-thumbs__slide img {

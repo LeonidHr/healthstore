@@ -65,15 +65,15 @@ async function viewProduct() {
 
   if(postsData[documetnId].imgPathSlide) {
     imgMain2 = `
-      <div class="swiper-product__slide swiper-slide">
-        <img  src="../${postsData[documetnId].imgPath}" alt="${postsData[documetnId].title}" />
-      </div>
+      <a href="../${postsData[documetnId].imgPathSlide}" class="swiper-product__slide swiper-slide">
+        <img src="../${postsData[documetnId].imgPathSlide}" alt="${postsData[documetnId].title}" />
+      </a>
     `;
     
     imgMain3 = `
-      <div class="swiper-product-thumbs__slide swiper-slide">
-        <img  src="../${postsData[documetnId].imgPath}" alt="${postsData[documetnId].title}" />
-      </div>
+      <a href="../${postsData[documetnId].imgPathSlide}" class="swiper-product-thumbs__slide swiper-slide">
+        <img  src="../${postsData[documetnId].imgPathSlide}" alt="${postsData[documetnId].title}" />
+      </a>
     `;
   }
 
@@ -673,8 +673,7 @@ function initSliders() {
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
-			spaceBetween: 0,
-			autoHeight: true,
+			spaceBetween: 30,
 			speed: 600,
 
 			// Кнопки "вліво/вправо"
@@ -687,14 +686,18 @@ function initSliders() {
         swiper: {
           el: `.swiper-product-thumbs`, 
           slideToClickedSlide: true,
-          slidesPerView: 5,
 
           breakpoints: {
             320: {
               spaceBetween: 8,
+              slidesPerView: 2,
+            },
+            680: {
+              slidesPerView: 5,
             },
             767: {
               spaceBetween: 24,
+              slidesPerView: 5,
             }
           }
         },	
