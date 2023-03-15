@@ -174,6 +174,12 @@ main {
   display: none;
 }
 
+.menu__list {
+  padding: 15px 0 0 0 !important;
+}
+.phone-list {
+  margin-bottom: 20px !important;
+} 
 
 
 body::after {
@@ -379,6 +385,7 @@ body::after {
 @media (max-width: 480px){
   .footer-wrap {
     margin-top: -30px !important;
+    margin-bottom: 20px !important;
   }
 }
 .splide__pagination {
@@ -437,7 +444,13 @@ body::after {
 }
 
 .tabs-prod {
-  padding-top: 40px;
+  padding-top: 15px;
+}  
+
+@media (min-width:767px){
+  .tabs-prod {
+    padding-top: 40px;
+  }   
 }
 
 .product-preview-elem {
@@ -493,5 +506,5 @@ body::after {
 }
 
 .address {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
