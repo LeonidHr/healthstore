@@ -435,9 +435,6 @@ body::after {
   margin-bottom: 8px !important;
 }
 
-.header__area-logo {
-  margin-right: 8px;
-}
 .filters-wrap {
   max-width: 1200px;
   margin: 0 auto;

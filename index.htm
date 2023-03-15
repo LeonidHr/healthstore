@@ -1649,7 +1649,19 @@
       background: #fff !important;
     }
     .widget-type_system_widget_v4_page_banner_2 .banner-list__item .banner-list__item-image img {
-      object-fit: fill !important;
+      object-fit: scale-down !important;
+      /* min-height: 100px; */
+    }
+    @media (max-width: 550px){
+      .footer-wrap {
+        margin-top: -90px !important;
+      }   
+    }
+    @media (max-width: 500px){
+      .tabs-prod {
+        margin-bottom: -20px;
+
+      }
     }
     .widget-type_system_widget_v4_page_banner_2 .banner-list__item .banner-list__item-image-main img {
       object-fit: cover !important;
