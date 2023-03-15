@@ -65,82 +65,15 @@ async function viewProduct() {
 
   if(postsData[documetnId].imgPathSlide) {
     imgMain2 = `
-      <div
-        class="splide__slide product__slide-main"
-        data-product-img-id="529685437"
-        data-product-img-index="2"
-        id="splide01-slide03"
-        style="
-          margin-right: 1px;
-          width: calc(((100% + 1px) / 1) - 1px);
-        "
-        aria-hidden="true"
-      >
-        <a
-          class="img-ratio img-fit product__photo"
-          data-alt=""
-          data-fslightbox="product-photos-lightbox"
-          data-type="image"
-          href="../${postsData[documetnId].imgPathSlide}"
-          tabindex="-1"
-        >
-          <div class="img-ratio__inner">
-            <picture>
-              <source
-                data-srcset="../${postsData[documetnId].imgPathSlide}"
-                type="image/webp"
-                class="lazyload entered exited"
-                data-ll-status="entered"
-                srcset="../${postsData[documetnId].imgPathSlide}"
-              />
-              <img
-                src="../img/" data-src="../${postsData[documetnId].imgPathSlide}"
-                class="lazyload entered loaded"
-                alt=""
-                data-ll-status="loaded"
-                src="../${postsData[documetnId].imgPathSlide}"
-              />
-            </picture>
-          </div>
-        </a>
+      <div class="swiper-product__slide swiper-slide">
+        <img  src="../${postsData[documetnId].imgPath}" alt="${postsData[documetnId].title}" />
       </div>
     `;
     
     imgMain3 = `
-      <div
-      class="splide__slide product__slide-tumbs js-product-gallery-tumbs-slide is-active is-visible is-current"
-      data-product-img-id="529685436"
-      data-product-img-index="0"
-      id="splide02-slide01"
-      style="
-        margin-right: 1rem;
-        width: calc(((100% + 1rem) / 7) - 1rem);
-      "
-      tabindex="0"
-    >
-      <div
-        class="img-ratio img-ratio_contain product__photo-tumb"
-      >
-        <div class="img-ratio__inner">
-          <picture>
-            <source
-              data-srcset="../${postsData[documetnId].imgPathSlide}"
-              type="image/webp"
-              class="lazyload entered"
-              data-ll-status="entered"
-              srcset="../${postsData[documetnId].imgPathSlide}"
-            />
-            <img
-              data-src="../${postsData[documetnId].imgPathSlide}"
-              class="lazyload entered loaded"
-              alt="${postsData[documetnId].title}"
-              data-ll-status="loaded"
-              src="../${postsData[documetnId].imgPathSlide}"
-            />
-          </picture>
-        </div>
+      <div class="swiper-product-thumbs__slide swiper-slide">
+        <img  src="../${postsData[documetnId].imgPath}" alt="${postsData[documetnId].title}" />
       </div>
-    </div>
     `;
   }
 
@@ -165,292 +98,26 @@ async function viewProduct() {
   const postEl = `
       <div id="${postsData[documetnId].id}" data-product data-gallery-type="all-photos" class="product is-zero-count-preorder">
       <div class="product__area-photo">
-        <div class="product__gallery js-product-gallery">
-          <div style="display: none" class="js-product-all-images">
-            
-          
-            <div class="splide__slide product__slide-main">
-              <a
-                class="img-ratio img-fit product__photo"
-                data-alt="${postsData[documetnId].title}"
-                data-fslightbox="product-photos-lightbox"
-                data-type="image"
-                href="../${postsData[documetnId].imgPath}"
-              >
-                <div class="img-ratio__inner">
-                  <picture>
-                    <source
-                      data-srcset="../${postsData[documetnId].imgPath}"
-                      type="image/webp"
-                      class="lazyload"
-                    />
-                    <img
-                      src="../${postsData[documetnId].imgPath}" data-src="../${postsData[documetnId].imgPath}"
-                      class="lazyload"
-                      alt="${postsData[documetnId].title}"
-                    />
-                  </picture>
-                </div>
-              </a>
-            </div>
-            <div
-              class="splide__slide product__slide-tumbs js-product-gallery-tumbs-slide"
-              data-product-img-id="529685434"
-            >
-              <div
-                class="img-ratio img-ratio_contain product__photo-tumb"
-              >
-                <div class="img-ratio__inner">
-                  <picture>
-                    <source
-                      data-srcset="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
-                      type="image/webp"
-                      class="lazyload"
-                    />
-                    <img
-                      src="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}" data-src="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
-                      class="lazyload"
-                      alt="Triphala (Unifarma) Добовка для пищеварения"
-                    />
-                  </picture>
-                </div>
-              </div>
-            </div>
-            <div
-              class="splide__slide product__slide-main"
-              data-product-img-id="529685437"
-            >
-              <a
-                class="img-ratio img-fit product__photo"
-                data-alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
-                data-fslightbox="product-photos-lightbox"
-                data-type="image"
-                href="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
-              >
-                <div class="img-ratio__inner">
-                  <picture>
-                    <source
-                      data-srcset="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
-                      type="image/webp"
-                      class="lazyload"
-                    />
-                    <img
-                      src="../img/" data-src="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
-                      class="lazyload"
-                      alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
-                    />
-                  </picture>
-                </div>
-              </a>
-            </div>
-            
-          </div>
-          <div class="product__gallery-main">
-            <div
-              class="splide js-product-gallery-main is-initialized splide--slide splide--ltr splide--draggable is-active"
-              id="splide01"
-            >
-              <div
-                class="splide__track"
-                id="splide01-track"
-                style="padding-left: 0px; padding-right: 0px"
-              >
-                <div
-                  class="splide__list"
-                  id="splide01-list"
-                  style="transform: translateX(0px)"
-                >
-                  <div
-                    class="splide__slide product__slide-main is-active is-visible"
-                    data-product-img-id="529685436"
-                    data-product-img-index="0"
-                    id="splide01-slide01"
-                    style="
-                      margin-right: 1px;
-                      width: calc(((100% + 1px) / 1) - 1px);
-                    "
-                    tabindex="0"
-                  >
-                    <a
-                      class="img-ratio img-fit product__photo"
-                      data-alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
-                      data-fslightbox="product-photos-lightbox-423834350"
-                      data-type="image"
-                      href="../${postsData[documetnId].imgPath}"
-                    >
-                      <div class="img-ratio__inner">
-                        <picture>
-                          <source
-                            data-srcset="../${postsData[documetnId].imgPath}"
-                            type="image/webp"
-                            class="lazyload entered"
-                            data-ll-status="entered"
-                            srcset="../${postsData[documetnId].imgPath}"
-                          />
-                          <img
-                            data-src="../${postsData[documetnId].imgPath}"
-                            class="lazyload entered loaded"
-                            alt="${postsData[documetnId].title}"
-                            data-ll-status="loaded"
-                            src="../${postsData[documetnId].imgPath}"
-                          />
-                        </picture>
-                      </div>
-                    </a>
-                  </div>
-                  ${imgMain2}
-                  
-                </div>
-              </div>
-              <div class="splide__arrows">
-                <button
-                  type="button"
-                  class="splide__arrow splide__arrow--prev"
-                  aria-controls="splide01-track"
-                  aria-label="Previous slide"
-                  disabled=""
-                  style="display:flex !important;"
-                >
-                  <span
-                    class="splide__arrow-icon icon-angle-left"
-                  ></span>
-                </button>
-                <button
-                  type="button"
-                  class="splide__arrow splide__arrow--next"
-                  aria-controls="splide01-track"
-                  aria-label="Next slide"
-                  style="display: flex !important;"
-                >
-                  <span
-                    class="splide__arrow-icon icon-angle-right"
-                  ></span>
-                </button>
-              </div>
-              <ul class="splide__pagination">
-                <li>
-                  <button
-                    class="splide__pagination__page is-active"
-                    type="button"
-                    aria-controls="splide01-slide01"
-                    aria-label="Go to slide 1"
-                    aria-current="true"
-                  ></button>
-                </li>
-                <li>
-                  <button
-                    class="splide__pagination__page"
-                    type="button"
-                    aria-controls="splide01-slide02"
-                    aria-label="Go to slide 2"
-                  ></button>
-                </li>
-                <li>
-                  <button
-                    class="splide__pagination__page"
-                    type="button"
-                    aria-controls="splide01-slide03"
-                    aria-label="Go to slide 3"
-                  ></button>
-                </li>
-              </ul>
-            </div>
-            <div class="stickers">
-              <div
-                class="sticker sticker-sale"
-                data-product-card-sale-value=""
-                data-sticker-title="sticker-sale"
-              ></div>
-              <div
-                class="sticker sticker-preorder"
-                data-sticker-title="sticker-preorder"
-              >
-                Предзаказ
-              </div>
-            </div>
-          </div>
-          <div class="product__gallery-tumbs" style="--img-ratio: 1">
-            <div
-              class="splide js-product-gallery-tumbs is-initialized splide--slide splide--ltr splide--draggable is-active"
-              id="splide02"
-            >
-              <div
-                class="splide__track"
-                id="splide02-track"
-                style="padding-left: 0px; padding-right: 0px"
-              >
-                <div
-                  class="splide__list"
-                  id="splide02-list"
-                  style="transform: translateX(0px)"
-                >
-                  <div
-                    class="splide__slide product__slide-tumbs js-product-gallery-tumbs-slide is-active is-visible is-current"
-                    data-product-img-id="529685436"
-                    data-product-img-index="0"
-                    id="splide02-slide01"
-                    style="
-                      margin-right: 1rem;
-                      width: calc(((100% + 1rem) / 7) - 1rem);
-                    "
-                    tabindex="0"
-                  >
-                    <div
-                      class="img-ratio img-ratio_contain product__photo-tumb"
-                    >
-                      <div class="img-ratio__inner">
-                        <picture>
-                          <source
-                            data-srcset="../${postsData[documetnId].imgPath}"
-                            type="image/webp"
-                            class="lazyload entered"
-                            data-ll-status="entered"
-                            srcset="../${postsData[documetnId].imgPath}"
-                          />
-                          <img
-                            data-src="../${postsData[documetnId].imgPath}"
-                            class="lazyload entered loaded"
-                            alt="${postsData[documetnId].title}"
-                            data-ll-status="loaded"
-                            src="../${postsData[documetnId].imgPath}"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
-                  ${imgMain3}
-              
-                </div>
-              </div>
-              <div class="splide__arrows">
-                <button
-                  type="button"
-                  class="splide__arrow splide__arrow--prev"
-                  aria-controls="splide02-track"
-                  disabled=""
-                  aria-label="Previous slide"
-                  style="display:flex !important;"
-                >
-                  <span
-                    class="splide__arrow-icon icon-angle-left"
-                  ></span>
-                </button>
-                <button
-                  type="button"
-                  class="splide__arrow splide__arrow--next"
-                  aria-controls="splide02-track"
-                  disabled=""
-                  aria-label="Next slide"
-                  style="display:flex !important;"
-                >
-                  <span
-                    class="splide__arrow-icon icon-angle-right"
-                  ></span>
-                </button>
-              </div>
-            </div>
-          </div>
+      <div class="swiper-product swiper">
+        <div class="swiper-product__wrapper swiper-wrapper" data-gallery id="lightgallery">
+          <a href="../${postsData[documetnId].imgPath}" class="swiper-product__slide swiper-slide">
+            <img  src="../${postsData[documetnId].imgPath}" alt="${postsData[documetnId].title}" />
+          </a>
+          ${imgMain2}
+
         </div>
+        <button type="button" class="swiper-button-prev"></button>
+        <button type="button" class="swiper-button-next"></button>
+      </div>
+      <div class="swiper-product-thumbs swiper"> 
+        <div class="swiper-product-thumbs__wrapper swiper-wrapper" data-gallery id="lightgallery">
+          <a href="../${postsData[documetnId].imgPath}" class="swiper-product-thumbs__slide swiper-slide">
+            <img src="../${postsData[documetnId].imgPath}" alt="${postsData[documetnId].title}" />
+          </a>
+          ${imgMain3}
+
+        </div>
+      </div>
       </div>
       <form
         action="/cart_items"
@@ -533,7 +200,7 @@ async function viewProduct() {
                         <span class="add-cart-counter__detail-text"
                           >В корзине
                           <span data-add-cart-counter-count=""></span>
-                          шт</span
+                        </span
                         >
                         <span class="add-cart-counter__detail-dop-text"
                           >Перейти</span
@@ -588,7 +255,32 @@ async function viewProduct() {
       addProductToCart(e.target.closest('[data-product]').getAttribute('id'), e.target.dataset.num);
       // addToCart(e.target.closest('[data-product]').getAttribute('id'), e.target.dataset.num);
     });
+
+    initSliders();
+
+    
+
+    // document.querySelectorAll('.lg-container').forEach(lg => {
+    //   lg.style.display = 'none';
+    // });
+    // document.querySelector('.lg-container').style.display = "block";
+
   });
+
+  const galleries = document.querySelectorAll('[data-gallery]');
+  if (galleries.length) {
+    let galleyItems = [];
+    galleries.forEach(gallery => {
+      galleyItems.push({
+        gallery,
+        galleryClass: lightGallery(gallery, {
+          licenseKey: '7EC452A9-0CFD441C-BD984C7C-17C8456E',
+          speed: 500,
+        })
+      })
+    });
+  }
+
 
   addBtnsClick();
   showMore();
@@ -732,7 +424,7 @@ function addBtnsClick() {
   btns.forEach(btn => {
     btn.addEventListener("click", e => {
       addCartBtn.classList.add('is-add-cart');
-      addCartBtnCount.innerHTML = btn.dataset.num;
+      addCartBtnCount.innerHTML = btn.innerHTML;
     });
   });
 }
@@ -965,5 +657,48 @@ function dataMediaQueries(array, dataSetValue) {
 			});
 			return mdQueriesArray;
 		}
+	}
+}
+
+
+function initSliders() {
+	// Список слайдерів
+	// Перевіряємо, чи є слайдер на сторінці
+	if (document.querySelector('.swiper-product')) { // Вказуємо склас потрібного слайдера
+		// Створюємо слайдер
+		new Swiper('.swiper-product', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			// modules: [Navigation],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 0,
+			autoHeight: true,
+			speed: 600,
+
+			// Кнопки "вліво/вправо"
+			navigation: {
+				prevEl: '.swiper-button-prev',
+				nextEl: '.swiper-button-next',
+			},
+
+      thumbs: {
+        swiper: {
+          el: `.swiper-product-thumbs`, 
+          slideToClickedSlide: true,
+          slidesPerView: 5,
+
+          breakpoints: {
+            320: {
+              spaceBetween: 8,
+            },
+            767: {
+              spaceBetween: 24,
+            }
+          }
+        },	
+      },
+		});
 	}
 }

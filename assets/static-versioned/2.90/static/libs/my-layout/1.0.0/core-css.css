@@ -449,3 +449,31 @@ body::after {
     min-height: 298px;
   }
 }
+
+.swiper-product__slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-product-thumbs__slide img {
+  width: 120px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  color: #000;
+  font-size: 25px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  border: none;
+}
+
+.lg-backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.lg-toolbar .lg-close:after,
+.lg-toolbar .lg-download:after {
+  color: #000;
+}
