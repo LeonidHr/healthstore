@@ -79,11 +79,9 @@ async function viewProducts(categoryMain, filters) {
     }
     
   });
-
   if (filters == 'all') {
     viewAllProducts(postsData, badsWrap, categoryMain);
   }
-
 }
 
 async function changeFilters(categoryMain, filters) {
