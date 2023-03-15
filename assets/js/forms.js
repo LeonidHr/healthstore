@@ -217,6 +217,8 @@ function formSubmit() {
 				const formMethod = form.getAttribute('method') ? form.getAttribute('method').trim() : 'GET';
 				const formData = new FormData(form);
 
+				console.log(document.querySelector('.form-popup__item select').value);
+
 				form.classList.add('_sending');
 				const response = await fetch(formAction, {
 					method: formMethod,

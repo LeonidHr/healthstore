@@ -38,7 +38,8 @@ async function viewProductsCard() {
               <div class="cart-checkout__title cart-checkout__text">${postsData[item.id].title}</div>
               <div class="cart-checkout__articul">
                 <div>Артикул</div> 
-                <span>${postsData[item.id].articul}</span>
+                <input name="articul-${i}" value="${postsData[item.id].articul}" readonly/>
+                <span></span>
               </div>
             </div>
           </div>

@@ -116,8 +116,11 @@ button {
   white-space: nowrap;
 }
 
-.cart-checkout__articul span {
+.cart-checkout__articul input {
   font-weight: 700;
+  border: none;
+  outline: none;
+  width: 80px;
   white-space: nowrap;
 }
 

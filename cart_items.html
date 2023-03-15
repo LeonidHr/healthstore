@@ -380,7 +380,7 @@
                 <a href="index.htm" class="checkout__btn button button_no-bg">Продолжить покупки</a>
              </div>
             </div>
-            <form data-dev id="checkout" data-popup-message="#popup-form" class="checkout" action="files/sendmail/sendmail.php" method="POST">
+            <form data-ajax action="files/sendmail/sendmail.php" id="checkout" data-popup-message="#popup-form" class="checkout" action="files/sendmail/sendmail.php" method="POST">
               <div class="checkout__content">
                 <div class="checkout__info checkout-grid">
                   <div class="checkout__info-item">Название</div>
@@ -410,11 +410,11 @@
                     </div>
                     <div class="form-popup__item">
                       <label for="email" class="checkout__label">Доставка </label>
-                      <select name="form[]" data-required data-error="Выберите способ доставки" data-class-modif="form">
+                      <select name="form-select" data-required data-error="Выберите способ доставки" data-class-modif="form">
                         <option value selected>Выбрать</option>
                         <option value="Самовывоз">Самовывоз</option>
                         <option value="Omniva">Доставка Omniva</option>
-                        <option value="Почта">Доставка почтой</option>
+                        <option value="почтой">Доставка почтой</option>
                       </select>
                     </div>
                   </div>
