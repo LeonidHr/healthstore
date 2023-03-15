@@ -80,7 +80,12 @@ main {
     padding-bottom: 30px;
   }
 }
-@media (max-width: 580px){
+
+.filters-slider {
+  max-width: 580px;
+}
+
+/* @media (max-width: 580px){
   #main-filter {
     min-width: 545px;
     margin: 0 20px 0 -7px !important;
@@ -138,7 +143,7 @@ main {
   #main-filter {
     gap: 10px;
   }
-}
+} */
 
 
 .more-block {

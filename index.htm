@@ -86,6 +86,11 @@
       }
     </style>
 
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
   </head>
   <body data-main data-multi-lang="false">
     <noscript>
@@ -474,61 +479,75 @@
               <div id="products" class="tabs-prod">
                 <div class="tabs-prod__wrap">
                   <nav id="main-filter" class="tabs-prod__navigation">
-                    <a data-tab="bads" href="#bads" data-nav type="button" class="tabs-prod__title _tab-active">
-                      <div class="tabs__head-item"> 
-                        <picture>
-                          <img
-                            src="img/categories/1.webp"
-                            class="lazyload"
-                          />
-                        </picture>
+                    <div class="filters-slider swiper">
+                      <div class="filter__wrapper swiper-wrapper">
+                        <div class="filter__slide swiper-slide">
+                          <a data-tab="bads" href="#bads" data-nav type="button" class="tabs-prod__title _tab-active">
+                            <div class="tabs__head-item"> 
+                              <picture>
+                                <img
+                                  src="img/categories/1.webp"
+                                  class="lazyload"
+                                />
+                              </picture>
+                            </div>
+                            <span class="tabs-prod__label">Бады</span>
+                          </a>
+                        </div>
+                        <div class="filter__slide swiper-slide">
+                          <a data-tab="vitamins" href="#vitamins" data-nav type="button" class="tabs-prod__title">
+                            <div class="tabs__head-item">
+                              <picture>
+                                <img
+                                  src="img/categories/2.webp"
+                                  class="lazyload"
+                                />
+                              </picture>
+                            </div>
+                            <span class="tabs-prod__label">Витамины и минералы</span>
+                          </a>
+                        </div>
+                        <div class="filter__slide swiper-slide">
+                          <a data-tab="capsules" href="#capsules" data-nav type="button" class="tabs-prod__title">
+                            <div class="tabs__head-item">
+                              <picture>
+                                <img
+                                  src="img/categories/3.webp"
+                                  class="lazyload"
+                                />
+                              </picture>
+                            </div>
+                            <span class="tabs-prod__label">Капсулы, таблетки </span>
+                          </a>
+                        </div>
+                        <div class="filter__slide swiper-slide">
+                          <a data-tab="herbs" href="#herbs" data-nav type="button" class="tabs-prod__title">
+                            <div class="tabs__head-item">
+                              <picture>
+                                <img
+                                  src="img/categories/4.webp"
+                                  class="lazyload"
+                                />
+                              </picture>
+                            </div>
+                            <span class="tabs-prod__label">Травы</span>
+                          </a>
+                        </div>
+                        <div class="filter__slide swiper-slide">
+                          <a data-tab="other" href="#other" data-nav type="button" class="tabs-prod__title">
+                            <div class="tabs__head-item">
+                              <picture>
+                                <img
+                                  src="img/categories/5.webp"
+                                  class="lazyload"
+                                />
+                              </picture>
+                            </div>
+                            <span class="tabs-prod__label">Остальное</span>
+                          </a>
+                        </div>
                       </div>
-                      <span class="tabs-prod__label">Бады</span>
-                    </a>
-                    <a data-tab="vitamins" href="#vitamins" data-nav type="button" class="tabs-prod__title">
-                      <div class="tabs__head-item">
-                        <picture>
-                          <img
-                            src="img/categories/2.webp"
-                            class="lazyload"
-                          />
-                        </picture>
-                      </div>
-                      <span class="tabs-prod__label">Витамины и минералы</span>
-                    </a>
-                    <a data-tab="capsules" href="#capsules" data-nav type="button" class="tabs-prod__title">
-                      <div class="tabs__head-item">
-                        <picture>
-                          <img
-                            src="img/categories/3.webp"
-                            class="lazyload"
-                          />
-                        </picture>
-                      </div>
-                      <span class="tabs-prod__label">Капсулы, таблетки </span>
-                    </a>
-                    <a data-tab="herbs" href="#herbs" data-nav type="button" class="tabs-prod__title">
-                      <div class="tabs__head-item">
-                        <picture>
-                          <img
-                            src="img/categories/4.webp"
-                            class="lazyload"
-                          />
-                        </picture>
-                      </div>
-                      <span class="tabs-prod__label">Травы</span>
-                    </a>
-                    <a data-tab="other" href="#other" data-nav type="button" class="tabs-prod__title">
-                      <div class="tabs__head-item">
-                        <picture>
-                          <img
-                            src="img/categories/5.webp"
-                            class="lazyload"
-                          />
-                        </picture>
-                      </div>
-                      <span class="tabs-prod__label">Остальное</span>
-                    </a>
+                    </div>
                   </nav>
                 </div>
                 <div class="tabs-prod__content">
@@ -788,6 +807,8 @@
     
 
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./assets/js/products-view.js"></script>  
 
   <script src="assets/js/search.js"></script>
@@ -804,13 +825,13 @@
     type="text/css"
   />
   <script src="assets/static-versioned/1.26/static/libs/jquery/3.5.1/jquery-3.5.1.min.js"></script>
-  <script src="assets/static-versioned/2.38/static/libs/splide/3.6.9/js/splide.min.js"></script>
+  <!-- <script src="assets/static-versioned/2.38/static/libs/splide/3.6.9/js/splide.min.js"></script> -->
   <link
     href="assets/static-versioned/2.38/static/libs/splide/3.6.9/css/splide.min.css"
     rel="stylesheet"
     type="text/css"
   />
-  <script src="assets/static-versioned/1.42/static/libs/splide/2.4.21/js/splide.min.js"></script>
+  <!-- <script src="assets/static-versioned/1.42/static/libs/splide/2.4.21/js/splide.min.js"></script> -->
   <link
     href="assets/static-versioned/1.42/static/libs/splide/2.4.21/css/splide.min.css"
     rel="stylesheet"
@@ -830,13 +851,8 @@
     rel="stylesheet"
     type="text/css"
   />
-  <script src="assets/static-versioned/1.26/static/libs/fslightbox/3.2.2/fslightbox.js"></script>
+  <!-- <script src="assets/static-versioned/1.26/static/libs/fslightbox/3.2.2/fslightbox.js"></script> -->
   <style>
-    @media (max-width: 550px){
-      #footer {
-        margin-top: -30px;
-      }
-    }
 
     .product-preview__area-photo img {
       max-width: 140px !important;
@@ -1655,7 +1671,7 @@
       background: #fff !important;
     }
     .widget-type_system_widget_v4_page_banner_2 .banner-list__item .banner-list__item-image img {
-      object-fit: scale-down !important;
+      object-fit: fill !important;
       /* min-height: 100px; */
     }
     @media (max-width: 550px){

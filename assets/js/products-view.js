@@ -352,3 +352,35 @@ function handleUrlHashChange() {
 }
 
 window.addEventListener("hashchange", handleUrlHashChange);
+
+initSliders();
+
+function initSliders() {
+	// Список слайдерів
+	// Перевіряємо, чи є слайдер на сторінці
+	if (document.querySelector('.filters-slider')) { // Вказуємо склас потрібного слайдера
+		// Створюємо слайдер
+		new Swiper('.filters-slider', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			// modules: [Navigation],
+			observer: true,
+			observeParents: true,
+			speed: 600,
+      breakpoints: {
+        270: {
+          slidesPerView: 3.6,
+          spaceBetween: 10,
+        },
+        480: {
+          slidesPerView: 4.5,
+          spaceBetween: 0,
+        },
+        540: {
+          slidesPerView: 5,
+          spaceBetween: 0,
+        }
+      }
+		});
+	}
+}
