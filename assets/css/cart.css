@@ -74,6 +74,10 @@ button {
   }
 }
 
+.cart-checkout__text input {
+  min-width: 75px !important;
+}
+
 .cart-checkout {
   padding: 15px 0;
   border-bottom: 1px solid #25a033;
@@ -120,7 +124,7 @@ button {
   font-weight: 700;
   border: none;
   outline: none;
-  width: 80px;
+  min-width: 80px;
   white-space: nowrap;
 }
 
@@ -137,6 +141,15 @@ button {
   }
 }
 
+.cart-checkout__title textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  text-align: start;
+  min-height: 40px;
+}
+
 .cart-checkout__exit img {
   width: 16px;
 }
@@ -145,6 +158,15 @@ button {
 .cart-checkout__price {
   text-align: center;
 }
+
+.cart-checkout__count input {
+  border: none;
+  outline: none;
+  text-align: center;
+  min-width: 60px;
+}
+
+
 
 
 .cart-checkout__name {
@@ -230,6 +252,15 @@ button {
 .checkout__summa-num {
   font-weight: 900;
   color: #25a033;
+}
+
+.checkout__summa-num input {
+  font-weight: 900;
+  color: #25a033;
+  border: none;
+  outline: none;
+  text-align: end;
+  width: 90px;
 }
 
 .checkout__btns {

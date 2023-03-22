@@ -18,7 +18,6 @@ async function viewPopup() {
   const popups = document.querySelectorAll('.popup');
 
   popups.forEach(popup => {
-    console.log(popup.id);
     const popupContent = document.querySelector(`#${popup.id} .popup__content`);
 
 

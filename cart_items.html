@@ -107,6 +107,9 @@
 
     <div class="page_layout page_layout-clear">
       <header>
+        <button data-goto="header" class="button-back" type="button">
+          <img src="img/arrow-top.svg" alt="Вернуться назад">
+        </button>
         <div
           class="layout widget-type_system_widget_v4_header_11"
           style="
@@ -393,7 +396,7 @@
                 </div>
                 <div class="checkout__summa">
                   <div>Итого к оплате:</div>
-                  <div class="checkout__summa-num"><span id="cart-summ">0</span> €</div>
+                  <div class="checkout__summa-num"><input name="summ" id="cart-summ" readonly value="0" /> €</div>
                 </div>
                 <div class="checkout__btns">
                   <a href="index.htm" class="checkout__btn button button_no-bg">Продолжить покупки</a>
@@ -425,7 +428,7 @@
                   <div class="checkout__form-row">
                     <div class="form-popup__item">
                       <div class="checkbox form-popup__checkbox">
-                        <div id="capcha1" data-required="capcha" data-sitekey="6Lfsl-ckAAAAAC4bZqHxJD7Pn8debRlnBrCEsKzb" data-error="Пройдите reCAPCHA" class="g-recaptcha"></div>
+                        <div id="capcha1" data-required="capcha" data-sitekey="6LcJdwYlAAAAACaQcNyBQFjsZtLLIr1ZBnB-k7f5" data-error="Пройдите reCAPCHA" class="g-recaptcha"></div>
                       </div>
                     </div>
                     <button class="form-popup__btn button" type="submit">Заказать</button>

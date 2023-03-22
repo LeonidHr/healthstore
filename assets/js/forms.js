@@ -217,7 +217,7 @@ function formSubmit() {
 				const formMethod = form.getAttribute('method') ? form.getAttribute('method').trim() : 'GET';
 				const formData = new FormData(form);
 
-				console.log(document.querySelector('.form-popup__item select').value);
+				// Object.assign([{'articul-0': '003'}, {'articul-0': '003'}], formData);
 
 				form.classList.add('_sending');
 				const response = await fetch(formAction, {
@@ -226,6 +226,7 @@ function formSubmit() {
 				});
 				if (response.ok) {
 					let responseResult = await response.json();
+
 					form.classList.remove('_sending');
 					formSent(form, responseResult);
 				} else {
@@ -255,7 +256,7 @@ function formSubmit() {
 		showPopup(form, true);
 
 		// Очищуємо форму
-		formValidate.formClean(form);
+		// formValidate.formClean(form);
 		// Повідомляємо до консолі
 		// formLogging(`Форму відправлено!`);
 	}
