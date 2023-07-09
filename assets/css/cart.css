@@ -400,3 +400,27 @@ textarea {
     width: 100%;
   }
 }
+
+.checkout._sending::before,
+.checkout._sending::after {
+  content: "";
+  position: fixed;
+}
+
+.checkout._sending::before {
+  z-index: 5;
+  background: url('/img/spinner.svg') center / 60px 60px no-repeat;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  transform: translate(-50%, -50%);
+}
+.checkout._sending::after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 4;
+}

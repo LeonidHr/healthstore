@@ -15,8 +15,19 @@ const getData = async (url) => {
   return await response.json();
 };
 
+let langPath = 'ru';
+const langArr = getLang();
+
+if (langArr[0] == 'lv' || checkUrl('-lv')) {
+  langPath = 'lv';
+}
+
 async function viewProductsCard() {
-  const data = await getData('./assets/json/products.json');
+  if (langPath == 'ru') {
+    data = await getData('./assets/json/products.json');
+  } else {
+    data = await getData('./assets/json/products-lv.json');
+  }
   let postsData = data.products;
   const cartWrap = document.getElementById('cards-wrap');
   const summWrap = document.getElementById('cart-summ');
@@ -45,7 +56,7 @@ async function viewProductsCard() {
                 <textarea name="title-${a += 1}" value="${postsData[item.id].title}" readonly>${postsData[item.id].title}</textarea>  
               </div>
               <div class="cart-checkout__articul">
-                <div>Артикул</div> 
+                <div>${langPath == 'ru' ? 'Артикул' : 'Preces kods'}</div> 
                 <input name="articul-${a += 1}" value="${postsData[item.id].articul}" readonly/>
                 <span></span>
               </div>
@@ -136,4 +147,12 @@ function smoothScroll() {
       behavior: 'smooth'
     });
   }, 200);
+}
+
+function checkUrl(val) {
+  if (window.location.href.indexOf(val) > -1) {
+    return true;
+  } else {
+    return false;
+  }
 }

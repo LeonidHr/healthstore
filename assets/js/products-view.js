@@ -5,8 +5,42 @@ const getData = async (url) => {
   return await response.json();
 };
 
+let langPath = 'ru';
+const langArr = getLang();
+
+if (langArr[0] == 'lv' && checkIndexHtml('index.htm')) {
+  window.location.href = 'index-lv.htm';
+}
+if (langArr[0] == 'lv' || checkIndexHtml('-lv')) {
+  langPath = 'lv';
+}
+
+function extractContentBetweenParentheses(str) {
+  const regex = /\(([^)]+)\)/g;
+  const matches = str.match(regex);
+  const content = [];
+
+  if (matches) {
+    for (let i = 0; i < matches.length; i++) {
+      const match = matches[i];
+      const extracted = match.slice(1, -1); // Удаляем скобки из содержимого
+      content.push(extracted);
+      str = str.replace(match, ''); // Удаляем содержимое из исходной строки
+    }
+  }
+
+  return { content, modifiedString: str };
+}
+
 async function viewProducts(categoryMain, filters) {
-  const data = await getData('./assets/json/products.json');
+  let data;
+
+  if (langPath == 'ru') {
+    data = await getData('./assets/json/products.json');
+  } else {
+    data = await getData('./assets/json/products-lv.json');
+  }
+
   let postsData = data.products;
   const badsWrap = document.getElementById('all-bads');
 
@@ -16,10 +50,14 @@ async function viewProducts(categoryMain, filters) {
 
   changeFilters(categoryMain, filters);
   badsWrap.innerHTML = '';
-  postsData.forEach((el, i) => {
-    if (el.category == filters && el.mainCategory == categoryMain) {
+  // postsData.forEach((el, i) => {
+  for (let i = postsData.length - 1; i >= 0; i--) {
+    if (postsData[i].category == filters && postsData[i].mainCategory == categoryMain) {
+
+      const { content, modifiedString } = extractContentBetweenParentheses(postsData[i].title);
+
       const postEl = `
-        <div id="${el.id}" class="product-preview-elem ">
+        <div id="${postsData[i].id}" class="product-preview-elem ">
           <form
             action="/cart_items"
             method="post"
@@ -32,25 +70,25 @@ async function viewProducts(categoryMain, filters) {
                   <div class="img-ratio img-fit">
                     <div class="img-ratio__inner">
                       <a
-                        href="product/product${el.id}.html"
+                        href="${langPath}/product/product${postsData[i].id}.html"
                       >
                         <picture>
                           <source
                             media="(min-width:768px)"
-                            data-srcset="${el.imgPath}"
+                            data-srcset="${postsData[i].imgPath}"
                             type="image/webp"
                             class="lazyload"
                           />
                           <source
                             media="(max-width:767px)"
-                            data-srcset="${el.imgPath}"
+                            data-srcset="${postsData[i].imgPath}"
                             type="image/webp"
                             class="lazyload"
                           />
                           <img
-                            src="${el.imgPath}"
+                            src="${postsData[i].imgPath}"
                             class="lazyload"
-                            alt="${el.title}"
+                            alt="${postsData[i].title}"
                           />
                         </picture>
                       </a>
@@ -61,10 +99,10 @@ async function viewProducts(categoryMain, filters) {
               </div>
               <div class="product-preview__area-title">
                 <div class="product-preview__title">
-                  <a href="product/product${el.id}.html">
-                    <p class="product-preview__label">${el.title}</p>
-                    <p class="product-preview__text">${el.text}</p>      
-                    <p class="product-preview__articul">${el.articul}</p>      
+                  <a href="${langPath}/product/product${postsData[i].id}.html">
+                    <p class="product-preview__label">${postsData[i].title}</p>
+                    <p class="product-preview__text">${postsData[i].text}</p>      
+                    <p class="product-preview__articul">${postsData[i].articul}</p>      
                   </a>
                 </div>
               </div>
@@ -77,15 +115,22 @@ async function viewProducts(categoryMain, filters) {
       `;
       badsWrap.insertAdjacentHTML("beforeend", postEl);
     }
-    
-  });
+  }
+  // });
   if (filters == 'all') {
     viewAllProducts(postsData, badsWrap, categoryMain);
   }
 }
 
 async function changeFilters(categoryMain, filters) {
-  const data = await getData('./assets/json/filters.json');
+  let data;
+
+  if (langPath == 'ru') {
+    data = await getData('./assets/json/filters.json');
+  } else {
+    data = await getData('./assets/json/filters-lv.json');
+  }
+ 
   let postsData = data.filters;
   const filtersContainer = document.getElementById('filters');
 
@@ -144,10 +189,14 @@ function viewAllProducts(postsData, badsWrap, category) {
 
   badsWrap.innerHTML = '';
 
-  postsData.forEach((el, i) => {
-    if (el.mainCategory === category) {
+  // postsData.forEach((el, i) => {
+  for (let i = postsData.length - 1; i >= 0; i--) {
+    if (postsData[i].mainCategory === category) {
+
+      const { content, modifiedString } = extractContentBetweenParentheses(postsData[i].title);
+
       const postEl = `
-        <div id="${el.id}" class="product-preview-elem ">
+        <div id="${postsData[i].id}" class="product-preview-elem ">
           <form
             action="/cart_items"
             method="post"
@@ -160,14 +209,14 @@ function viewAllProducts(postsData, badsWrap, category) {
                   <div class="img-ratio img-fit">
                     <div class="img-ratio__inner">
                       <a
-                        href="product/product${el.id}.html"
+                        href="${langPath}/product/product${postsData[i].id}.html"
                       >
                       
                         <picture>
                           <img
-                            src="${el.imgPath}"
+                            src="${postsData[i].imgPath}"
                             class="lazyload"
-                            alt="${el.title}"
+                            alt="${postsData[i].title}"
                           />
                           
                         </picture>
@@ -179,10 +228,15 @@ function viewAllProducts(postsData, badsWrap, category) {
               </div>
               <div class="product-preview__area-title">
                 <div class="product-preview__title">
-                  <a href="product/product${el.id}.html">
-                    <p class="product-preview__label">${el.title}</p>
-                    <p class="product-preview__text">${el.text}</p>      
-                    <p class="product-preview__articul">${el.articul}</p>      
+                  <a href="${langPath}/product/product${postsData[i].id}.html">
+                    <p class="product-preview__label">
+                      ${modifiedString}
+                    </p>
+                    <p class="product-preview__label">
+                      ${content.length ? `(${content})` : ''}
+                    </p>
+                    <p class="product-preview__text">${postsData[i].text}</p>      
+                    <p class="product-preview__articul">${postsData[i].articul}</p>      
                   </a>
                 </div>
               </div>
@@ -196,7 +250,8 @@ function viewAllProducts(postsData, badsWrap, category) {
 
       badsWrap.insertAdjacentHTML("beforeend", postEl);
     }
-  });
+  }
+  // });
 }
 
 
@@ -338,7 +393,6 @@ function getUrlHashText(url) {
 
 function handleUrlHashChange() {
   const hash = window.location.hash.substring(1); // извлекаем фрагмент без символа "#"
-  console.log(`Hash changed to: ${hash}`);
   
   const mainNav = document.querySelectorAll('[data-nav]');
 
@@ -381,4 +435,12 @@ function initSliders() {
       }
 		});
 	}
+}
+
+function checkIndexHtml(val) {
+  if (window.location.href.indexOf(val) > -1) {
+    return true;
+  } else {
+    return false;
+  }
 }

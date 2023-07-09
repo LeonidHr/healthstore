@@ -3,8 +3,16 @@ const getDataProd = async (url) => {
   return await response.json();
 };
 
+
 async function viewSearch() {
-  const data = await getDataProd('./assets/json/products.json');
+  let data 
+  
+  if (lang == 'ru') {
+    data = await getDataProd('./assets/json/products.json');
+  } else {
+    data = await getDataProd('./assets/json/products-lv.json');
+  }
+  
   let postsData = data.products;
   const productsWrap = document.getElementById('search-result');
   const searchItem = getSearchName();
@@ -28,7 +36,7 @@ async function viewSearch() {
                   <div class="img-ratio img-fit">
                     <div class="img-ratio__inner">
                       <a
-                        href="product/product${el.id}.html"
+                        href="${lang}/product/product${el.id}.html"
                       >
                         <picture>
                           <source
@@ -57,7 +65,7 @@ async function viewSearch() {
               </div>
               <div class="product-preview__area-title">
                 <div class="product-preview__title">
-                  <a href="product/product${el.id}.html">
+                  <a href="${lang}/product/product${el.id}.html">
                     <p class="product-preview__label">${el.title}</p>
                     <p class="product-preview__text">${el.text}</p>      
                     <p class="product-preview__articul">${el.articul}</p>      

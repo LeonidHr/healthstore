@@ -1,0 +1,1548 @@
+{
+  "products": [  
+    {
+      "id": 0,
+      "imgPath": "../../img/17.webp",
+      "articul": "No. 053",
+      "title": "Eliksīra imunitāte (Vital Elixir)",
+      "text": "Imunitātei",
+      "price": "0.06",
+      "unit": "gr.",
+      "mainCategory": "bads",
+      "category": "immunity",
+      "isBadsGr": true,
+      "descr": [
+        "Cidoniju augļu ekstrakts - 150 µg;",
+        "Ābolu ekstrakts - 67 µg;",
+        "Melnā plūme, sausais ekstrakts - 42,3 µg;",
+        "Burkānu sakņu ekstrakts - 20 µg;",
+        "Priežu pumpuru ekstrakts - 16 µg;",   
+        "Bumbieru augļu ekstrakts - 14,8 µg;",
+        "Mežrozīšu augļu ekstrakts - 12 µg;",
+        "Plantas lapu ekstrakts - 11,8 µg;",
+        "Liepas ziedu ekstrakts - 7,2 µg;",
+        "Melnā plūškoka augļu ekstrakts - 1,56 µg;",
+        "Kliņģerīšu ziedu ekstrakts - 2,4 µg;",    
+        "Kanēļa mizas ekstrakts - 1,8 µg;",
+        "krustnagliņu pumpuru ekstrakts - 0,8 µg;",
+        "Ingvera saknes ekstrakts - 1,8 µg;",
+        "Kardamona sēklu ekstrakts - 1,8 µg;",    
+        "Smargo piparu, augļu ekstrakts - 1,8 µg;",
+        "Koriandrs, sēklas, augļu ekstrakts - 1,8 µg;",
+        "Kinquefoil erect sakneņu ekstrakts - 0,68 µg;",
+        "C vitamīns - 12 mg;",
+        "B 12 vitamīns - 2,5 µg."   
+      ]
+    },
+    {
+      "id": 1,
+      "imgPath": "../../img/2.webp",
+      "articul": "No. 054",
+      "title": "Ashvaganda (Himalaya)",
+      "text": " Miegam",
+      "price": "0.20",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "calmness",
+      "descr": [
+        "250 mg Ashwagandha sakņu ekstrakts"
+      ]
+    },
+    {
+      "id": 2,
+      "imgPath": "../../img/3.webp",
+      "articul": "No. 055",
+      "title": "Piena dadzis + artišoks (Biokor)",
+      "text": "Aknu uztura bagātinātājs",
+      "price": "0.20",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "food",
+      "descr": [
+        "Piena dadžu milti (Biokor)",
+        "Sausais mežrozīšu ekstrakts",
+        "Selēns (selenopirāns (9-fenil-s-oktahidroselenoksantēns))"
+      ]
+    },
+    {
+      "id": 3,
+      "imgPath": "../img/4.webp",
+      "articul": "No. 056",
+      "title": "5-HTP (Swanson)",
+      "text": "Smadzeņu ",
+      "price": "0.25",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "think",
+      "descr": [
+        "L-5 hidroksitriptofāns - 100 mg;"
+      ]
+    },
+    {
+      "id": 4,
+      "imgPath": "../img/5.webp",
+      "imgPath2": "../img/4-1.webp",
+      "articul": "No. 057",
+      "title": "Super Enzymes (NOW)",
+      "text": "Gremošanai",
+      "price": "0.30",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "food",
+      "descr": [
+        ""
+      ]                                                                    
+    },
+    {
+      "id": 5,
+      "imgPath": "../img/6.webp",
+      "articul": "No. 058",
+      "title": "L-Carnitine (Ostrovit)",
+      "text": "Izturības ",
+      "price": "0.25",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "others",
+      "descr": [
+        "L-karnitīna tartrāts 1250mg"
+      ]
+    },
+    {
+      "id": 6,
+      "imgPath": "../img/7.webp",
+      "articul": "No. 059",
+      "title": "L-theanine (Ostrovit)",
+      "text": "Smadzeņu ",
+      "price": "0.15",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "think",
+      "descr": [
+        "L-teanīns 200 mg;",
+        "Inulīns 100 mg;"
+      ]
+    },
+    {
+      "id": 7,
+      "imgPath": "../img/8.webp",
+      "articul": "No. 060",
+      "title": "Brahmi (Bacopa) Himalaya",
+      "text": "Smadzeņu ",
+      "price": "0.25",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "think",
+      "descr": [
+        "Brahmi ekstrakts (Bacopa monnieri) 500 mg."
+      ]
+    },
+    {
+      "id": 8,
+      "imgPath": "../img/9.webp",
+      "articul": "No. 061",
+      "title": "LIV-52 (Himalaya) ",
+      "text": "Aknu uztura bagātinātājs",
+      "price": "0.15",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "food",
+      "descr": [
+        "Dzelteno kaperu sakņu pulveris - 65 mg.",
+        "parasto cigoriņu sēklu pulveris - 65 mg.",
+        "Black Nightshade Powder - 32 mg.",
+        "Arjuna Terminalia mizas pulveris - 32 mg.",
+        "Cassia Occidentalis sēklu pulveris - 16 mg.",
+        "Yarrow garšaugu pulveris - 16 mg.",
+        "Gali Tamarix pulveris - 16 mg."
+      ]
+    },
+    {
+      "id": 9,
+      "imgPath": "../img/11.webp",
+      "articul": "No. 062",
+      "title": "Healthy Skin (Ostrovit)",
+      "text": "Veselīgai ādai",
+      "price": "0.25",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "others",
+      "descr": [
+        "Hidrolizēts liellopu gaļas kolagēns 350mg",
+        "C vitamīns 200 mg",
+        "Hialuronskābe 100 mg",
+        "Kosa malto daļu ekstrakts (7% silīcija dioksīds) 100 mg",
+        "Cinks (cinka pikolināts) 10mg",
+        "E vitamīns (Dl-alfa-tokoferilacetāts) 12 mg",
+        "Nikotīnskābe 16mg",
+        "B2 vitamīns (riboflavīns) 15 mg",
+        "Japānas brūnaļģes lapu ekstrakts 15mg",
+        "Varš (vara diglicināts) 1,5 mg",
+        "A vitamīns (retinola acetāts) 800 µg",
+        "Biotīns 500 µg"
+      ]
+    },
+    {
+      "id": 10,
+      "imgPath": "../img/12.webp",
+      "articul": "No. 063",
+      "title": "NeuroOffice (BioChronoss+)",
+      "text": "Produktivitātei",
+      "price": "0.66",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "others",
+      "descr": [
+        "B6 vitamīns 2,8 mg",
+        "B2 vitamīns 2,8 mg",
+        "B1 vitamīns 2,8 mg",
+        "B12 vitamīns 5 μg",
+        "Sausais pasifloras ziedu iemiesotais ekstrakts 5:1 50mg",
+        "Eleutherococcus senticosus sakņu sausais ekstrakts 10:1 50mg",
+        "Sausais sakņu ekstrakts 5:1 25 mg",
+        "Cinks 10 mg",
+        "L-triptofāns 200 mg",
+        "L-arginīns 40 mg",
+        "L-teanīns 40 mg",
+        "Acetil-L-karnitīna hidrohlorīds 40 mg"
+      ]
+    },
+    {
+      "id": 11,
+      "imgPath": "../img/13.webp",
+      "articul": "No. 064",
+      "title": "Immuno Shots (Acorus Balance)",
+      "text": "Imunitātei",
+      "price": "2.00",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "immunity",
+      "descr": [
+        "Melnā plūškoka koncentrāts (Sambucus nigra)",
+        "Šitaki sēņu (Lentinula edodes) augļķermeņu sausais ekstrakts (12:1)",
+        "Reishi sēņu (Ganoderma lucidum) augļķermeņu sausais ekstrakts (5:1)",
+        "C vitamīns (L-askorbīnskābe)",
+        "Meža ogu garša",
+        "Zaļās tējas lapu (Camellia sinensis) sausais ekstrakts (8:1)",
+        "Sausais purpursarkanās ehinācijas saknes ekstrakts (Echinacea purpurea) (4:1)",
+        "Marshmallow (Thymus vulgaris) sausais lapu ekstrakts (4:1)"
+      ]
+    },
+    {
+      "id": 12,
+      "imgPath": "../img/14.webp",
+      "articul": "No. 065",
+      "title": "Travelan (Olimp Labs)",
+      "text": "Pret kustību slimībām",
+      "price": "0.70",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "others",
+      "descr": [
+        "Ingvera sakneņu ekstrakts - 150 mg.",
+        "B6 vitamīns - 1,4 mg."
+      ]
+    },
+    {
+      "id": 13,
+      "imgPath": "../img/15.webp",
+      "articul": "No. 066",
+      "title": "Melatonīns (Evalar)",
+      "text": "Miegam",
+      "price": "0.30",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "sleep",
+      "descr": [
+        "Melatonīns - 3,00 mg"
+      ]
+    },
+    {
+      "id": 14,
+      "imgPath": "../img/16.webp",
+      "articul": "No. 067",
+      "title": "Chyawanprash (Dabur)",
+      "text": "Imunitātei",
+      "price": "0.03",
+      "unit": "gr.",
+      "isBadsGr": true,
+      "mainCategory": "bads",
+      "category": "immunity",
+      "descr": [
+        "Amla - 45,7%",
+        "Vidarikand - 3,7%",
+        "Pipari garie - 3%",
+        "Sandalkoks - 2,4%",
+        "Kardamons - 1,8%",
+        "Akarkari Root - 1,5%",
+        "Arjun - 1,5%",
+        "Ashwagandha - 1,5%",
+        "Sparģeļi - 1,5%",
+        "Bacopa - 1,5%",
+        "Bael (aegle) - 1,5%",
+        "Sida - 1,5%",
+        "Phyllanthus - 1,5%",
+        "Haritaki - 1,5%",
+        "Fig - 1,5%",
+        "Ingvers - 1,5%",
+        "Vīnogas - 1,5%",
+        "Tulasi - 1,5%",
+        "Elecampane - 1,5%",
+        "Tīklenes leptads - 1,5%"
+      ]
+    },
+
+    {
+      "id": 15,
+      "imgPath": "../img/vitamins/15.webp",
+      "articul": "No. 037",
+      "title": "Dzelzs + vitamīni (Altapharma)",
+      "text": "Imūnsistēmai",
+      "price": "0.15",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Dzelzs - 14 mg;",
+        "C vitamīns - 80mg;",
+        "B12 vitamīns - 2,5 µg;",
+        "Folskābe - 200 µg."
+      ]
+    },
+    {
+      "id": 16,
+      "imgPath": "../img/vitamins/7.webp",
+      "articul": "No. 038",
+      "title": "Selen/Zinc (Walmark)",
+      "text": "Imūnsistēmai",
+      "price": "0.30",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Selēns - 100 µg",
+        "Melnie pipari - 5 mg;"
+      ]
+    },
+    {
+      "id": 17,
+      "imgPath": "../img/vitamins/8.webp",
+      "articul": "No. 039",
+      "title": "Dias Collagen",
+      "text": "ādai, kauliem, muskuļiem",
+      "price": "1.60",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "I un II tipa kolagēns - 4000 mg",
+        "Hialuronskābe - 50 mg",
+        "Magnijs - 100 mg",
+        "Cinks - 5 mg",
+        "Mangāns - 1 mg",
+        "Varš - 500 mcg",
+        "C VITAMĪNS - 80 mg",
+        "D VITAMĪNS - 10 mcg"
+      ]
+    },
+    {
+      "id": 18,
+      "imgPath": "../img/vitamins/9.webp",
+      "articul": "No. 040",
+      "title": "Magnijs 200 mg",
+      "text": "Nervu sistēmai, muskuļu relaksācijai",
+      "price": "0.22",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "nerves",
+      "descr": [
+        "Magnijs 200,0 mg"
+      ]
+    },
+    {
+      "id": 19,
+      "imgPath": "../img/vitamins/10.webp",
+      "imgPath2": "../img/vitamins/10-1.webp",
+      "articul": "No. 041",
+      "title": "Vitamīnu un minerālvielu komplekss Altapharma",
+      "text": "Imūnsistēmai",
+      "price": "0.15",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        ""
+      ]
+    },
+   
+    {
+      "id": 20,
+      "imgPath": "../img/vitamins/11.webp",
+      "articul": "No. 042",
+      "title": "Immunosil Virufix",
+      "text": "Imūnsistēmai",
+      "price": "0.40",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Cinks - 19,9 mg;",
+        "Kvercetīns - 500 µg;",
+        "C vitamīns - 1000 mg;",
+        "D vitamīns - 100 µg;"
+      ]
+    },
+    {
+      "id": 21,
+      "imgPath": "../img/vitamins/12.webp",
+      "articul": "No. 043",
+      "title": "Coenzyme Q10 (Walmark)",
+      "text": "Imūnsistēmai",
+      "price": "0.35",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Koenzīms Q10 - 60 mg;"
+      ]
+    },
+  
+    {
+      "id": 22,
+      "imgPath": "../img/vitamins/13.webp",
+      "articul": "No. 044",
+      "title": "Senior Complex (vitamīnu komplekss ar Ginkgo Biloba)",
+      "text": "Imūnsistēmai",
+      "price": "0.30",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "A vitamīns - 135 µg;",
+        "B1 vitamīns - 3 mg;",
+        "B2 vitamīns - 3,5 mg;",
+        "B3 vitamīns - 12,5 mg;",
+        "B5 vitamīns - 5 mg;",
+        "B6 vitamīns - 2 mg;",
+        "Folskābe - 200 µg;",
+        "B12 vitamīns - 75 µg;",
+        "Biotīns - 75 µg;",
+        "D3 vitamīns - 12,5 µg;",
+        "E vitamīns - 24 mg;",
+        "K2 vitamīns - 15 µg;",
+        "Inozitols - 15 mg;",
+        "Jods - 37,5 µg;",
+        "Magnijs - 15 mg;",
+        "Selēns - 30 µg;",
+        "Ginkgo lapu ekstrakts - 14 mg;",
+        "Ashwagandha ekstrakts - 10 mg;",
+        "Dabīgais koenzīms Q10 - 15 mg."
+      ]
+    },
+    {
+      "id": 23,
+      "imgPath": "../img/vitamins/14.webp",
+      "articul": "No. 045",
+      "title": "Zink/Vitamin C (Altapharma)",
+      "text": "Imūnsistēmai",
+      "price": "0.15",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Cinks - 5 mg;",
+        "C vitamīns - 300 mg"
+      ]
+    },
+    {
+      "id": 24,
+      "imgPath": "../img/vitamins/17.webp",
+      "articul": "No. 046",
+      "title": "Vitamin K2 (Wish)",
+      "text": " Imunitātei",
+      "price": "0.15",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "K2 vitamīns vitaMK7 - 100 µg"
+      ]
+    }, 
+    {
+      "id": 25,
+      "imgPath": "../img/10.webp",
+      "articul": "No. 047",
+      "title": "Kālija jodīds (vitamīrs)",
+      "text": "Jods",
+      "price": "0.04",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Kālija jodīds 200mcg"
+      ]
+    },
+    {
+      "id": 26,
+      "imgPath": "../img/vitamins/1.webp",
+      "articul": "No. 048",
+      "title": "B vitamīnu komplekss (Jonax)",
+      "text": "Nervu sistēmai",
+      "price": "0.30",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "nerves",
+      "descr": [
+        "Niacīns - 100 mg;",
+        "B5 vitamīns - 50 mg;",
+        "B1 vitamīns - 30 mg;",
+        "B2 vitamīns - 30 mg;",
+        "B6 vitamīns - 20 mg;",
+        "Biotīns - 300 μg;",
+        "B12 vitamīns - 20 µg"
+      ]
+    },
+    {
+      "id": 27,
+      "imgPath": "../img/vitamins/2.webp",
+      "articul": "No. 049",
+      "title": "D vitamīns + Omega 3 + K2 (Mollers)",
+      "text": "Imūnsistēmai",
+      "price": "0.60",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Omega-3 - 660 mg;",
+        "DHS - 240 mg;",
+        "EPS - 320 mg;",
+        "Vitamīns D-3 - 50 µg;",
+        "K2 vitamīns - 50 µg;"
+      ]
+    },
+    {
+      "id": 28,
+      "imgPath": "../img/vitamins/3.webp",
+      "articul": "No. 050",
+      "title": "Kalcijs+kālijs+magnijs+cinks (Biofarmācija)",
+      "text": "Imūnsistēmai",
+      "price": "0.60",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Kalcijs - 520 mg;",
+        "Kālijs - 300 mg;",
+        "Magnijs - 200 mg;",
+        "Cinks - 15 mg;",
+        "D3 vitamīns - 5 µg;"
+      ]
+    },
+    {
+      "id": 29,
+      "imgPath": "../img/vitamins/4.webp",
+      "articul": "No. 051",
+      "title": "Pre Race drink (Aptona)",
+      "text": "Relaksējošam treniņam",
+      "price": "1.44",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "energy",
+      "descr": [
+        "Melisa;",
+        "B1, B2, B6 vitamīni;",
+        "C vitamīns;"
+      ]
+    },
+    {
+      "id": 30,
+      "imgPath": "../img/vitamins/16.webp",
+      "articul": "No. 052",
+      "title": "Vitamīns B5 (pantotēnskābe) Osavi",
+      "text": "Enerģijai",
+      "price": "0.20",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "energy",
+      "descr": [
+        "Pantotēnskābe - 200 mg."
+      ]
+    },
+   
+    {
+      "id": 31,
+      "imgPath": "../img/pills/12.webp",
+      "articul": "No. 024",
+      "title": "Fosfoglivs Urso",
+      "text": "Aknām",
+      "price": "0.30",
+      "unit": "gab.",
+      "mainCategory": "capsules",
+      "category": "gastrointestinal",
+      "descr": [
+        "Ursodeoksiholskābe - 250 mg",
+        "Nātrija glicirizināts - 35 mg"
+      ]
+    },
+    {
+      "id": 32,
+      "imgPath": "../img/pills/13.webp",
+      "articul": "No. 025",
+      "title": "Holenzim",
+      "text": "žultspūslim",
+      "price": "0.12",
+      "unit": "gab.",
+      "mainCategory": "capsules",
+      "category": "gastrointestinal",
+      "descr": [
+        "Žults sausais - 100 mg",
+        "Sasmalcināts žāvēts aizkuņģa dziedzeris - 100 mg",
+        "Nokautu liellopu tievo zarnu žāvētas gļotādas - 100 mg"
+      ]
+    },
+    {
+      "id": 33,
+      "imgPath": "../img/pills/1.webp",
+      "articul": "No. 026",
+      "title": "Fenkarol",
+      "text": "No alerģijām",
+      "price": "0.22",
+      "unit": "gab.",
+      "mainCategory": "capsules",
+      "category": "others",
+      "descr": [
+        "50 mg kifenadīna hidrohlorīda"
+      ]
+    },
+    {
+      "id": 34,
+      "imgPath": "../img/pills/2.webp",
+      "articul": "No. 027",
+      "title": "GoRespiro",
+      "text": "Elpošanai",
+      "price": "0.46",
+      "unit": "gab.",
+      "mainCategory": "capsules",
+      "category": "others",
+      "descr": [
+        "Bosvelijas ekstrakts - 130 mg;",
+        "Passiflora ekstrakts - 110 mg;",
+        "Eyebright ekstrakts - 83 mg;",
+        "Anīsa ekstrakts - 50 mg;",
+        "Kvercetīns - 20 mg;",
+        "Priedes ekstrakts - 20 mg;",
+        "Pterostilbēns - 20 mg;",
+        "Ivy ekstrakts - 17 mg;",
+        "Aļģu pulveris (Astaksantīns) -10 mg;",
+        "Likopēna pulveris - 10 mg."
+      ]
+    },
+    {
+      "id": 35,
+      "imgPath": "../img/pills/3.webp",
+      "articul": "No. 028",
+      "title": "Escadra",
+      "text": "Vēderam",
+      "price": "0.30",
+      "unit": "gab.",
+      "mainCategory": "capsules",
+      "category": "gastrointestinal",
+      "descr": [
+        "Esomeprazols - 20 mg"
+      ]
+    },
+    {
+      "id": 36,
+      "imgPath": "../img/pills/4.webp",
+      "articul": "No. 029",
+      "title": "Omeprazol",
+      "text": "Vēderam",
+      "price": "0.18",
+      "unit": "gab.",
+      "mainCategory": "capsules",
+      "category": "gastrointestinal",
+      "descr": [
+        "Omeprazols - 20 mg"
+      ]
+    },
+    {
+      "id": 37,
+      "imgPath": "../img/pills/5.webp",
+      "articul": "No. 030",
+      "title": "Gastroval",
+      "text": "Gremošanai",
+      "price": "0.45",
+      "unit": "gab.",
+      "mainCategory": "capsules",
+      "category": "gastrointestinal",
+      "descr": [
+        "Magnijs - 200 mg;",
+        "Inulīns - 100 mg;",
+        "Natenzims - 75 mg;",
+        "Lactobacillus acidophilus - 11 mg;",
+        "Bifidobacterium bifidum 3,7 mg;",
+        "Genciānas dzeltens - 60 mg;",
+        "Ingvers - 52 mg;",
+        "Fenhelis - 50 mg;",
+        "Trigonella foenum-graecum - 50 mg;",
+        "Raponticum saflora - 25 mg;",
+        "Lakrica - 21 mg;",
+        "Deglicirizēts lakricas sakņu sausais ekstrakts - 240 mg."
+      ]
+    },
+    {
+      "id": 38,
+      "imgPath": "../img/pills/6.webp",
+      "imgPathSlide": "../img/pills/6-1.webp",
+      "articul": "No. 031",
+      "title": "Boulardi",
+      "text": "Probiotikas zarnām",
+      "price": "0.60",
+      "unit": "gab.",
+      "mainCategory": "capsules",
+      "category": "gastrointestinal",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 39,
+      "imgPath": "../img/pills/7.webp",
+      "articul": "No. 032",
+      "title": "Mildronats",
+      "text": "Spēkam un enerģijai",
+      "price": "0.30",
+      "unit": "gab.",
+      "mainCategory": "capsules",
+      "category": "others",
+      "descr": [
+        "Meldonija dihidrāts - 250 mg."
+      ]
+    },
+    {
+      "id": 40,
+      "imgPath": "../img/pills/8.webp",
+      "articul": "No. 033",
+      "title": "Nalgedol",
+      "text": "Pretsāpju līdzekļis",
+      "price": "0.22",
+      "unit": "gab.",
+      "mainCategory": "capsules",
+      "category": "others",
+      "descr": [
+        "Naproksēna nātrijs - 220 mg;"
+      ]
+    },
+    {
+      "id": 41,
+      "imgPath": "../img/pills/9.webp",
+      "articul": "No. 034",
+      "title": "Neurotin",
+      "text": "No nervu iekaisuma un sāpēm",
+      "price": "0.20",
+      "unit": "gab.",
+      "mainCategory": "capsules",
+      "category": "nerves",
+      "descr": [
+        "Gabapentīns - 100 mg;"
+      ]
+    },
+    {
+      "id": 42,
+      "imgPath": "../img/pills/10.webp",
+      "articul": "No. 035",
+      "title": "Sorbex",
+      "text": "Sorbents pret gremošanas traucējumiem",
+      "price": "0.30",
+      "unit": "gab.",
+      "mainCategory": "capsules",
+      "category": "gastrointestinal",
+      "descr": [
+        "Aktivētā ogle - 300 mg."
+      ]
+    },
+    {
+      "id": 43,
+      "imgPath": "../img/pills/11.webp",
+      "articul": "No. 036",
+      "title": "Noofen",
+      "text": "Lai mazinātu stresu un trauksmi",
+      "price": "0.50",
+      "unit": "gab.",
+      "mainCategory": "capsules",
+      "category": "nerves",
+      "descr": [
+        "Fenibuts - 250 mg."
+      ]
+    },
+  
+  
+    {
+      "id": 44,
+      "imgPath": "../img/herbs/12.webp",
+      "articul": "No. 011",
+      "title": "Vilkābele",
+      "text": "Vilkābele zāle pēc svara.",
+      "price": "0.50",
+      "unit": "10 gr.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "nerves",
+      "descr": [
+        "Vilkābele"
+      ]
+    },
+    {
+      "id": 45,
+      "imgPath": "../img/herbs/1.webp",
+      "articul": "No. 012",
+      "title": "Asinszāle",
+      "text": "Asinszāle zāle pēc svara.",
+      "price": "0.50",
+      "unit": "10 gr.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "all",
+      "descr": [
+        "Asinszāle"
+      ]
+    },
+    {
+      "id": 46,
+      "imgPath": "../img/herbs/2.webp",
+      "articul": "No. 013",
+      "title": "Vērmele",
+      "text": "Vērmele zāle pēc svara.",
+      "price": "0.50",
+      "unit": "10 gr.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "gastrointestinal",
+      "descr": [
+        "Vērmele"
+      ]
+    },
+    {
+      "id": 47,
+      "imgPath": "../img/herbs/3.webp",
+      "articul": "No. 014",
+      "title": "Kumelīte",
+      "text": "Kumelīte zāle pēc svara.",
+      "price": "0.50",
+      "unit": "10 gr.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "gastrointestinal",
+      "descr": [
+        "Kumelīte"
+      ]
+    },
+    {
+      "id": 48,
+      "imgPath": "../img/herbs/4.webp",
+      "articul": "No. 015",
+      "title": "Fenhelis",
+      "text": "Fenhelis zāle pēc svara.",
+      "price": "0.50",
+      "unit": "10 gr.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "gastrointestinal",
+      "descr": [
+        "Fenhelis"
+      ]
+    },
+    {
+      "id": 49,
+      "imgPath": "../img/herbs/5.webp",
+      "articul": "No. 016",
+      "title": "Pienenes sakne",
+      "text": "Pienenes sakne zāle pēc svara.",
+      "price": "0.50",
+      "unit": "10 gr.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "immunity",
+      "descr": [
+        "Pienenes sakne"
+      ]
+    },
+    {
+      "id": 50,
+      "imgPath": "../img/herbs/6.webp",
+      "articul": "No. 017",
+      "title": "Raudene",
+      "text": "Raudene zāle pēc svara.",
+      "price": "0.50",
+      "unit": "10 gr.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "nerves",
+      "descr": [
+        "Raudene"
+      ]
+    },
+    {
+      "id": 51,
+      "imgPath": "../img/herbs/7.webp",
+      "articul": "No. 018",
+      "title": "Diždadzis",
+      "text": "Diždadzis zāle pēc svara.",
+      "price": "0.50",
+      "unit": "10 gr.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "gastrointestinal",
+      "descr": [
+        "Diždadzis"
+      ]
+    },
+    {
+      "id": 52,
+      "imgPath": "../img/herbs/11.webp",
+      "articul": "No. 019",
+      "title": "Valeriana",
+      "text": "Valeriana zāle pēc svara.",
+      "price": "0.50",
+      "unit": "10 gr.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "nerves",
+      "descr": [
+        "Valeriana"
+      ]
+    },
+    {
+      "id": 53,
+      "imgPath": "../img/herbs/13.webp",
+      "articul": "No. 020",
+      "title": "Dzeltenā salmene",
+      "text": "Dzeltenā salmene zāle pēc svara.",
+      "price": "0.50",
+      "unit": "10 gr.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "gastrointestinal",
+      "descr": [
+        "Dzeltenā salmene"
+      ]
+    },
+    {
+      "id": 54,
+      "imgPath": "../img/herbs/9.webp",
+      "articul": "No. 021",
+      "title": "Pelašķis",
+      "text": "Pelašķis zāle pēc svara.",
+      "price": "0.50",
+      "unit": "10 gr.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "others",
+      "descr": [
+        "Pelašķis"
+      ]
+    },
+    {
+      "id": 55,
+      "imgPath": "../img/herbs/10.webp",
+      "articul": "No. 022",
+      "title": "Amoliņš",
+      "text": "Amoliņš zāle pēc svara.",
+      "price": "0.50",
+      "unit": "10 gr.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "others",
+      "descr": [
+        "Amoliņš"
+      ]
+    },
+    {
+      "id": 56,
+      "imgPath": "../img/herbs/8.webp",
+      "articul": "No. 023",
+      "title": "Tīruma kosa",
+      "text": "Tīruma kosa zāle pēc svara.",
+      "price": "0.50",
+      "unit": "10 gr.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "immunity",
+      "descr": [
+        "Tīruma kosa"
+      ]
+    },
+   
+    
+    
+    {
+      "id": 57,
+      "imgPath": "../img/other/9.webp",
+      "imgPath2": "../img/other/9-1.webp",
+      "articul": "No. 001",
+      "title": "Auzas, neapstrādātas",
+      "text": "",
+      "price": "1.25",
+      "unit": "50 gr.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "others",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 58,
+      "imgPath": "../img/other/1.webp",
+      "articul": "No. 002",
+      "title": "Kokosriekstu milti",
+      "text": "",
+      "price": "0.40",
+      "unit": "50 gr.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "others",
+      "descr": [
+        "Tauki - 10 g.",
+        "Ogļhidrāti 18 g.",
+        "Olbaltumvielas 20 g.",
+        "Šķiedra - 32 g."
+      ]
+    },
+    {
+      "id": 59,
+      "imgPath": "../img/other/2.webp",
+      "articul": "No. 003",
+      "title": "Maltas mandeles",
+      "text": "",
+      "price": "0.75",
+      "unit": "50 gr.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "seeds",
+      "descr": [
+        "Tauki - 50 g.",
+        "Ogļhidrāti - 10,7 g.",
+        "Olbaltumvielas - 21,4 g.",
+        "Šķiedra - 10,7 g."
+      ]
+    },
+    {
+      "id": 60,
+      "imgPath": "../img/other/3.webp",
+      "imgPath2": "../img/other/3-1.webp",
+      "articul": "No. 004",
+      "title": "Gold Nutrition Protein (Whey)",
+      "text": "",
+      "price": "3.25",
+      "unit": "50 gr.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "protein",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 61,
+      "imgPath": "../img/other/4.webp",
+      "articul": "No. 005",
+      "title": "Olbaltumvielas ar magniju un cinku (Dobra Kaloria)",
+      "text": "",
+      "price": "1.03",
+      "unit": "50 gr.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "protein",
+      "descr": [
+        "Tauki - 36 g.",
+        "Ogļhidrāti - 10,0 g.",
+        "Šķiedra - 21 g.",
+        "Olbaltumvielas - 22 g.",
+        "Magnijs",
+        "Cinks",
+        "Fosfors",
+        "B1 vitamīns"
+      ]
+    },
+    {
+      "id": 62,
+      "imgPath": "../img/other/5.webp",
+      "imgPath2": "../img/other/5-1.webp",
+      "articul": "No. 006",
+      "title": "Organiskais kakao (Now)",
+      "text": "",
+      "price": "2.25",
+      "unit": "50 gr.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "others",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 63,
+      "imgPath": "../img/other/10.webp",
+      "articul": "No. 007",
+      "title": "Semper (BabySemp 1) bērnu pārtika",
+      "text": "",
+      "price": "1.00",
+      "unit": "50 gr.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "others",
+      "descr": [
+        "Vājpiens;",
+        "Laktoze;",
+        "Zivju tauki;",
+        "A vitamīns;",
+        "D vitamīns;",
+        "E vitamīns;",
+        "K vitamīns;",
+        "C vitamīns;",
+        "B6 vitamīns;",
+        "Inozīts;",
+        "L ir karnitīns."
+      ]
+    },
+    {
+      "id": 64,
+      "imgPath": "../img/other/6.webp",
+      "articul": "No. 008",
+      "title": "Turku sēklas",
+      "text": "",
+      "price": "0.40",
+      "unit": "50 gr.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "all",
+      "descr": [
+        "Tauki - 1,1 g.",
+        "Ogļhidrāti - 53,3 g.",
+        "Olbaltumvielas - 24 g.",
+        "Šķiedra - 8 g."
+      ]
+    },
+    {
+      "id": 65,
+      "imgPath": "../img/other/7.webp",
+      "articul": "No. 009",
+      "title": "Linu sēklas",
+      "text": "",
+      "price": "0.50",
+      "unit": "50 gr.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "seeds",
+      "descr": [
+        "Tauki - 10,1 g.",
+        "Ogļhidrāti - 28 g.",
+        "Olbaltumvielas - 33 g.",
+        "Šķiedra - 15 g."
+      ]
+    },
+    {
+      "id": 66,
+      "imgPath": "../img/other/8.webp",
+      "articul": "No. 010",
+      "title": "Ķirbju sēklas",
+      "text": "",
+      "price": "0.90",
+      "unit": "50 gr.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "seeds",
+      "descr": [
+        "Tauki - 49,05 g.",
+        "Olbaltumvielas - 30,23 g.",
+        "Ogļhidrāti - 10,71 g.",
+        "Šķiedra - 18 g."
+      ]
+    },
+
+
+
+
+
+
+    {
+      "id": 67,
+      "imgPath": "../img/1.webp",
+      "articul": "No. 068",
+      "title": "Triphala (Unifarma)",
+      "text": "Gremošanai",
+      "price": "0.20",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "food",
+      "descr": [
+        "Emblics - 166,6 mg;",
+        "Belerica - 166,6 mg;",
+        "Chebula - 166,6 mg;"                           
+      ]
+    },
+    {
+      "id": 68,
+      "imgPath": "../img/19.webp",
+      "articul": "No. 069",
+      "title": "OstroVit Caffeine",
+      "text": "Enerģijai",
+      "price": "0.10",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "think",
+      "descr": [
+        "Kofeīns 200 mg" 
+      ]
+    },
+    {
+      "id": 69,
+      "imgPath": "../img/18.webp",
+      "articul": "No. 070",
+      "title": "Glutathione (Ostravit)",
+      "text": "Imunitātei",
+      "price": "0.25",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "immunity",
+      "descr": [
+        "L-glutations - 200 mg" 
+      ]
+    },
+    {
+      "id": 70,
+      "imgPath": "../img/20.webp",
+      "articul": "No. 071",
+      "title": "Lion's Mane (Lauvas krēpes)",
+      "text": "Imūnsistēmai",
+      "price": "0.25",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "immunity",
+      "descr": [
+        "Lauvas krēpes ekstrakts - 500 mg"
+      ]
+    },
+    {
+      "id": 71,
+      "imgPath": "../img/21.webp",
+      "articul": "No. 072",
+      "title": "Chaga (Čagas ekstrakts)",
+      "text": "Imūnsistēmai",
+      "price": "0.25",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "immunity",
+      "descr": [
+        "Čagas sēņu ekstrakts - 500 mg"
+      ]
+    },
+    {
+      "id": 72,
+      "imgPath": "../img/22.webp",
+      "articul": "No. 073",
+      "title": "Cordyceps Mushroom (kordicepsa sēņu ekstrakts)",
+      "text": "Imūnsistēmai",
+      "price": "0.25",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "immunity",
+      "descr": [
+        "kordicepsa sēņu ekstrakts - 500 mg"
+      ]
+    },
+    {
+      "id": 73,
+      "imgPath": "../img/23.webp",
+      "articul": "No. 074",
+      "title": "Reishi Mushroom (reishi sēņu ekstrakts)",
+      "text": "Imūnsistēmai",
+      "price": "0.25",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "immunity",
+      "descr": [
+        "reishi sēņu ekstrakts - 240 mg"
+      ]
+    },
+    {
+      "id": 74,
+      "imgPath": "../img/24.webp",
+      "articul": "No. 075",
+      "title": "Shiitake Mushroom (šitaki sēņu ekstrakts)",
+      "text": "Imūnsistēmai",
+      "price": "0.35",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "immunity",
+      "descr": [
+        "šitaki sēņu ekstrakts - 500 mg"
+      ]
+    },
+    {
+      "id": 75,
+      "imgPath": "../img/other/11.webp",
+      "articul": "No. 076",
+      "title": "ICE POWER Roll",
+      "text": "(Aukstā želeja)",
+      "price": "0.20",
+      "unit": "gr.",
+      "mainCategory": "other",
+      "isOintments": true,
+      "category": "ointments",
+      "descr": [
+        "Mentols, etanols."
+      ]
+    },
+    {
+      "id": 76,
+      "imgPath": "../img/other/12.webp",
+      "articul": "No. 077",
+      "title": "Pantenola krēms ar urīnvielu",
+      "text": "(Lyofin Grieķija)",
+      "price": "0.50",
+      "unit": "gr.",
+      "mainCategory": "other",
+      "isOintments": true,
+      "category": "ointments",
+      "descr": [
+        "Pantenols, urīnviela un citi komponenti."
+      ]
+    },
+    {
+      "id": 77,
+      "imgPath": "../img/other/13.webp",
+      "articul": "No. 078",
+      "title": "Sustavit gēls",
+      "text": "(Arnika ar brioniju)",
+      "price": "0.05",
+      "unit": "gr.",
+      "mainCategory": "other",
+      "isOintments": true,
+      "category": "ointments",
+      "descr": [
+        "Kalnu arnika, baltais brions un citas sastāvdaļas."
+      ]
+    },
+    {
+      "id": 78,
+      "imgPath": "../img/other/14.webp",
+      "articul": "No. 079",
+      "title": "Lmp Sanagel",
+      "text": "(Lmp Sanagels)",
+      "price": "0.50",
+      "unit": "gr.",
+      "mainCategory": "other",
+      "isOintments": true,
+      "category": "ointments",
+      "descr": [
+        "1 g - metiluracils 30 mg, lidokaīna hidrohlorīds 20 mg"
+      ]
+    },
+    {
+      "id": 79,
+      "imgPath": "../img/other/15.webp",
+      "articul": "No. 080",
+      "title": "Diclac gēls 1%",
+      "text": "(Diclac 1% gels)",
+      "price": "0.15",
+      "unit": "gr.",
+      "mainCategory": "other",
+      "isOintments": true,
+      "category": "ointments",
+      "descr": [
+        "1 g - 10 mg diklofenaka nātrija."
+      ]
+    },
+    {
+      "id": 80,
+      "imgPath": "../img/other/16.webp",
+      "articul": "No. 081",
+      "title": "Lioton Gel 1000 SV/g",
+      "text": "(Lioton gels 1000 SV/g)",
+      "price": "0.40",
+      "unit": "gr.",
+      "mainCategory": "other",
+      "isOintments": true,
+      "category": "ointments",
+      "descr": [
+        "nātrija heparīns 1000 SV"
+      ]
+    },
+    {
+      "id": 81,
+      "imgPath": "../img/other/17.webp",
+      "articul": "No. 082",
+      "title": "Olfen gēls",
+      "text": "(OLFEN 1% gels)",
+      "price": "0.15",
+      "unit": "gr.",
+      "mainCategory": "other",
+      "isOintments": true,
+      "category": "ointments",
+      "descr": [
+        "1 g - 10 mg diklofenaka nātrija"
+      ]
+    },
+    {
+      "id": 82,
+      "imgPath": "../img/other/18.webp",
+      "articul": "No. 083",
+      "title": "Bepanthen gels",
+      "text": "(Bepanthen gels)",
+      "price": "0.22",
+      "unit": "gr.",
+      "mainCategory": "other",
+      "isOintments": true,
+      "category": "ointments",
+      "descr": [
+        "1 g - 50 mg dekspantenola"
+      ]
+    },
+    {
+      "id": 83,
+      "imgPath": "../img/other/19.webp",
+      "articul": "No. 084",
+      "title": "Lmp brūču ziede",
+      "text": "(Lmp brūču gels)",
+      "price": "0.20",
+      "unit": "gr.",
+      "mainCategory": "other",
+      "isOintments": true,
+      "category": "ointments",
+      "descr": [
+        "1 g - lidokaīna hidrohlorīds 20 mg"
+      ]
+    },
+    {
+      "id": 84,
+      "imgPath": "../img/other/20.webp",
+      "articul": "No. 085",
+      "title": "Lmp niezes želeja",
+      "text": "(Lmp pretniezes gels)",
+      "price": "0.20",
+      "unit": "gr.",
+      "mainCategory": "other",
+      "isOintments": true,
+      "category": "ointments",
+      "descr": [
+        "1 g - difenhidramīna hidrohlorīds 10 mg"
+      ]
+    },
+    {
+      "id": 85,
+      "imgPath": "../img/other/21.webp",
+      "articul": "No. 086",
+      "title": "Lmp Gel Ortofena",
+      "text": "(Lmp Ortofēna gels)",
+      "price": "0.20",
+      "unit": "gr.",
+      "mainCategory": "other",
+      "isOintments": true,
+      "category": "ointments",
+      "descr": [
+        "1 g - 50 mg diklofenaka nātrija"
+      ]
+    },
+    {
+      "id": 86,
+      "imgPath": "../img/vitamins/18.webp",
+      "articul": "No. 087",
+      "title": "Vitamin D (Nateo)",
+      "text": "Imunitātei",
+      "price": "0.35",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "D vitamīns - 4000 SV"
+      ]
+    },
+    {
+      "id": 87,
+      "imgPath": "../img/25.webp",
+      "articul": "No. 088",
+      "title": "MSM (Ostrovit)",
+      "text": "Imūnsistēmai",
+      "price": "0.15",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "immunity",
+      "descr": [
+        "Metilsulfanilmetāns - 2000 mg"
+      ]
+    },
+    {
+      "id": 88,
+      "imgPath": "../img/26.webp",
+      "articul": "No. 089",
+      "title": "Taurine Swanson (Amino Acid)",
+      "text": "Imūnsistēmai",
+      "price": "0.20",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "immunity",
+      "descr": [
+        "Taurīns - 500 mg"
+      ]
+    },
+    {
+      "id": 89,
+      "imgPath": "../img/27.webp",
+      "articul": "No. 090",
+      "title": "L-Arginine (Now Foods)",
+      "text": "Izturībai",
+      "price": "0.20",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "immunity",
+      "descr": [
+        "L-arginīns - 1000 mg"
+      ]
+    },
+    {
+      "id": 90,
+      "imgPath": "../img/28.webp",
+      "articul": "No. 091",
+      "title": "Gaba (Now Foods)",
+      "text": "Miegam",
+      "price": "0.17",
+      "unit": "gab.",
+      "mainCategory": "bads",
+      "category": "sleep",
+      "descr": [
+        "Gamma-aminosviestskābe - 500 mg",
+        "B6 vitamīns - 2 mg"
+      ]
+    },
+    {
+      "id": 91,
+      "imgPath": "../img/29.webp",
+      "articul": "No. 092",
+      "title": "Kolagēna (Hialuronskābe Ostrovit)",
+      "text": "Kauliem, nagiem, matiem",
+      "price": "0.20",
+      "unit": "gab.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 92,
+      "imgPath": "../img/30.webp",
+      "articul": "No. 093",
+      "title": "Eliksīrs kuņģim (Vital Elixir)",
+      "text": "Gremošanai",
+      "price": "0.06 €",
+      "unit": "gr.",
+      "isBadsGr": true,
+      "mainCategory": "bads",
+      "category": "food",
+      "descr": [
+        ""
+      ]
+    }
+  ]
+}

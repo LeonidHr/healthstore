@@ -1,0 +1,28 @@
+{
+  "popups": [  
+    {
+      "category": "popup-about",
+      "title": "Par mums",
+      "text": [
+        "Uzturā bagātinātāji, minerālvielas - pēdējā laikā ar vien vairāk par viņiem runā, bet kā izdomāt un saprast, kas vairāk der katram gadījumam .. šeit galvenais pluss mūsu platforma, ko var pasūtīt pa kapsulām. Tādā veidā, jūs varat no sākuma pamēģināt mūsu preci un tad jau pasūtīt pilnos iepakojumus.",
+        "Pieejams vienmēr liela izvēle dažādas preces veselibai, ja kaut kas nav saite, jūs varat uzrakstīt mums un mēs skatāmies pieejamību noliktavā pēc jūsu pozīcijam. Pasūtīt preci var caur saiti, paņemt preci var jebkurā izsniegšanas punktā - Arēnā Rīga vai Iļģuciema.",
+        "Pēc jautājumiem lūdzu zvaniet. ",
+        "Būsim priecīgi dot konsultāciju jums par mūsu asortimentu, dot padomu par vispareizako preci kurš derēs jūsu veselībai.",
+        "Ar cieņu"
+      ],
+      "imgPath": "img/logo.svg"
+    },
+    {
+      "category": "popup-payment",
+      "title": "Apmaksa un piegāde ",
+      "text": [
+        "Preces pasūtījums izpildās saitā, tur vajag norādīt, ka jums būs ērtāk saņemt preci - ar pašsaņemšanu vai ar nosūtīšanu. ",
+        "Ja jūs paši brauksiet pēc preces tad uz vietas varēsiet uzreiz samaksāt.",
+        "Ja ar piegādi, tad jums būs atsūtīts rēķins, kur varēsiet apmaksāt pasūtījumu. ",
+        "Preci nosūtam, un izsniedzam tikai pēc 100% apmaksas. ",
+        "Ar cieņu"
+      ],
+      "imgPath": "img/logo.svg"
+    }
+  ]
+}

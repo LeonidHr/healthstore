@@ -1,17 +1,12 @@
-// function getLastButtonClicksJson() {
-//   let json = localStorage.getItem('buttonClicks');
-//   if (json) {
-//     // Если в локальном хранилище есть JSON объект, возвращаем его
-//     let buttonClicks = JSON.parse(json);
-//     return buttonClicks;
-//   } else {
-//     // Если объекта в локальном хранилище нет, возвращаем пустой JSON объект
-//     return '{}';
-//   }
-// }
 
-// let lastButtonClicksJson = getLastButtonClicksJson();
-// console.log(lastButtonClicksJson);
+
+function checkIndexHtml() {
+  if (window.location.href.indexOf('index.htm') > -1) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 const getData = async (url) => {
   const response = await fetch(url);
@@ -19,35 +14,71 @@ const getData = async (url) => {
 };
 
 async function viewProduct() {
-  const data = await getData('../assets/json/products.json');
+  let langPath = 'ru';
+  let filters;
+  if (checkUrl('/lv/')) {
+    langPath = 'lv';
+  }
+
+  const langArr = getLang();
+
+  if (langArr[0] == 'ru') {
+    document.querySelector('.special-products__title ').innerHTML = 'Другие товары';
+    data = await getData('../../assets/json/products.json');
+    filters = await getData('../../assets/json/filters.json');
+  } else if (langArr[0] == 'lv') {
+    document.querySelector('.special-products__title ').innerHTML = 'Citi piedāvājumi';
+    data = await getData('../../assets/json/products-lv.json');
+    filters = await getData('../../assets/json/filters-lv.json');
+  } else if (langPath == 'lv') {
+    document.querySelector('.special-products__title ').innerHTML = 'Citi piedāvājumi';
+    data = await getData('../../assets/json/products-lv.json');
+    filters = await getData('../../assets/json/filters-lv.json');
+  } else {
+    document.querySelector('.special-products__title ').innerHTML = 'Другие товары';
+    data = await getData('../../assets/json/products.json');
+    filters = await getData('../../assets/json/filters.json');
+  }
+  // const data = await getData('../assets/json/products.json');
   let postsData = data.products;
   const product = document.getElementById('product-wrap');
   const path = document.getElementById('page-path');
   const documetnId = document.documentElement.getAttribute('id');
 
-  viewAnalogs(postsData);
+  const langs = document.querySelectorAll('[data-lang]');
 
-  const pathContent = `
-    <div class="breadcrumb-wrapper delemeter_3">
-      <ul class="breadcrumb">
-        <li class="breadcrumb-item home">
-          <a class="breadcrumb-link" title="Главная" href="../index.htm">Главная</a
-          >
-        </li>
 
-        <li class="breadcrumb-item" data-breadcrumbs="2">
-          <a class="breadcrumb-link">${postsData[documetnId].mainCategory}</a
-          >
-        </li>
+  if (langArr[0] == 'lv') {
+    langPath = 'lv';
+  }
 
-        <li class="breadcrumb-item" data-breadcrumbs="2">
-          <a class="breadcrumb-link">${postsData[documetnId].title}</a>
-        </li>
-      </ul>
-    </div>
-  `
+  for (let i = 0; i < filters.filters.length; i++) {
+    if (filters.filters[i].category == postsData[documetnId].mainCategory) {
+      const pathContent = `
+        <div class="breadcrumb-wrapper delemeter_3">
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item home">
+              <a class="breadcrumb-link" title="Главная" href="../index.htm">${langPath == 'ru' ? 'Главная' : 'Galvenā'}</a
+              >
+            </li>
+    
+            <li class="breadcrumb-item" data-breadcrumbs="2">
+              <a class="breadcrumb-link">${filters.filters[i].categoryTitle}</a
+              >
+            </li>
+    
+            <li class="breadcrumb-item" data-breadcrumbs="2">
+              <a class="breadcrumb-link">${postsData[documetnId].title}</a>
+            </li>
+          </ul>
+        </div>
+      `;
+    
+      path.insertAdjacentHTML("beforeend", pathContent);
+    }
+  }
 
-  path.insertAdjacentHTML("beforeend", pathContent);
+
   document.title = postsData[documetnId].title;
 
 
@@ -78,20 +109,35 @@ async function viewProduct() {
   }
 
   let buttons = `
-    <button data-num="5" type="button">5 шт.</button>
-    <button data-num="10" type="button">10 шт.</button>
-    <button data-num="15" type="button">15 шт. </button>
-    <button data-num="20" type="button">20 шт.</button>
+    <button data-add="10" data-num="10" type="button">10 ${langPath == 'ru' ? 'шт' : 'gab'}.</button>
+    <button data-add="15" data-num="15" type="button">15 ${langPath == 'ru' ? 'шт' : 'gab'}.</button>
+    <button data-add="20" data-num="20" type="button">20 ${langPath == 'ru' ? 'шт' : 'gab'}.</button>
+    <button data-other-num type="button">${langPath == 'ru' ? 'Другое' : 'Cits'}</button>
   `;
 
   if (postsData[documetnId].isHerbs) {
-    buttons = `<button data-num="1" type="button">10 гр.</button>`;
+    buttons = `
+      <button data-add data-num="1" type="button">10 ${langPath == 'ru' ? 'гр' : 'gr'}.</button>
+      <button data-other-num type="button">${langPath == 'ru' ? 'Другое' : 'Cits'}</button>
+    `;
   }
   if (postsData[documetnId].isOther) {
-    buttons = `<button data-num="1" type="button">50 гр.</button>`;
+    buttons = `
+      <button data-add data-num="1" type="button">50 ${langPath == 'ru' ? 'гр' : 'gr'}.</button>
+      <button data-other-num type="button">${langPath == 'ru' ? 'Другое' : 'Cits'}</button>
+    `;
   }
   if (postsData[documetnId].isBadsGr) {
-    buttons = `<button data-num="50" type="button">50 гр.</button>`;
+    buttons = `
+      <button data-add data-num="50" type="button">50 ${langPath == 'ru' ? 'гр' : 'gr'}.</button>
+      <button data-other-num type="button">${langPath == 'ru' ? 'Другое' : 'Cits'}</button>
+    `;
+  }
+  if (postsData[documetnId].isOintments) {
+    buttons = `
+      <button data-add="10" data-num="10" type="button">10 ${langPath == 'ru' ? 'гр' : 'gr'}.</button>
+      <button style="display:none;" data-other-num type="button">${langPath == 'ru' ? 'Другое' : 'Cits'}</button> 
+    `;
   }
   
 
@@ -138,17 +184,17 @@ async function viewProduct() {
           
         <div data-showmore class="more-block">
           <div data-showmore-content="0" class="block__content">
-            <h6>Состав</h6>
+            <h6>${langPath == 'ru' ? 'Состав' : 'Sastāvs'}</h6>
             <div>
               ${img2}
             </div>
           </div>
           <button hidden data-showmore-button type="button" class="block__more">
             <div>
-              <span>Состав</span>
-              <span>Скыть</span>
+              <span>${langPath == 'ru' ? 'Состав' : 'Sastāvs'}</span>
+              <span>${langPath == 'ru' ? 'Скрыть' : 'Slēpt'}</span>
             </div>
-            <img src="../img/arrow-down.svg" />
+            <img src="/img/arrow-down.svg" />
           </button>
         </div>
         </div>
@@ -162,14 +208,17 @@ async function viewProduct() {
             class="product__price-old"
             data-product-card-old-price=""
           ></span>
-          за ${postsData[documetnId].unit}
+          ${langPath == 'ru' ? 'за' : 'par'} ${postsData[documetnId].unit}
         </div>
       </div>
         <div class="product-form__area-variants-bundle">
           <input type="hidden" name="variant_id" value="579206704" />
         </div>
         <div class="product-form__counters">
-          <div class="product__block-title">Кол-во шт.</div>
+          <div class="product__block-title">${langPath == 'ru' ? 'Кол-во шт.' : 'Daudzums, gab.'}</div>
+          <div class="counter-input">
+            <input type="text" placeholder="${langPath == 'ru' ? 'Введите кол-во' : 'Ievadiet daudzumu'}" />
+          </div>
           <div class="product-form__counters-btns">
             ${buttons}
           </div>
@@ -189,22 +238,23 @@ async function viewProduct() {
                     <button type="button" class="button button_size-l add-cart-counter__btn" data-add-cart-counter-btn="">
                         <span class="button__icon icon-cart"></span>
                         <span class="add-cart-counter__btn-label">
-                        В корзину
+                        ${langPath == 'ru' ? 'В корзину' : 'Pievienot grozā'} 
                       </span>
                     </button>
                     <div class="add-cart-counter__controls">
                       <a
-                        href="../cart_items.html"
+                        href="/cart_items-${langPath}.html"
                         class="button button_size-l add-cart-counter__detail"
                       >
                         <span class="add-cart-counter__detail-text"
-                          >В корзине
+                          >${langPath == 'ru' ? 'В корзине' : 'Grozā'}
                           <span data-add-cart-counter-count=""></span>
+                          ${postsData[documetnId].unit}
                         </span
                         >
                         <span class="add-cart-counter__detail-dop-text"
-                          >Перейти</span
-                        >
+                          >${langPath == 'ru' ? 'Перейти' : 'Pāriet'}</span> 
+                        
                       </a>
                     </div>
                   </div>
@@ -226,7 +276,7 @@ async function viewProduct() {
           </div>
         </div>
         <p class="product__text">
-          * Перед применением этого или любого другого товара с нашего сайта, проконсультируйтесь с врачом
+           ${langPath == 'ru' ? '* Перед применением этого или любого другого товара с нашего сайта, проконсультируйтесь с врачом' : '* pirms lietošanas kādu no mūsu piedāvātiem produktiem vietnē, konsultējieties ar savu ārstu.'} 
         </p>
         
       </form>
@@ -249,21 +299,14 @@ async function viewProduct() {
   document.querySelector('meta[name="description"]').setAttribute("content", postsData[documetnId].title);
 
 
-  const countBtns = document.querySelectorAll('.product-form__counters-btns button');
+  const countBtns = document.querySelectorAll('[data-num]');
   countBtns.forEach(btn => {
     btn.addEventListener("click", e => {
+      document.querySelector('.counter-input input').value = e.target.dataset.num;
       addProductToCart(e.target.closest('[data-product]').getAttribute('id'), e.target.dataset.num);
-      // addToCart(e.target.closest('[data-product]').getAttribute('id'), e.target.dataset.num);
     });
 
     initSliders();
-
-    
-
-    // document.querySelectorAll('.lg-container').forEach(lg => {
-    //   lg.style.display = 'none';
-    // });
-    // document.querySelector('.lg-container').style.display = "block";
 
   });
 
@@ -280,8 +323,8 @@ async function viewProduct() {
       })
     });
   }
-
-
+  viewAnalogs(data, langPath);
+  viewInput(postsData[documetnId]);
   addBtnsClick();
   showMore();
 }
@@ -289,14 +332,49 @@ async function viewProduct() {
 viewProduct();
 
 
-function viewAnalogs(postsData) {
+function addFunctionalInp(input, data) {
+  const toCartBtn = document.querySelector('[data-add-cart-counter-btn]');
+
+  input.addEventListener("input", () => {
+    addBtnsClick();
+    if (data.isOther || data.isBadsGr) {
+      toCartBtn.setAttribute('data-num', input.value / 50);
+      toCartBtn.setAttribute('data-add', input.value);
+    } else if (data.isHerbs) {
+      toCartBtn.setAttribute('data-num', input.value / 10);
+      toCartBtn.setAttribute('data-add', input.value);
+    } else {
+      toCartBtn.setAttribute('data-num', input.value);
+      toCartBtn.setAttribute('data-add', input.value);
+    }
+
+    addProductToCart(input.closest('[data-product]').getAttribute('id'), toCartBtn.dataset.num);
+    document.querySelector('.add-cart-counter').classList.remove('is-add-cart');
+  });
+}
+
+function viewInput(data) {
+  const input = document.querySelector('.counter-input input');
+  document.querySelector('[data-other-num]').addEventListener("click", e => {
+    input.classList.add('_view');
+  });
+
+  addFunctionalInp(input, data);
+}
+
+function viewAnalogs(postsData, lang) {
   const analogsWrap = document.getElementById('analogs-wrap');
   const randomNumbers = generateRandomNumbers();
 
-  for (let i = 0; i < 5; i++) {
+
+  const data = postsData.products;
+
+  for (let i = 0; i < 4; i++) {
+
+    console.log(data[randomNumbers[i]].id);
 
     const postEl = `
-      <div id="${postsData[randomNumbers[i]].id}" class="product-preview-elem _sending">
+      <div id="${data[randomNumbers[i]].id}" class="product-preview-elem _sending">
         <form
           action="/cart_items"
           method="post"
@@ -308,26 +386,26 @@ function viewAnalogs(postsData) {
                 <div class="img-ratio img-fit">
                   <div class="img-ratio__inner">
                     <a
-                      href="product${postsData[randomNumbers[i]].id}.html"
+                      href="https://health.ispace.lv/${lang}/product/product${data[randomNumbers[i]].id}.html"
                     >
                       <picture>
                         <source
                           media="(min-width:768px)"
-                          data-srcset="../${postsData[randomNumbers[i]].imgPath}"
+                          data-srcset="../${data[randomNumbers[i]].imgPath}"
                           type="image/webp"
                           class="lazyload"
                         />
                         <source
                           media="(max-width:767px)"
-                          data-srcset="../${postsData[randomNumbers[i]].imgPath}"
+                          data-srcset="../${data[randomNumbers[i]].imgPath}"
                           type="image/webp"
                           class="lazyload"
                         />
                         <img
-                          src="../${postsData[randomNumbers[i]].imgPath}"
-                          data-src="../${postsData[randomNumbers[i]].imgPath}"
+                          src="../${data[randomNumbers[i]].imgPath}"
+                          data-src="../${data[randomNumbers[i]].imgPath}"
                           class="lazyload"
-                          alt="${postsData[randomNumbers[i]].title}"
+                          alt="${data[randomNumbers[i]].title}"
                         />
                       </picture>
                     </a>
@@ -338,10 +416,10 @@ function viewAnalogs(postsData) {
             </div>
             <div class="product-preview__area-title">
               <div class="product-preview__title">
-                <a href="product${postsData[randomNumbers[i]].id}.html">
-                  <p class="product-preview__label">${postsData[randomNumbers[i]].title}</p>
-                  <p class="product-preview__text">${postsData[randomNumbers[i]].text}</p>      
-                  <p class="product-preview__articul">${postsData[randomNumbers[i]].articul}</p>      
+                <a href="https://health.ispace.lv/${lang}/product/product${data[randomNumbers[i]].id}.html">
+                  <p class="product-preview__label">${data[randomNumbers[i]].title}</p>
+                  <p class="product-preview__text">${data[randomNumbers[i]].text}</p>      
+                  <p class="product-preview__articul">${data[randomNumbers[i]].articul}</p>      
                 </a>
               </div>
             </div>
@@ -359,8 +437,8 @@ function viewAnalogs(postsData) {
 
 function generateRandomNumbers() {
   const numbers = [];
-  while (numbers.length < 5) {
-    const randomNumber = Math.floor(Math.random() * 17);
+  while (numbers.length < 4) {
+    const randomNumber = Math.floor(Math.random() * 90);
     if (!numbers.includes(randomNumber)) {
       numbers.push(randomNumber);
     }
@@ -416,7 +494,7 @@ function removeSending() {
 }
 
 function addBtnsClick() {
-  const btns = document.querySelectorAll('.product-form__counters-btns button');
+  const btns = document.querySelectorAll('[data-num]');
   const addCartBtn = document.querySelector('.add-cart-counter');
   const addCartBtnCount =  addCartBtn.querySelector('[data-add-cart-counter-count]');
 
@@ -424,7 +502,7 @@ function addBtnsClick() {
   btns.forEach(btn => {
     btn.addEventListener("click", e => {
       addCartBtn.classList.add('is-add-cart');
-      addCartBtnCount.innerHTML = btn.innerHTML;
+      addCartBtnCount.innerHTML = btn.dataset.add;
     });
   });
 }
@@ -498,7 +576,6 @@ let _slideDown = (target, duration = 500, showmore = 0) => {
 		}, duration);
 	}
 }
-
 
 function showMore() {
 	// window.addEventListener("load", function (e) {
@@ -704,4 +781,13 @@ function initSliders() {
       },
 		});
 	}
+}
+
+
+function checkUrl(val) {
+  if (window.location.href.indexOf(val) > -1) {
+    return true;
+  } else {
+    return false;
+  }
 }

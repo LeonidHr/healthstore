@@ -1,0 +1,92 @@
+{
+  "filters": [  
+    {
+      "category": "bads",
+      "categoryTitle": "Uztura bagātinātāji",
+      "content": [
+        "Viss",
+        "Gremošanai",
+        "Miegai un atpūtai",
+        "Jautrībai un garastāvoklim",
+        "Imunitātei",
+        "Citi"
+      ],
+      "filters": [
+        "all",
+        "food",
+        "sleep",
+        "think",
+        "immunity",
+        "others"
+      ]
+    },
+    {
+      "category": "vitamins",
+      "categoryTitle": "Vitamīni un minerāli",
+      "content": [
+        "Viss",
+        "Nervu sistēmai",
+        "Imūnsistēmai",
+        "Enerģijai"
+      ],
+      "filters": [
+        "all",
+        "nerves",
+        "immunity",
+        "energy"
+      ]
+    },
+    {
+      "category": "capsules",
+      "categoryTitle": "Kapsulas, tabletes",
+      "content": [
+        "Viss",
+        "Gremošanas sistēmai",
+        "Nervu sistēmai",
+        "Cits"
+      ],
+      "filters": [
+        "all",
+        "gastrointestinal",
+        "nerves",
+        "others"
+      ]
+    },
+    {
+      "category": "herbs",
+      "categoryTitle": "Zāles",
+      "content": [
+        "Viss",
+        "Gremošanas sistēmai",
+        "Nervu sistēmai",
+        "Imūnsistēmai",
+        "Cits"
+      ],
+      "filters": [
+        "all",
+        "gastrointestinal",
+        "nerves",
+        "immunity",
+        "others"
+      ]
+    },
+    {
+      "category": "other",
+      "categoryTitle": "Pārējais",
+      "content": [
+        "Viss",
+        "Smēres un gēli",
+        "Proteīns",
+        "Rieksti un sēklas",
+        "Cits"
+      ],
+      "filters": [
+        "all",
+        "ointments",
+        "protein",
+        "seeds",
+        "others"
+      ]
+    }
+  ]
+}

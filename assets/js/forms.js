@@ -227,6 +227,7 @@ function formSubmit() {
 				if (response.ok) {
 					let responseResult = await response.json();
 
+					console.log(responseResult);
 					form.classList.remove('_sending');
 					formSent(form, responseResult);
 				} else {
@@ -280,10 +281,25 @@ function showPopup(form, isSucsess, response = '',) {
 		new Popup({}).open(popup);
 	}, 0);
 
-	// setTimeout(() => {
-	// 	const popup = form.dataset.popupMessage;
-	// 	new Popup({}).close(popup);
-	// }, 5000);
+	setTimeout(() => {
+		const url = window.location.href;
+		let newUrl = '';
+
+		if (url.indexOf('/cart_items.html#popup-form') !== -1) {
+			newUrl = url.replace('/cart_items.html#popup-form', '');
+		} else if (url.indexOf('/cart_items.html') !== -1) {
+			newUrl = url.replace('/cart_items.html', '');
+		}
+
+		const carts = document.querySelectorAll('.cart-checkout');
+
+		carts.forEach(cart => {
+			sessionStorage.removeItem('prodToCart');
+			cart.remove();
+		});
+
+		window.location.href = newUrl;
+	}, 2500);
 }
 
 

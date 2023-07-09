@@ -1,0 +1,1301 @@
+{
+  "products": [  
+    {
+      "id": 3,
+      "imgPath": "img/2.webp",
+      "articul": "No. 004",
+      "title": "Ashvaganda (Himalaya)",
+      "text": "Добавка для спокойствия",
+      "price": "0.20",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "calmness",
+      "descr": [
+        "250 мг экстракта из корня  Ашваганда"
+      ]
+    },
+    {
+      "id": 4,
+      "imgPath": "img/3.webp",
+      "articul": "No. 005",
+      "title": "Расторопша+Артишок (Биокор)",
+      "text": "Добавка для печени",
+      "price": "0.20",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "food",
+      "descr": [
+        "Шрот расторопши (Биокор)",
+        "Экстракт плодов шиповника сухой",
+        "Экстракт листьев артишока сухой",
+        "Селен (селенопиран (9-фенил-симм-октагидроселеноксантен))"
+      ]
+    },
+    {
+      "id": 5,
+      "imgPath": "img/4.webp",
+      "articul": "No. 006",
+      "title": "5-HTP (Swanson)",
+      "text": "Добавка для работы мозга",
+      "price": "0.25",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "think",
+      "descr": [
+        "L-5 гидрокситриптофан - 100 mg;"
+      ]
+    },
+    {
+      "id": 6,
+      "imgPath": "img/5.webp",
+      "imgPath2": "img/4-1.webp",
+      "articul": "No. 007",
+      "title": "Super Enzymes (NOW)",
+      "text": "Добавка для пищеварения",
+      "price": "0.30",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "food",
+      "descr": [
+        ""
+      ]                                                                    
+    },
+    {
+      "id": 7,
+      "imgPath": "img/6.webp",
+      "articul": "No. 008",
+      "title": "L-Carnitine (Ostrovit)",
+      "text": "Добавка для выносливости",
+      "price": "0.25",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "others",
+      "descr": [
+        "L-Карнитин тартрат 1250мг"
+      ]
+    },
+    {
+      "id": 8,
+      "imgPath": "img/7.webp",
+      "articul": "No. 009",
+      "title": "L-theanine (Ostrovit)",
+      "text": "Добавка для работы мозга",
+      "price": "0.15",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "think",
+      "descr": [
+        "L-теанин 200 mg;",
+        "Инулин 100 mg;"
+      ]
+    },
+    {
+      "id": 9,
+      "imgPath": "img/8.webp",
+      "articul": "No. 010",
+      "title": "Brahmi (Bacopa) Himalaya",
+      "text": "Добавка для работы мозга",
+      "price": "0.25",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "think",
+      "descr": [
+        "Экстракт Брами (bacopa monnieri) 500 mg."
+      ]
+    },
+    {
+      "id": 10,
+      "imgPath": "img/9.webp",
+      "articul": "No. 011",
+      "title": "LIV-52 (Himalaya) ",
+      "text": "Добавка для печени",
+      "price": "0.15",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "food",
+      "descr": [
+        "порошок корней каперсов колючих - 65 mg.",
+        "порошок семян цикория обыкновенного - 65 mg.",
+        "порошок паслена черного  - 32 mg.",
+        "порошок коры терминалии арджуна  - 32 mg.",
+        "порошок семян кассии западной - 16 mg.",
+        "порошок herbs тысячелистника обыкновенного - 16 mg.",
+        "порошок тамарикса гальского - 16 mg."
+      ]
+    },
+    {
+      "id": 11,
+      "imgPath": "img/11.webp",
+      "articul": "No. 012",
+      "title": "Healthy Skin (Ostrovit)",
+      "text": "Добавка для кожи",
+      "price": "0.25",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "others",
+      "descr": [
+        "Гидролизованый говяжий колаген 350мг",
+        "Витамин C 200мг",
+        "Гиалуроновая кислота 100мг",
+        "Экстракт молотых частей хвоща (7% диоксида кремния) 100мг",
+        "Цинк (пиколинат цинка) 10мг",
+        "Витамин E (Dl-альфа-токоферилацетат) 12мг",
+        "Никотиновая кислота 16мг",
+        "Витамин B2 (рибофлавин) 15мг",
+        "Экстракт из листья японской ламинарии 15мг",
+        "Медь (диглицинат меди) 1.5мг",
+        "Витамин а (ретинола ацетат) 800µg",
+        "Биотин 500µg"
+      ]
+    },
+    {
+      "id": 12,
+      "imgPath": "img/12.webp",
+      "articul": "No. 013",
+      "title": "NeuroOffice (BioChronoss+)",
+      "text": "Добавка для продуктивности",
+      "price": "0.66",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "others",
+      "descr": [
+        "Витамин B6 2,8мг",
+        "Витамин B2 2,8мг",
+        "Витамин B1 2,8мг",
+        "Витамин B12 5μг",
+        "Cухой экстракт цветков пассифлоры инкарнатной 5:1 50мг",
+        "Сухой экстракт корней элеутерококка колючего 10:1 50мг",
+        "Сухой экстракт корней 5:1 25мг",
+        "Цинк 10 мг",
+        "L-триптофан 200мг",
+        "L-аргинин 40мг",
+        "L-теанин 40мг",
+        "Ацетил-L-карнитина гидрохлорид 40мг"
+      ]
+    },
+    {
+      "id": 13,
+      "imgPath": "img/13.webp",
+      "articul": "No. 014",
+      "title": "Immuno Shots (Acorus Balance)",
+      "text": "Добавка для иммунитета",
+      "price": "2.00",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "immunity",
+      "descr": [
+        "Концентрат ягод черной бузины (Sambucus nigra)",
+        "Сухой экстракт плодовых тел грибов шиитаке (Lentinula edodes) (12:1)",
+        "Сухой экстракт плодовых тел грибов рейши (Ganoderma lucidum) (5:1)",
+        "Витамин С (L-аскорбиновая кислота)",
+        "Ароматизатор лесных ягод",
+        "Сухой экстракт листьев зеленого чая (Camellia sinensis) (8:1)",
+        "Сухой экстракт корня пурпурной эхинацеи (Echinacea purpurea) (4:1)",
+        "Алтей обыкновенный (Thymus vulgaris) сухой экстракт листьев (4:1)"
+      ]
+    },
+    {
+      "id": 14,
+      "imgPath": "img/14.webp",
+      "articul": "No. 015",
+      "title": "Travelan (Olimp Labs)",
+      "text": "Добавка от укачивания",
+      "price": "0.70",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "others",
+      "descr": [
+        "Экстракт корневища имбиря - 150 mg.",
+        "Витамин B6 - 1.4 mg."
+      ]
+    },
+    {
+      "id": 15,
+      "imgPath": "img/15.webp",
+      "articul": "No. 016",
+      "title": "Мелатонин (Эвалар)",
+      "text": "Добавка для сна",
+      "price": "0.30",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "sleep",
+      "descr": [
+        "Мелатонин – 3,00 мг"
+      ]
+    },
+    {
+      "id": 16,
+      "imgPath": "img/16.webp",
+      "articul": "No. 017",
+      "title": "Chyawanprash (Dabur)",
+      "text": "Добавка для иммунитета",
+      "price": "0.03",
+      "unit": "гр.",
+      "isBadsGr": true,
+      "mainCategory": "bads",
+      "category": "immunity",
+      "descr": [
+        "Амла - 45.7%",
+        "Vidarikand - 3.7%",
+        "Перец длинный - 3%",
+        "Сандаловое дерево - 2.4%",
+        "Кардамон - 1.8%",
+        "Корень Акаркари - 1.5%",
+        "Арджун - 1.5%",
+        "Ашваганда - 1.5%",
+        "Спаржа - 1.5%",
+        "Бакопа - 1.5%",
+        "Bael (aegle) - 1.5%",
+        "Сида - 1.5%",
+        "Филлантус - 1.5%",
+        "Харитаки - 1.5%",
+        "Инжир - 1.5%",
+        "Имбирь - 1.5%",
+        "Виноград - 1.5%",
+        "Туласи - 1.5%",
+        "Девясил - 1.5%",
+        "Лептады сетчатки - 1.5%"
+      ]
+    },
+    {
+      "id": 17,
+      "imgPath": "img/17.webp",
+      "articul": "No. 018",
+      "title": "Эликсир Иммунитет (Vital Elixir)",
+      "text": "Добавка для иммунитета",
+      "price": "0.06",
+      "unit": "гр.",
+      "mainCategory": "bads",
+      "category": "immunity",
+      "isBadsGr": true,
+      "descr": [
+        "Экстракт плодов айвы - 150 µg;",     
+        "Экстракт яблока - 67 µg;",     
+        "Слива черная, сухой экстракт - 42,3 µg;",     
+        "Экстракт корня моркови - 20 µg;",     
+        "Экстракт почек сосны - 16 µg;",     
+        "Экстракт экстракта плодов груши - 14,8 µg;",     
+        "Экстракт плодов шиповника - 12 µg;",     
+        "Экстракт листьев подорожника - 11,8 µg;",     
+        "Экстракт цветков липы обыкновенной - 7,2 µg;",     
+        "Экстракт плодов черной бузины - 1,56 µg;",     
+        "Экстракт цветков календулы - 2,4 µg;",     
+        "Экстракт коры корицы - 1,8 µg;",     
+        "Экстракт бутонов гвоздики - 0,8 µg;",     
+        "Экстракт корня имбиря - 1,8 µg;",     
+        "Экстракт семян кардамона - 1,8 µg;",     
+        "Перец душистый, фруктовый экстракт - 1,8 µg;",     
+        "Кориандр, семена, экстракт плодов - 1,8 µg;",     
+        "Экстракт корневища лапчатки прямостоячей - 0,68 µg;",     
+        "Витамин С - 12 mg;",     
+        "Витамин B 12 - 2,5 µg."     
+      ]
+    },
+    {
+      "id": 18,
+      "imgPath": "img/vitamins/17.webp",
+      "articul": "No. 019",
+      "title": "Vitamin K2",
+      "text": "Добавка для иммунитета",
+      "price": "0.15",
+      "unit": "шт.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Витамин K2 vitaMK7 - 100 µg" 
+      ]
+    }, 
+    {
+      "id": 19,
+      "imgPath": "img/10.webp",
+      "articul": "No. 020",
+      "title": "Калия Йодид (Витамир)",
+      "text": "Йод",
+      "price": "0.04",
+      "unit": "шт.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Калия йодид 200мкг"
+      ]
+    },
+    {
+      "id": 20,
+      "imgPath": "img/vitamins/1.webp",
+      "articul": "No. 021",
+      "title": "Комплекс витаминов B группы (Jonax)",
+      "text": "для нервной системы",
+      "price": "0.30",
+      "unit": "шт.",
+      "mainCategory": "vitamins",
+      "category": "nerves",
+      "descr": [
+        "Ниацин - 100 mg;",
+        "Витамин B5 - 50 mg;",
+        "Витамин B1 - 30 mg; ",
+        "Витамин B2 - 30 mg; ",
+        "Витамин B6 - 20 mg;",
+        "Биотин - 300 μg;",
+        "Витамин B12 - 20 µg"
+      ]
+    },
+    {
+      "id": 21,
+      "imgPath": "img/vitamins/2.webp",
+      "articul": "No. 022",
+      "title": "D витамин + Омега 3 + K2 (Mollers)",
+      "text": "для иммунитета",
+      "price": "0.60",
+      "unit": "шт.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Омега-3 - 660 mg; ",
+        "DHS - 240 mg;",
+        "EPS - 320 mg;",
+        "Витамин D-3 - 50 µg;",
+        "Витамин К2 - 50 µg;"
+      ]
+    },
+    {
+      "id": 22,
+      "imgPath": "img/vitamins/3.webp",
+      "articul": "No. 023",
+      "title": "Кальций+Калий+Магний+Цинк (Biofarmacija)",
+      "text": "для иммунитета",
+      "price": "0.60",
+      "unit": "шт.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Кальций - 520 mg;",
+        "Калий - 300 mg;",
+        "Магний - 200 mg; ",
+        "Цинк - 15 mg;",
+        "Витамин D3 - 5 µg;"
+      ]
+    },
+    {
+      "id": 23,
+      "imgPath": "img/vitamins/4.webp",
+      "articul": "No. 024",
+      "title": "Pre Race drink (Aptona)",
+      "text": "для спокойной тренировки",
+      "price": "1.44",
+      "unit": "шт.",
+      "mainCategory": "vitamins",
+      "category": "energy",
+      "descr": [
+        "Мелисса;",
+        "Витамины В1, В2, В6;",
+        "Витамин С;"
+      ]
+    },
+    {
+      "id": 24,
+      "imgPath": "img/vitamins/16.webp",
+      "articul": "No. 025",
+      "title": "Витамин B5 (Пантотеновая кислота) Osavi",
+      "text": "для энергии",
+      "price": "0.20",
+      "unit": "шт.",
+      "mainCategory": "vitamins",
+      "category": "energy",
+      "descr": [
+        "Пантотеновая кислота - 200 mg."
+      ]
+    },
+    {
+      "id": 25,
+      "imgPath": "img/vitamins/15.webp",
+      "articul": "No. 026",
+      "title": "Железо + Витамины (Altapharma)",
+      "text": "для иммунитета",
+      "price": "0.15",
+      "unit": "шт.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Железо - 14 mg;",
+        "Витамин C - 80mg;",
+        "Витамин В12 - 2,5µg;",
+        "Фолиева кислота - 200 µg."
+      ]
+    },
+    {
+      "id": 26,
+      "imgPath": "img/vitamins/7.webp",
+      "articul": "No. 027",
+      "title": "Selen/Zinc (Walmark)",
+      "text": "для иммунитета",
+      "price": "0.30",
+      "unit": "шт.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Селен - 100 µg",
+        "Черный перец- 5 mg;"
+      ]
+    },
+    {
+      "id": 27,
+      "imgPath": "img/vitamins/8.webp",
+      "articul": "No. 028",
+      "title": "Dias Collagen",
+      "text": "для кожи, костей, мышц",
+      "price": "1.60",
+      "unit": "шт.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Коллаген типа I и типа II - 4000 mg",
+        "Гиалуроновая кислота - 50 мг",
+        "Магний - 100 мг",
+        "Цинк - 5 мг",
+        "Марганец - 1 мг",
+        "Медь - 500 мкг",
+        "ВИТАМИН С - 80 мг",
+        "ВИТАМИН D - 10 мкг"
+      ]
+    },
+    {
+      "id": 28,
+      "imgPath": "img/vitamins/9.webp",
+      "articul": "No. 029",
+      "title": "Магний 200 mg",
+      "text": "для нервной системы, расслабления мышц",
+      "price": "0.22",
+      "unit": "шт.",
+      "mainCategory": "vitamins",
+      "category": "nerves",
+      "descr": [
+        "Магний - 200,0 mg;"
+      ]
+    },
+    {
+      "id": 29,
+      "imgPath": "img/vitamins/10.webp",
+      "imgPath2": "img/vitamins/10-1.webp",
+      "articul": "No. 030",
+      "title": "Комплекс витаминов и минералов Altapharma",
+      "text": "для иммунитета",
+      "price": "0.15",
+      "unit": "шт.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 30,
+      "imgPath": "img/vitamins/11.webp",
+      "articul": "No. 031",
+      "title": "Immunosil Virufix",
+      "text": "для иммунитета",
+      "price": "0.40",
+      "unit": "шт.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Цинк - 19,9 mg;",
+        "Кверцетин - 500 µg;",
+        "Витамин С - 1000 mg;",
+        "Витамин D - 100 µg;"
+      ]
+    },
+    {
+      "id": 31,
+      "imgPath": "img/vitamins/12.webp",
+      "articul": "No. 032",
+      "title": "Coenzyme Q10",
+      "text": "для кислорода",
+      "price": "0.35",
+      "unit": "шт.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Коэнзим Q10 - 60 mg; "
+      ]
+    },
+    {
+      "id": 32,
+      "imgPath": "img/vitamins/13.webp",
+      "articul": "No. 033",
+      "title": "Senior Complex (комплекс витаминов с Гинкго Билобой)",
+      "text": "для иммунитета",
+      "price": "0.30",
+      "unit": "шт.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Витамин А - 135 µg; ",
+        "Витамин B1 - 3 mg; ",
+        "Витамин В2 - 3,5 mg; ",
+        "Витамин B3 - 12,5 mg; ",
+        "Витамин B5 - 5 mg;",
+        "Витамин B6 - 2 mg;",
+        "Фолиевая кислота - 200 µg;",
+        "Витамин B12 - 75 µg;",
+        "Биотин - 75 µg;",
+        "Витамин D3 - 12,5 µg;",
+        "Витамин Е - 24 mg;",
+        "Витамин K2 - 15 µg;",
+        "Инозитол - 15 mg;",
+        "Йод - 37,5 µg;",
+        "Магний - 15 mg;",
+        "Селен - 30 µg;",
+        "Экстракт листьев гинкго - 14 mg;",
+        "Экстракт ашваганды - 10 mg;",
+        "Коэнзим Q10 натуральный - 15 mg."
+      ]
+    },
+    {
+      "id": 33,
+      "imgPath": "img/vitamins/14.webp",
+      "articul": "No. 034",
+      "title": "Zink/Vitamin (Altapharma)",
+      "text": "для иммунитета",
+      "price": "0.15",
+      "unit": "шт.",
+      "mainCategory": "vitamins",
+      "category": "immunity",
+      "descr": [
+        "Цинк - 5 mg;",
+        "Витамин С - 300 mg"
+      ]
+    },
+    {
+      "id": 34,
+      "imgPath": "img/pills/1.webp",
+      "articul": "No. 035",
+      "title": "Fenkarol",
+      "text": "противоаллергические",
+      "price": "0.22",
+      "unit": "шт.",
+      "mainCategory": "capsules",
+      "category": "others",
+      "descr": [
+        "50 мг квифенадин гидрохлорид"
+      ]
+    },
+    
+    {
+      "id": 35,
+      "imgPath": "img/pills/2.webp",
+      "articul": "No. 036",
+      "title": "GoRespiro",
+      "text": "для дыхания",
+      "price": "0.46",
+      "unit": "шт.",
+      "mainCategory": "capsules",
+      "category": "others",
+      "descr": [
+        "Экстракт босвеллии - 130 mg;",
+        "Экстракт пассифлоры -  110 mg;",
+        "Экстракт очанки - 83 mg;",
+        "Экстракт аниса - 50 mg;",
+        "Кверцетин - 20 mg;",
+        "Экстракт сосны - 20 mg;",
+        "Птеростильбен - 20 mg;",
+        "Экстракт плюща - 17 mg;",
+        "Порошок водоросли (астаксантина) -10 mg;",
+        "Порошок ликопина - 10 mg."
+      ]
+    },
+    {
+      "id": 36,
+      "imgPath": "img/pills/3.webp",
+      "articul": "No. 037",
+      "title": "Escadra",
+      "text": "для желудка",
+      "price": "0.30",
+      "unit": "шт.",
+      "mainCategory": "capsules",
+      "category": "gastrointestinal",
+      "descr": [
+        "Эзомепразол - 20 mg"
+      ]
+    },
+    {
+      "id": 37,
+      "imgPath": "img/pills/4.webp",
+      "articul": "No. 038",
+      "title": "Omeprazol",
+      "text": "для желудка",
+      "price": "0.18",
+      "unit": "шт.",
+      "mainCategory": "capsules",
+      "category": "gastrointestinal",
+      "descr": [
+        "Омепразол- 20 mg"
+      ]
+    },
+    {
+      "id": 38,
+      "imgPath": "img/pills/5.webp",
+      "articul": "No. 039",
+      "title": "Gastroval",
+      "text": "для пищеварения",
+      "price": "0.45",
+      "unit": "шт.",
+      "mainCategory": "capsules",
+      "category": "gastrointestinal",
+      "descr": [
+        "Магний - 200 mg;",
+        "Инулин - 100 mg;",
+        "Натензим - 75 mg;",
+        "Lactobacillus acidophilus - 11 mg; ",
+        "Бифидобактерии бифидум 3,7 mg;",
+        "Желтая горечавка - 60 mg;",
+        "Имбирь - 52 mg;",
+        "Фенхель - 50 mg;",
+        "Trigonella foenum-graecum - 50 mg;",
+        "Рапонтикум сафлоровидный – 25 mg; ",
+        "Лакрица - 21 mg;",
+        "Сухой экстракт корня деглицирризированной солодки - 240 mg."
+      ]
+    },
+    {
+      "id": 39,
+      "imgPath": "img/pills/6.webp",
+      "imgPathSlide": "img/pills/6-1.webp",
+      "articul": "No. 040",
+      "title": "Boulardi",
+      "text": "Пробиотики для кишечника",
+      "price": "0.60",
+      "unit": "шт.",
+      "mainCategory": "capsules",
+      "category": "gastrointestinal",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 40,
+      "imgPath": "img/pills/7.webp",
+      "articul": "No. 041",
+      "title": "Mildronats",
+      "text": "для сил и энергии",
+      "price": "0.30",
+      "unit": "шт.",
+      "mainCategory": "capsules",
+      "category": "others",
+      "descr": [
+        "Дигидрата мельдония - 250 mg."
+      ]
+    },
+    {
+      "id": 41,
+      "imgPath": "img/pills/8.webp",
+      "articul": "No. 042",
+      "title": "Nalgedol",
+      "text": "обезболивающие",
+      "price": "0.22",
+      "unit": "шт.",
+      "mainCategory": "capsules",
+      "category": "others",
+      "descr": [
+        "Напроксен натрия - 220 mg;"
+      ]
+    },
+    {
+      "id": 42,
+      "imgPath": "img/pills/9.webp",
+      "articul": "No. 043",
+      "title": "Neurotin",
+      "text": "от нервных воспалений и болей",
+      "price": "0.20",
+      "unit": "шт.",
+      "mainCategory": "capsules",
+      "category": "nerves",
+      "descr": [
+        "Габапентин - 100 mg;"
+      ]
+    },
+    {
+      "id": 43,
+      "imgPath": "img/pills/10.webp",
+      "articul": "No. 044",
+      "title": "Sorbex",
+      "text": "сорбент при расстройстве желудка",
+      "price": "0.30",
+      "unit": "шт.",
+      "mainCategory": "capsules",
+      "category": "gastrointestinal",
+      "descr": [
+        "Активированный уголь - 300 mg."
+      ]
+    },
+    {
+      "id": 44,
+      "imgPath": "img/pills/11.webp",
+      "articul": "No. 045",
+      "title": "Noofen",
+      "text": "для снятия стресса и тревоги",
+      "price": "0.50",
+      "unit": "шт.",
+      "mainCategory": "capsules",
+      "category": "nerves",
+      "descr": [
+        "Фенибут - 250 mg."
+      ]
+    },
+    {
+      "id": 45,
+      "imgPath": "img/pills/12.webp",
+      "articul": "No. 046",
+      "title": "Фосфоглив Урсо",
+      "text": "для печени",
+      "price": "0.30",
+      "unit": "шт.",
+      "mainCategory": "capsules",
+      "category": "gastrointestinal",
+      "descr": [
+        "Урсодезоксихолевая кислота - 250 мг",
+        "Натрия глицирризинат - 35 мг"
+      ]
+    },
+    {
+      "id": 46,
+      "imgPath": "img/pills/13.webp",
+      "articul": "No. 047",
+      "title": "Холензим",
+      "text": "для жёлчного пузыря",
+      "price": "0.12",
+      "unit": "шт.",
+      "mainCategory": "capsules",
+      "category": "gastrointestinal",
+      "descr": [
+        "Желчь сухая - 100 мг",
+        "Измельченная высушенная поджелудочная железа - 100 мг",
+        "Высушенные слизистые оболочки тонких кишок убойного скота - 100 мг"
+      ]
+    },
+    {
+      "id": 47,
+      "imgPath": "img/herbs/1.webp",
+      "articul": "No. 048",
+      "title": "Зверобой",
+      "text": "Трава зверобоя на вес.",
+      "price": "0.50",
+      "unit": "10 гр.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "all",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 48,
+      "imgPath": "img/herbs/2.webp",
+      "articul": "No. 049",
+      "title": "Полынь",
+      "text": "Трава полыни на вес.",
+      "price": "0.50",
+      "unit": "10 гр.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "gastrointestinal",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 49,
+      "imgPath": "img/herbs/3.webp",
+      "articul": "No. 050",
+      "title": "Ромашка",
+      "text": "Трава ромашки на вес.",
+      "price": "0.50",
+      "unit": "10 гр.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "gastrointestinal",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 50,
+      "imgPath": "img/herbs/4.webp",
+      "articul": "No. 051",
+      "title": "Фенхель",
+      "text": "Трава фенхеля на вес.",
+      "price": "0.50",
+      "unit": "10 гр.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "gastrointestinal",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 51,
+      "imgPath": "img/herbs/5.webp",
+      "articul": "No. 052",
+      "title": "Корень одуванчика",
+      "text": "Корень одуванчика на вес.",
+      "price": "0.50",
+      "unit": "10 гр.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "immunity",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 52,
+      "imgPath": "img/herbs/6.webp",
+      "articul": "No. 053",
+      "title": "Душица",
+      "text": "Трава душицы на вес.",
+      "price": "0.50",
+      "unit": "10 гр.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "nerves",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 53,
+      "imgPath": "img/herbs/7.webp",
+      "articul": "No. 054",
+      "title": "Лопух",
+      "text": "Лопух на вес.",
+      "price": "0.50",
+      "unit": "10 гр.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "gastrointestinal",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 54,
+      "imgPath": "img/herbs/11.webp",
+      "articul": "No. 055",
+      "title": "Валерьяна",
+      "text": "Трава валерианы на вес.",
+      "price": "0.50",
+      "unit": "10 гр.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "nerves",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 55,
+      "imgPath": "img/herbs/13.webp",
+      "articul": "No. 056",
+      "title": "Бессмертник",
+      "text": "Трава бессмертника на вес.",
+      "price": "0.50",
+      "unit": "10 гр.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "gastrointestinal",
+      "descr": [
+        ""
+      ]
+    },
+     {
+      "id": 56,
+      "imgPath": "img/herbs/8.webp",
+      "articul": "No. 057",
+      "title": "Хвощ полевой",
+      "text": "Трава хвощь полевой на вес.",
+      "price": "0.50",
+      "unit": "10 гр.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "immunity",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 57,
+      "imgPath": "img/herbs/9.webp",
+      "articul": "No. 058",
+      "title": "Тысячилетник",
+      "text": "Трава тысячилетника на вес.",
+      "price": "0.50",
+      "unit": "10 гр.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "others",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 58,
+      "imgPath": "img/herbs/10.webp",
+      "articul": "No. 059",
+      "title": "Доник",
+      "text": "Трава донника на вес.",
+      "price": "0.50",
+      "unit": "10 гр.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "others",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 59,
+      "imgPath": "img/herbs/12.webp",
+      "articul": "No. 060",
+      "title": "Боярышник",
+      "text": "Трава боярышника на вес.",
+      "price": "0.50",
+      "unit": "10 гр.",
+      "mainCategory": "herbs",
+      "isHerbs": true,
+      "category": "nerves",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 60,
+      "imgPath": "img/other/1.webp",
+      "articul": "No. 061",
+      "title": "Кокосовая мука",
+      "text": "",
+      "price": "0.40",
+      "unit": "50 гр.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "others",
+      "descr": [
+        "Жиры - 10 g.",
+        "Углеводы 18 g.",
+        "Белки 20 g.",
+        "Клетчатка - 32 g."
+      ]
+    },
+    {
+      "id": 61,
+      "imgPath": "img/other/2.webp",
+      "articul": "No. 062",
+      "title": "Молотый миндаль",
+      "text": "",
+      "price": "0.75",
+      "unit": "50 гр.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "seeds",
+      "descr": [
+        "Жиры - 50 g.",
+        "Углеводы - 10,7 g.",
+        "Белок - 21,4 g.",
+        "Клетчатка - 10,7 g."
+      ]
+    },
+    {
+      "id": 62,
+      "imgPath": "img/other/3.webp",
+      "imgPath2": "img/other/3-1.webp",
+      "articul": "No. 063",
+      "title": "Gold Nutrition Protein (Whey)",
+      "text": "",
+      "price": "3.25",
+      "unit": "50 гр.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "protein",
+      "descr": [
+        ""
+      ]
+    },
+    
+    {
+      "id": 63,
+      "imgPath": "img/other/4.webp",
+      "articul": "No. 064",
+      "title": "Протеин с магнием и цинком (Dobra Kaloria)",
+      "text": "",
+      "price": "1.03",
+      "unit": "50 гр.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "protein",
+      "descr": [
+        "Жиры - 36 g.",
+        "Углеводы - 10,0 g.",
+        "Клетчатка - 21 g.",
+        "Белки - 22 g.",
+        "Магний",
+        "Цинк",
+        "Фосфор",
+        "Витамин B1"
+      ]
+    },
+    {
+      "id": 64,
+      "imgPath": "img/other/5.webp",
+      "imgPath2": "img/other/5-1.webp",
+      "articul": "No. 065",
+      "title": "Органическое какао (Now)",
+      "text": "",
+      "price": "2.25",
+      "unit": "50 гр.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "others",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 65,
+      "imgPath": "img/other/10.webp",
+      "articul": "No. 066",
+      "title": "Semper (BabySemp 1) детское питание",
+      "text": "",
+      "price": "1.00",
+      "unit": "50 гр.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "others",
+      "descr": [
+        "Обезжиренное молоко;",
+        "Лактоза;",
+        "Рыбий жир;",
+        "Витамин А;",
+        "Витамин D;",
+        "Витамин E;",
+        "Витамин K;",
+        "Витамин C;",
+        "Витамин B6;",
+        "Инозитол;",
+        "L - карнитин."
+      ]
+    },
+    {
+      "id": 66,
+      "imgPath": "img/other/6.webp",
+      "articul": "No. 067",
+      "title": "Турецкие семена",
+      "text": "",
+      "price": "0.40",
+      "unit": "50 гр.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "all",
+      "descr": [
+        "Жиры - 1,1 g.",
+        "Углеводы - 53.3 g.",
+        "Белок - 24 g.",
+        "Клетчатка - 8 g."
+      ]
+    },
+    {
+      "id": 67,
+      "imgPath": "img/other/7.webp",
+      "articul": "No. 068",
+      "title": "Cемена льна",
+      "text": "",
+      "price": "0.50",
+      "unit": "50 гр.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "seeds",
+      "descr": [
+        "Жиры - 10.1 g.",
+        "Углеводы - 28 g.",
+        "Белок - 33 g.",
+        "Клетчатка - 15 g."
+      ]
+    },
+    {
+      "id": 68,
+      "imgPath": "img/other/8.webp",
+      "articul": "No. 069",
+      "title": "Тыквенные семечки",
+      "text": "",
+      "price": "0.90",
+      "unit": "50 гр.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "seeds",
+      "descr": [
+        "Жиры - 49,05 g.",
+        "Белки - 30,23 g.",
+        "Углеводы - 10,71 g.",
+        "Клетчатка - 18 g."
+      ]
+    },
+    {
+      "id": 69,
+      "imgPath": "img/other/9.webp",
+      "imgPath2": "img/other/9-1.webp",
+      "articul": "No. 070",
+      "title": "Овес необработанный",
+      "text": "",
+      "price": "1.25",
+      "unit": "50 гр.",
+      "mainCategory": "other",
+      "isOther": true,
+      "category": "others",
+      "descr": [
+        ""
+      ]
+    },
+    {
+      "id": 2,
+      "imgPath": "img/1.webp",
+      "articul": "No. 003",
+      "title": "Triphala (Unifarma)",
+      "text": "Добавка для пищеварения",
+      "price": "0.20",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "food",
+      "descr": [
+        "Эмблики - 166.6 мg; ",
+        "Белерика - 166.6 mg;",
+        "Хебула - 166.6 mg;"                              
+      ]
+    },
+    {
+      "id": 0,
+      "imgPath": "img/19.webp",
+      "articul": "No. 001",
+      "title": "OstroVit Caffeine",
+      "text": "Добавка для бодрости",
+      "price": "0.10",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "think",
+      "descr": [
+        "Кофеин  200 мг" 
+      ]
+    },
+    {
+      "id": 1,
+      "imgPath": "img/18.webp",
+      "articul": "No. 002",
+      "title": "Glutathione",
+      "text": "Добавка для иммунитета",
+      "price": "0.25",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "immunity",
+      "descr": [
+        "L-глутатион - 200 mg" 
+      ]
+    },
+    {
+      "id": 70,
+      "imgPath": "img/20.webp",
+      "articul": "No. 071",
+      "title": "Lion's Mane (ежовик гребенчатый)",
+      "text": "Для иммунитета",
+      "price": "0.25",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "mush",
+      "descr": [
+        "Экстракт львиной гривы  - 500 mg"
+      ]
+    },
+    {
+      "id": 71,
+      "imgPath": "img/21.webp",
+      "articul": "No. 072",
+      "title": "Chaga (экстракт Чаги)",
+      "text": "Для иммунитета",
+      "price": "0.25",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "mush",
+      "descr": [
+        "Экстракт гриба чага - 500 mg"
+      ]
+    },
+    {
+      "id": 72,
+      "imgPath": "img/22.webp",
+      "articul": "No. 073",
+      "title": "Cordyceps (экстракт кордицепа)",
+      "text": "Для иммунитета",
+      "price": "0.25",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "mush",
+      "descr": [
+        "Экстракт гриба кордицепс - 500 mg"
+      ]
+    },
+    {
+      "id": 73,
+      "imgPath": "img/23.webp",
+      "articul": "No. 074",
+      "title": "Reisi (экстракт Рейши)",
+      "text": "Для иммунитета",
+      "price": "0.25",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "mush",
+      "descr": [
+        "Экстракт гриба Рейши - 240 mg"
+      ]
+    },
+    {
+      "id": 74,
+      "imgPath": "img/24.webp",
+      "articul": "No. 075",
+      "title": "Shiitake (экстракт шиитаке)",
+      "text": "Для иммунитета",
+      "price": "0.35",
+      "unit": "шт.",
+      "mainCategory": "bads",
+      "category": "mush",
+      "descr": [
+        "Экстракт гриба шиитаке - 500 mg"
+      ]
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

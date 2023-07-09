@@ -91,6 +91,8 @@
     href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+
   </head>
   <body data-main data-multi-lang="false">
     <noscript>
@@ -193,7 +195,7 @@
                   </div>
 
                   <a
-                    href="cart_items.html"
+                    href="cart_items-ru.html"
                     class="header__control-btn header__cart"
                   >
                     <span class="icon icon-cart">
@@ -210,7 +212,18 @@
                   >
                     <span class="icon icon-phone"></span>
                   </a>
+
+                  
+                  <div class="header__langs header__langs_desc">
+                    <a href="index.htm" data-ru data-lang class="header__lang-link">
+                      <img src="/img/ru.png" alt="">
+                    </a>
+                    <a href="index-lv.htm" data-lv data-lang class="header__lang-link">
+                      <img src="/img/lv.png" alt="">
+                    </a>
+                  </div>
                 </div>
+
               </div>
             </div>
 
@@ -221,40 +234,12 @@
             >
               <div class="side-panel__content">
                 <div class="side-panel__head">
-                  <div class="header__search">
-                    <form
-                      action="/search"
-                      method="get"
-                      class="header__search-form"
-                    >
-                      <input
-                        type="text"
-                        autocomplete="off"
-                        class="form-control form-control_size-l header__search-field"
-                        name="q"
-                        value=""
-                        placeholder="Поиск"
-                      />
-                      <input type="hidden" name="lang" value="ru" />
-                      <div
-                        class="header__search__results"
-                        data-search-result=""
-                      ></div>
-                    </form>
-                    <button
-                      type="button"
-                      class="header__search-btn js-show-search  _show _hide"
-                    >
-                      <span class="icon icon-search "></span>
-                      <span class="icon icon-times "></span>
-                    </button>
-                  </div>
 
                   <a
                     href="client_account/session/new.html"
                     class="header__control-btn header__cabinet"
                   >
-                    <span class="icon icon-user"></span>
+                    <span class="icon icon-cart"></span>
                   </a>
 
                   <button
@@ -324,6 +309,44 @@
                     <a class="phone-value" href="tel:+37126858674">Tel. +371 26858674</a>
                     <p>(Whats App/Telegram)</p>
                   </div>
+                </div>
+
+                <div class="address">
+                  <div class="contacts__head">Языки</div>
+                  <div class="header__langs header__langs_mobi">
+                    <a href="index.htm" data-ru data-lang class="header__lang-link">
+                      <img src="/img/ru.png" alt="">
+                    </a>
+                    <a href="index-lv.htm" data-lv data-lang class="header__lang-link">
+                      <img src="/img/lv.png" alt="">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="header__search">
+                  <div class="contacts__head">Поиск</div>
+                  <form
+                    action="/search"
+                    method="get"
+                    class="header__search-form"
+                  >
+                    <input
+                      type="text"
+                      autocomplete="off"
+                      class="form-control form-control_size-l header__search-field"
+                      name="q"
+                      value=""
+                      placeholder="Поиск"
+                    />
+                    <input type="hidden" name="lang" value="ru" />
+                    <div
+                      class="header__search__results"
+                      data-search-result=""
+                    ></div>
+                    <button type="submit" class="header__search-btn js-show-search  _show _hide">
+                      <span class="icon icon-search "></span>
+                    </button>
+                  </form>
                 </div>
 
                 <div class="soclinks"></div>
@@ -419,19 +442,12 @@
                   />
                 </picture>
               </div>
-              <div style="opacity: 0;" class="banner-list__item-text">
-                <div class="banner-list__item-title h2"></div>
-                <div class="banner-list__item-content">
-                  <p><strong>Пищевые добавки, бады, витамины и минералы</strong></p>
-                  <p><strong>для вашего здоровья</strong></p>
+              <div class="banner-list__item-text">
+                <div class="banner-list__item-title h2">
+                  Пищевые добавки, бады, витамины и минералы <span>для вашего здоровья</span>
                 </div>
-
-                <div class="banner-list__item-button">
-                  <a
-                    href="blogs/blog/borba-s-tsellyulitom-vyberite-svoyo-oruzhie.html?"
-                    class="button button_size-m"
-                    >Читать</a
-                  >
+                <div class="banner-list__item-content">
+                  <p>Весь ассортимент в наличии. Продажа от 5 шт. одной позиции. Попробуй продукт, перед тем как покупать полные упаковки.</p>
                 </div>
               </div>
             </div>
@@ -623,7 +639,7 @@
         >
           <div class="layout__content">
             <div class="banner-list__item">
-              <div class="banner-list__item-image">
+              <div class="banner-list__item-image banner-list__item-image_2">
                 <picture>
                   <source
                     media="(min-width:769px)"
@@ -651,19 +667,9 @@
                   />
                 </picture>
               </div>
-              <div style="opacity: 0;" class="banner-list__item-text">
-                <div class="banner-list__item-title h2">Премиум аромамасла</div>
-                <div class="banner-list__item-content">
-                  <p>Найдите свой уникальный способ&nbsp;</p>
-                  <p>наполнить каждый день удовольствием</p>
-                </div>
-
-                <div class="banner-list__item-button">
-                  <a
-                    href="collection/aromaterapiya.html"
-                    class="button button_size-m"
-                    >К покупкам</a
-                  >
+              <div class="banner-list__item-text">
+                <div class="banner-list__item-title banner-list__item-title_2 h2">
+                  Быстрая отправка заказов по всей латвии и европе
                 </div>
               </div>
             </div>
@@ -672,127 +678,7 @@
 
       </main>
 
-      <footer id="footer">
-        <div
-          class="layout widget-type_system_widget_v4_delimeters"
-          style="
-            --delimeter-type: solid;
-            --border-size: 3px;
-            --layout-wide-bg: true;
-            --layout-pt: 2vw;
-            --layout-pb: 1vw;
-            --layout-wide-content: false;
-            --layout-edge: false;
-            --hide-desktop: false;
-            --hide-mobile: false;
-          "
-        >
-          <div class="layout__content">
-            <div class="delimeter">
-              <div class="delimeter_line"></div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="layout widget-type_system_widget_v4_footer_7"
-          style="
-            --logo-max-width: 140px;
-            --hide-pay: false;
-            --pay-img-1: 'https://static.insales-cdn.com/files/1/1311/14550303/original/Group.svg';
-            --pay-img-2: 'https://static.insales-cdn.com/files/1/1305/14550297/original/Visa.svg';
-            --hide-social: false;
-            --layout-wide-bg: true;
-            --layout-pt: 1vw;
-            --layout-pb: 2vw;
-            --layout-content-max-width: 1408px;
-            --layout-wide-content: false;
-            --layout-edge: false;
-            --hide-desktop: false;
-            --hide-mobile: false;
-          "
-        >
-          <div class="layout__content">
-            <div class="footer-wrap">
-              <div class="footer__area-social">
-                <div class="social-items">
-                  <div class="social-img-item">
-                    <img src="" />
-                  </div>
-
-                  <div class="social-img-item">
-                    <img src="" />
-                  </div>
-
-                  <div class="social-img-item">
-                    <img src="" />
-                  </div>
-
-                  <div class="social-img-item">
-                    <img src="" />
-                  </div>
-
-                  <div class="social-img-item">
-                    <img src="" />
-                  </div>
-
-                  <div class="social-img-item">
-                    <img src="" />
-                  </div>
-
-                  <div class="social-img-item">
-                    <img src="" />
-                  </div>
-                </div>
-              </div>
-              <div class="footer__area-contacts">
-                <div class="footer__wrap">
-                  <div class="phone-info">
-                    Health Store - все для вашего здоровья доступно, без переплат.
-                  </div>
-                </div>
-              </div>
-              <div class="footer__area-pay">
-                <div class="pay-img-item">
-                  <img src="files/1/1311/14550303/original/Group.svg" />
-                </div>
-
-                <div class="pay-img-item">
-                  <img src="files/1/1305/14550297/original/Visa.svg" />
-                </div>
-
-                <div class="pay-img-item">
-                  <img src="" />
-                </div>
-
-                <div class="pay-img-item">
-                  <img src="" />
-                </div>
-
-                <div class="pay-img-item">
-                  <img src="" />
-                </div>
-              </div>
-              <div class="footer_copyright">
-                <div class="footer__wrap">
-                  Точки выдачи заказов: 
-                </div>
-               <div class="footer__locations">
-                  <p><a href="https://goo.gl/maps/DNmtjrK46RDiRiPq6">Slokas 52 (Riga)</a></p>
-                  <p>
-                    <a href="https://goo.gl/maps/b2Ke5sVrsYu35ox6A">Arena Riga (Riga)</a>
-                  </p>
-               </div>
-                <p>
-                  E-mail:<a href="mailto:dsriga@gmail.com"> dsriga@gmail.com</a>
-                </p>
-                <p><a href="tel:+37126858674">Tel. +371 26858674</a></p>
-                <p>(Whats App/Telegram)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <footer id="footer"></footer>
     </div>
 
     <div id="popup-about" aria-hidden="true" class="popup popup-about">
@@ -812,6 +698,10 @@
     
 
   </body>
+
+  <script src="assets/js/langs.js"></script>
+
+  <script src="assets/js/footer-ru.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./assets/js/products-view.js"></script>  
@@ -1676,11 +1566,28 @@
       background: #fff !important;
     }
     .widget-type_system_widget_v4_page_banner_2 .banner-list__item .banner-list__item-image img {
-      object-fit: fill !important;
+      object-fit: cover !important;
+      position: relative;
       /* min-height: 100px; */
     }
+
+    .widget-type_system_widget_v4_page_banner_2 .banner-list__item .banner-list__item-image_2:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      height: 70px;
+      background: url("img/banner/2-1.webp") center / cover no-repeat;
+      border-top-left-radius: 10px;
+    }
+
+
     @media (max-width: 550px){
-     
+      .widget-type_system_widget_v4_page_banner_2 .banner-list__item .banner-list__item-image_2:after {
+        width: 75%;
+        height: 30px;
+      }
     }
     @media (max-width: 500px){
       .tabs-prod {
@@ -1689,7 +1596,7 @@
       }
     }
     .widget-type_system_widget_v4_page_banner_2 .banner-list__item .banner-list__item-image-main img {
-      object-fit: cover !important;
+      /* object-fit: co !important; */
     }
     .widget-type_system_widget_v4_page_banner_2
       .banner-list__item

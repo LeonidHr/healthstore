@@ -7,11 +7,27 @@ async function viewPopup() {
   let data = null;
   let isProduct = false;
 
+  const langArr = getLang();
+  console.log(langArr);
+
   if (hasProductInUrl()) {
     isProduct = true;
-    data = await getPopupData('../assets/json/popups.json');
+
+    if (langArr[0] == 'ru') {
+      data = await getPopupData('../../assets/json/popups.json');
+    } else if (langArr[0] == 'lv') {
+      data = await getPopupData('../../assets/json/popups-lv.json');
+    } else {
+      data = await getPopupData('../../assets/json/popups.json');
+    }
   } else {
-    data = await getPopupData('./assets/json/popups.json');
+    if (langArr[0] == 'ru') {
+      data = await getPopupData('./assets/json/popups.json');
+    } else if (langArr[0] == 'lv') {
+      data = await getPopupData('./assets/json/popups-lv.json');
+    } else {
+      data = await getPopupData('./assets/json/popups.json');
+    }
   }
 
   let postsData = data.popups;
@@ -26,7 +42,7 @@ async function viewPopup() {
 
         const postEl = `
           <button data-close type="button" class="popup__close">
-            <img class="img-fluid" src="${isProduct ? '../' : ''}img/exit.svg" alt="Закрыть окно">
+            <img class="img-fluid" src="${isProduct ? '../../' : ''}img/exit.svg" alt="Закрыть окно">
           </button>
           <div class="popup-about__content">
             <h3 class="popup__title popup__title_left popup-about__title">${el.title}</h3>
@@ -34,7 +50,7 @@ async function viewPopup() {
               
             </div>
             <div class="popup-about__logo">
-              <img class="img-fluid" src="${isProduct ? '../' : ''}${el.imgPath}" alt="Healthstore logo">
+              <img class="img-fluid" src="${isProduct ? '../../' : ''}${el.imgPath}" alt="Healthstore logo">
             </div>
           </div>
         `;

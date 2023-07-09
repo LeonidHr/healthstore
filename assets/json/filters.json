@@ -2,12 +2,13 @@
   "filters": [  
     {
       "category": "bads",
+      "categoryTitle": "Бады",
       "content": [
         "Все",
         "Для пищеварения",
-        "Для сна",
-        "Для мозга и настроения",
-        "Для иммунитета",
+        "Спокойствие и сон",
+        "Бодрость и настроение",
+        "Иммунитет",
         "Другие"
       ],
       "filters": [
@@ -21,6 +22,7 @@
     },
     {
       "category": "vitamins",
+      "categoryTitle": "Витамины и минералы",
       "content": [
         "Все",
         "Для нервной системы",
@@ -36,6 +38,7 @@
     },
     {
       "category": "capsules",
+      "categoryTitle": "Капсулы, таблетки ",
       "content": [
         "Все",
         "Пищеварение",
@@ -51,6 +54,7 @@
     },
     {
       "category": "herbs",
+      "categoryTitle": "Травы",
       "content": [
         "Все",
         "Пищеварение",
@@ -68,14 +72,17 @@
     },
     {
       "category": "other",
+      "categoryTitle": "Остальное",
       "content": [
         "Все",
+        "Мази и гели",
         "Протеин",
         "Орехи и семена",
         "Другие"
       ],
       "filters": [
         "all",
+        "ointments",
         "protein",
         "seeds",
         "others"
